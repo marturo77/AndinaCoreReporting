@@ -1,0 +1,6 @@
+periodo,parametro,inicio,fin,valor
+2026-1,TMR,2025-01-01,2025-12-31,radicacion 110
+2026-1,TM_Validos,2025-01-01,2025-12-31,SW10
+2026-1,TM_Invalidos,2025-01-01,2025-12-31,IR-05
+2026-1,TM_mejoramiento,2025-01-01,2025-12-31,F mejoramiento 2026
+2026-1,TM_reduccion,2025-01-01,2025-12-31,F reduccion 2026
