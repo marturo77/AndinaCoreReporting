@@ -1,0 +1,7 @@
+"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
+"","17915","R30-C01 Listado de parametros de producto de renta vitalicia, reserva matematica","","Fri Nov 21 19:01:48 UTC 2025","passed","Fri Nov 21 19:02:06 UTC 2025","","","",""
+"","22399","Comparacion de resultados de cotización masiva con archivo de referencia","","Fri Nov 21 19:04:46 UTC 2025","passed","Fri Nov 21 19:05:08 UTC 2025","","","",""
+"","15802","Carga exitosa del archivo masivo y descarga de resultados","","Fri Nov 21 19:01:32 UTC 2025","broken","Fri Nov 21 19:01:48 UTC 2025","","","",""
+"","141729","R30 C02-C07 Crear y eliminar vigencias para reserva matematica adjuntando documento","","Fri Nov 21 19:02:06 UTC 2025","passed","Fri Nov 21 19:04:28 UTC 2025","","","",""
+"","17981","Creacion de un siniestro","","Fri Nov 21 19:04:28 UTC 2025","passed","Fri Nov 21 19:04:46 UTC 2025","","","",""
+"","15095","creacion manual de cotizacion","","Fri Nov 21 19:01:17 UTC 2025","passed","Fri Nov 21 19:01:32 UTC 2025","","","",""
