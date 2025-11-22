@@ -1,5 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","19285","Comparacion de resultados de cotización masiva con archivo de referencia","","Fri Nov 14 02:03:59 UTC 2025","passed","Fri Nov 14 02:04:18 UTC 2025","","","",""
-"","29910","Carga exitosa del archivo masivo y descarga de resultados","","Fri Nov 14 02:02:54 UTC 2025","passed","Fri Nov 14 02:03:24 UTC 2025","","","",""
-"","13162","Creacion de un siniestro","","Fri Nov 14 02:03:46 UTC 2025","passed","Fri Nov 14 02:03:59 UTC 2025","","","",""
-"","21901","Crear y eliminar vigencias para una lista de parámetros","","Fri Nov 14 02:03:24 UTC 2025","passed","Fri Nov 14 02:03:46 UTC 2025","","","",""
