@@ -447,35 +447,31 @@
       transform: translateY(-0.5px);
     }
 
-    td .chip-folder {
-      display: inline-flex;
-      align-items: center;
-      gap: 0.35rem;
-      padding: 0.15rem 0.6rem;
-      border-radius: var(--radius-sm);
-      border: 1px solid rgba(30, 64, 175, 0.8);
-      background: rgba(15, 23, 42, 0.98);
-      font-size: 0.75rem;
-      color: #c7d2fe;
-    }
-
-    .chip-folder-icon {
-      width: 13px;
-      height: 13px;
-      border-radius: 3px;
-      border: 1px solid rgba(129, 140, 248, 0.6);
-      background: radial-gradient(circle at top, rgba(129, 140, 248, 0.5), rgba(15, 23, 42, 0.9));
-    }
-
     .link-table {
       color: var(--accent-soft);
       text-decoration: none;
       font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
     }
 
     .link-table:hover {
       text-decoration: underline;
       color: #7dd3fc;
+    }
+
+    .row-icon {
+      width: 22px;
+      height: 22px;
+      border-radius: 999px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.8), rgba(59, 130, 246, 0.9));
+      color: #0b1120;
+      font-size: 0.9rem;
+      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.9);
     }
 
     .status-bar {
@@ -595,7 +591,7 @@
                 id="search-input"
                 class="search-input"
                 type="text"
-                placeholder="Filtrar por fecha, id o carpeta…"
+                placeholder="Filtrar por fecha o id…"
                 autocomplete="off"
               />
             </div>
@@ -606,8 +602,6 @@
               <thead>
                 <tr>
                   <th>Fecha / Hora</th>
-                  <th>Carpeta</th>
-                  <th>Identificador</th>
                   <th>Reporte</th>
                 </tr>
               </thead>
@@ -682,9 +676,6 @@
           <span class="badge">
             <strong>Fecha:</strong> ${dateLabel}
           </span>
-          <span class="badge">
-            <strong>Carpeta:</strong> ${latest.folder || latest.id}
-          </span>
         </div>
         <div class="latest-actions">
           <a href="${latest.url}" target="_blank" class="btn-primary">
@@ -726,28 +717,18 @@
         const tdDate = document.createElement("td");
         tdDate.textContent = dateLabel;
 
-        const tdFolder = document.createElement("td");
-        tdFolder.innerHTML = `
-          <span class="chip-folder">
-            <span class="chip-folder-icon"></span>
-            ${r.folder || r.id}
-          </span>
-        `;
-
-        const tdId = document.createElement("td");
-        tdId.textContent = r.id || "—";
-
         const tdLink = document.createElement("td");
         const a = document.createElement("a");
         a.href = r.url || "#";
-        a.textContent = "Abrir reporte";
         a.target = "_blank";
         a.className = "link-table";
+        a.innerHTML = `
+          <span class="row-icon">📊</span>
+          <span>Abrir reporte</span>
+        `;
         tdLink.appendChild(a);
 
         tr.appendChild(tdDate);
-        tr.appendChild(tdFolder);
-        tr.appendChild(tdId);
         tr.appendChild(tdLink);
 
         tbodyEl.appendChild(tr);
@@ -765,7 +746,6 @@
         filteredReports = reports.filter((r) => {
           const haystack = [
             r.id || "",
-            r.folder || "",
             formatDateLabel(r)
           ]
             .join(" ")
