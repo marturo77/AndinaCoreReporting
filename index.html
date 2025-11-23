@@ -1,12 +1,838 @@
-<html><head><title>Allure Reports</title></head><body>
-<h1>Historial de Reportes</h1>
-<ul>
-<li><a href="./2025-11-22_22-25-build/">2025-11-22_22-25-build</a></li>
-<li><a href="./2025-11-22_22-07-build/">2025-11-22_22-07-build</a></li>
-<li><a href="./2025-11-22_21-44-build/">2025-11-22_21-44-build</a></li>
-<li><a href="./2025-11-22_20-56-build/">2025-11-22_20-56-build</a></li>
-<li><a href="./2025-11-22_20-06-build/">2025-11-22_20-06-build</a></li>
-<li><a href="./2025-11-22_19-30-build/">2025-11-22_19-30-build</a></li>
-<li><a href="./2025-11-22_19-26-build/">2025-11-22_19-26-build</a></li>
-</ul>
-</body></html>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Pruebas Automatizadas – Andina Vida Seguros</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta
+    name="description"
+    content="Histórico de reportes de pruebas automatizadas Allure – Andina Vida Seguros"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+  <style>
+    :root {
+      --bg-main: #020617;          /* fondo principal */
+      --bg-card: #020617;
+      --bg-card-soft: #030712;
+      --border-soft: #1f2937;
+      --text-main: #e5e7eb;
+      --text-soft: #9ca3af;
+      --accent: #22c55e;           /* verde de éxito */
+      --accent-soft: #38bdf8;      /* azul de acción */
+      --accent-soft-2: #0ea5e9;
+      --danger: #f97316;
+      --chip-bg: #0b1120;
+      --chip-border: #1d4ed8;
+      --radius-lg: 18px;
+      --radius-sm: 999px;
+      --shadow-soft: 0 18px 45px rgba(15, 23, 42, 0.7);
+      --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.6);
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at top left, rgba(34, 197, 94, 0.08), transparent 55%),
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.1), transparent 55%),
+        var(--bg-main);
+      color: var(--text-main);
+      min-height: 100vh;
+    }
+
+    header {
+      padding: 1.5rem 1.75rem;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.85);
+      position: sticky;
+      top: 0;
+      z-index: 20;
+      backdrop-filter: blur(10px);
+      background: linear-gradient(
+        to right,
+        rgba(2, 6, 23, 0.95),
+        rgba(15, 23, 42, 0.95)
+      );
+    }
+
+    .header-inner {
+      max-width: 1080px;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 1.25rem;
+    }
+
+    .brand-block {
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+    }
+
+    .logo-circle {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: radial-gradient(circle at 30% 20%, #f9fafb, #e5e7eb 25%, #0ea5e9 65%, #1f2937 100%);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 0 0 2px rgba(15, 23, 42, 0.9),
+                  0 10px 25px rgba(15, 23, 42, 0.8);
+      font-size: 0.8rem;
+      color: #0f172a;
+      font-weight: 700;
+      letter-spacing: 0.02em;
+    }
+
+    .brand-text h1 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 600;
+      display: flex;
+      align-items: baseline;
+      gap: 0.4rem;
+    }
+
+    .brand-text h1 span.main {
+      color: #e5e7eb;
+    }
+
+    .brand-text h1 span.sub {
+      font-size: 0.85rem;
+      color: var(--accent-soft-2);
+      font-weight: 500;
+    }
+
+    .brand-text p {
+      margin: 0.15rem 0 0;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .header-badge {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.25rem;
+      font-size: 0.8rem;
+    }
+
+    .chip-env {
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(56, 189, 248, 0.6);
+      padding: 0.15rem 0.7rem;
+      background: radial-gradient(circle at top, rgba(15, 118, 110, 0.35), rgba(15, 23, 42, 0.95));
+      color: #e5e7eb;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.3rem;
+      box-shadow: 0 0 0 1px rgba(15, 23, 42, 0.9);
+    }
+
+    .chip-env-dot {
+      width: 7px;
+      height: 7px;
+      border-radius: 999px;
+      background: #22c55e;
+      box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.25);
+    }
+
+    .header-badge span.subtext {
+      color: var(--text-soft);
+    }
+
+    main {
+      max-width: 1080px;
+      margin: 1.5rem auto 2rem;
+      padding: 0 1.25rem 2rem;
+    }
+
+    .grid-layout {
+      display: grid;
+      grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+      gap: 1.5rem;
+      align-items: flex-start;
+    }
+
+    @media (max-width: 880px) {
+      .grid-layout {
+        grid-template-columns: minmax(0, 1fr);
+      }
+      .header-inner {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+      .header-badge {
+        align-items: flex-start;
+      }
+    }
+
+    .card {
+      background: radial-gradient(circle at top left, rgba(15, 23, 42, 0.85), rgba(2, 6, 23, 0.98));
+      border-radius: var(--radius-lg);
+      border: 1px solid var(--border-soft);
+      box-shadow: var(--shadow-card);
+      padding: 1.4rem 1.5rem 1.5rem;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .card::before {
+      content: "";
+      position: absolute;
+      inset: -40%;
+      background:
+        radial-gradient(circle at top right, rgba(56, 189, 248, 0.08), transparent 55%),
+        radial-gradient(circle at bottom left, rgba(22, 163, 74, 0.08), transparent 60%);
+      opacity: 0.85;
+      pointer-events: none;
+    }
+
+    .card-inner {
+      position: relative;
+      z-index: 1;
+    }
+
+    .card-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+
+    .card-header h2 {
+      margin: 0;
+      font-size: 1rem;
+      font-weight: 600;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .pill-latest {
+      border-radius: 999px;
+      padding: 0.12rem 0.55rem;
+      background: rgba(34, 197, 94, 0.12);
+      color: #bbf7d0;
+      font-size: 0.7rem;
+      border: 1px solid rgba(34, 197, 94, 0.45);
+    }
+
+    .card-header p {
+      margin: 0.1rem 0 0;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .latest-body {
+      margin-top: 0.6rem;
+    }
+
+    .latest-title {
+      font-size: 0.95rem;
+      font-weight: 500;
+      margin: 0 0 0.35rem;
+      color: #f9fafb;
+    }
+
+    .latest-meta {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem 1rem;
+      align-items: center;
+      margin-bottom: 0.8rem;
+    }
+
+    .badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.2rem 0.7rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(148, 163, 184, 0.45);
+      background: rgba(15, 23, 42, 0.9);
+      font-size: 0.75rem;
+      color: var(--text-soft);
+    }
+
+    .badge strong {
+      color: #e5e7eb;
+      font-weight: 500;
+    }
+
+    .latest-actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.6rem;
+      margin-top: 0.4rem;
+    }
+
+    .btn-primary,
+    .btn-ghost {
+      border-radius: 999px;
+      font-size: 0.8rem;
+      padding: 0.4rem 0.95rem;
+      border: 1px solid transparent;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      text-decoration: none;
+      transition: all 0.18s ease-out;
+      white-space: nowrap;
+    }
+
+    .btn-primary {
+      background: radial-gradient(circle at top, #22c55e, #16a34a 40%, #15803d 100%);
+      border-color: rgba(22, 163, 74, 0.8);
+      color: #022c22;
+      box-shadow: 0 10px 25px rgba(22, 163, 74, 0.35);
+      font-weight: 600;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 14px 30px rgba(22, 163, 74, 0.45);
+      filter: brightness(1.02);
+    }
+
+    .btn-ghost {
+      background: rgba(15, 23, 42, 0.85);
+      border-color: rgba(148, 163, 184, 0.45);
+      color: var(--text-soft);
+      font-weight: 500;
+    }
+
+    .btn-ghost:hover {
+      border-color: var(--accent-soft);
+      color: #f9fafb;
+      background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.15), rgba(15, 23, 42, 0.95));
+    }
+
+    .icon-arrow {
+      font-size: 0.9rem;
+    }
+
+    .pill-label {
+      font-size: 0.8rem;
+      color: var(--accent-soft);
+      font-weight: 500;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+    }
+
+    .hint {
+      font-size: 0.77rem;
+      color: var(--text-soft);
+      margin-top: 0.4rem;
+    }
+
+    /* Panel derecho: filtro + tabla */
+    .panel-right-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 0.75rem;
+      margin-bottom: 0.9rem;
+    }
+
+    .panel-right-header h2 {
+      margin: 0;
+      font-size: 0.98rem;
+      font-weight: 600;
+    }
+
+    .panel-right-header span.count {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+
+    .search-box {
+      margin-top: 0.4rem;
+    }
+
+    .search-input-wrapper {
+      border-radius: 999px;
+      border: 1px solid rgba(148, 163, 184, 0.5);
+      background: rgba(15, 23, 42, 0.96);
+      display: flex;
+      align-items: center;
+      padding-inline: 0.6rem;
+      gap: 0.4rem;
+      box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.9);
+    }
+
+    .search-icon {
+      font-size: 0.9rem;
+      color: var(--text-soft);
+    }
+
+    .search-input {
+      flex: 1;
+      border: none;
+      outline: none;
+      background: transparent;
+      color: var(--text-main);
+      font-family: inherit;
+      font-size: 0.82rem;
+      padding: 0.4rem 0.2rem;
+    }
+
+    .search-input::placeholder {
+      color: #6b7280;
+    }
+
+    .table-wrapper {
+      margin-top: 0.75rem;
+      border-radius: 0.9rem;
+      border: 1px solid rgba(30, 64, 175, 0.7);
+      background:
+        radial-gradient(circle at top left, rgba(30, 64, 175, 0.3), transparent 40%),
+        rgba(15, 23, 42, 0.98);
+      overflow: hidden;
+      box-shadow: var(--shadow-soft);
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    thead {
+      background: linear-gradient(to right, #020617, #0b1120);
+    }
+
+    th, td {
+      padding: 0.55rem 0.8rem;
+      text-align: left;
+      border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+    }
+
+    th {
+      font-weight: 500;
+      color: #9ca3af;
+      font-size: 0.78rem;
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      transition: background 0.15s ease-out, transform 0.08s ease-out;
+    }
+
+    tbody tr:nth-child(even) {
+      background: rgba(15, 23, 42, 0.85);
+    }
+
+    tbody tr:nth-child(odd) {
+      background: rgba(15, 23, 42, 0.92);
+    }
+
+    tbody tr:hover {
+      background: radial-gradient(circle at left, rgba(56, 189, 248, 0.15), rgba(15, 23, 42, 0.96));
+      transform: translateY(-0.5px);
+    }
+
+    td .chip-folder {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      padding: 0.15rem 0.6rem;
+      border-radius: var(--radius-sm);
+      border: 1px solid rgba(30, 64, 175, 0.8);
+      background: rgba(15, 23, 42, 0.98);
+      font-size: 0.75rem;
+      color: #c7d2fe;
+    }
+
+    .chip-folder-icon {
+      width: 13px;
+      height: 13px;
+      border-radius: 3px;
+      border: 1px solid rgba(129, 140, 248, 0.6);
+      background: radial-gradient(circle at top, rgba(129, 140, 248, 0.5), rgba(15, 23, 42, 0.9));
+    }
+
+    .link-table {
+      color: var(--accent-soft);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .link-table:hover {
+      text-decoration: underline;
+      color: #7dd3fc;
+    }
+
+    .status-bar {
+      margin-top: 0.55rem;
+      font-size: 0.78rem;
+      color: var(--text-soft);
+      display: flex;
+      justify-content: space-between;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .status-pill-ok {
+      color: #22c55e;
+    }
+    .status-pill-error {
+      color: var(--danger);
+    }
+
+    .status-message-error {
+      color: var(--danger);
+      font-size: 0.8rem;
+      margin-top: 0.5rem;
+    }
+
+    .status-message-muted {
+      font-size: 0.8rem;
+      color: var(--text-soft);
+      margin-top: 0.5rem;
+    }
+
+    .muted {
+      color: var(--text-soft);
+    }
+
+    .no-results {
+      text-align: center;
+      padding: 1.1rem 0.8rem;
+      font-size: 0.8rem;
+      color: var(--text-soft);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <div class="brand-block">
+        <div class="logo-circle">
+          AV
+        </div>
+        <div class="brand-text">
+          <h1>
+            <span class="main">Andina Vida Seguros</span>
+            <span class="sub">CORE Andina · QA</span>
+          </h1>
+          <p>Dashboard de reportes de pruebas automatizadas (Allure)</p>
+        </div>
+      </div>
+      <div class="header-badge">
+        <div class="chip-env">
+          <span class="chip-env-dot"></span>
+          <span>Pipeline de pruebas activo</span>
+        </div>
+        <span class="subtext">Último despliegue publicado vía GitHub Actions.</span>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="grid-layout">
+      <!-- Panel: Último reporte -->
+      <section class="card">
+        <div class="card-inner">
+          <div class="card-header">
+            <div>
+              <div class="pill-label">Visión general</div>
+              <h2>
+                Último reporte publicado
+                <span class="pill-latest">LATEST</span>
+              </h2>
+              <p id="latest-subtitle">
+                Cargando información del último build…
+              </p>
+            </div>
+          </div>
+
+          <div class="latest-body" id="latest-body">
+            <!-- Aquí se renderiza el último reporte -->
+          </div>
+
+          <div class="status-bar">
+            <span id="status-label" class="muted">
+              Esperando datos de <code>reports.json</code>…
+            </span>
+            <span id="status-count" class="muted"></span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Panel: Histórico -->
+      <section class="card">
+        <div class="card-inner">
+          <div class="panel-right-header">
+            <div>
+              <div class="pill-label">Histórico</div>
+              <h2>Todos los reportes ejecutados</h2>
+              <span id="history-subtitle" class="count">
+                Cargando historial…
+              </span>
+            </div>
+          </div>
+
+          <div class="search-box">
+            <div class="search-input-wrapper">
+              <span class="search-icon">🔍</span>
+              <input
+                id="search-input"
+                class="search-input"
+                type="text"
+                placeholder="Filtrar por fecha, id o carpeta…"
+                autocomplete="off"
+              />
+            </div>
+          </div>
+
+          <div class="table-wrapper" id="table-wrapper" style="display:none;">
+            <table>
+              <thead>
+                <tr>
+                  <th>Fecha / Hora</th>
+                  <th>Carpeta</th>
+                  <th>Identificador</th>
+                  <th>Reporte</th>
+                </tr>
+              </thead>
+              <tbody id="reports-tbody">
+                <!-- Filas dinámicas -->
+              </tbody>
+            </table>
+          </div>
+
+          <div id="no-results" class="no-results" style="display:none;">
+            No hay resultados que coincidan con el filtro aplicado.
+          </div>
+
+          <div id="history-message" class="status-message-muted"></div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <script>
+    const latestBodyEl = document.getElementById("latest-body");
+    const latestSubtitleEl = document.getElementById("latest-subtitle");
+    const statusLabelEl = document.getElementById("status-label");
+    const statusCountEl = document.getElementById("status-count");
+    const historySubtitleEl = document.getElementById("history-subtitle");
+    const historyMessageEl = document.getElementById("history-message");
+    const tableWrapperEl = document.getElementById("table-wrapper");
+    const tbodyEl = document.getElementById("reports-tbody");
+    const noResultsEl = document.getElementById("no-results");
+    const searchInputEl = document.getElementById("search-input");
+
+    let reports = [];
+    let filteredReports = [];
+
+    function formatDateLabel(report) {
+      // Usar label si viene del JSON, si no usar createdAt, si no id
+      if (report.label) return report.label;
+      if (report.createdAt) {
+        try {
+          const d = new Date(report.createdAt);
+          return d.toLocaleString("es-CO", {
+            year: "numeric",
+            month: "2-digit",
+            day: "2-digit",
+            hour: "2-digit",
+            minute: "2-digit"
+          });
+        } catch (e) {}
+      }
+      return report.id || "(sin id)";
+    }
+
+    function renderLatest() {
+      latestBodyEl.innerHTML = "";
+
+      if (!reports.length) {
+        latestSubtitleEl.textContent = "Aún no hay reportes registrados.";
+        statusLabelEl.textContent = "Sin datos de pruebas automatizadas.";
+        return;
+      }
+
+      const latest = reports[0]; // ya viene ordenado del JSON
+      const dateLabel = formatDateLabel(latest);
+
+      latestSubtitleEl.textContent = `Build más reciente publicado: ${dateLabel}`;
+
+      const wrapper = document.createElement("div");
+
+      wrapper.innerHTML = `
+        <p class="latest-title">${latest.id}</p>
+        <div class="latest-meta">
+          <span class="badge">
+            <strong>Fecha:</strong> ${dateLabel}
+          </span>
+          <span class="badge">
+            <strong>Carpeta:</strong> ${latest.folder || latest.id}
+          </span>
+        </div>
+        <div class="latest-actions">
+          <a href="${latest.url}" target="_blank" class="btn-primary">
+            Ver último reporte
+            <span class="icon-arrow">↗</span>
+          </a>
+          <a href="#historico" class="btn-ghost" onclick="document.querySelector('.table-wrapper')?.scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">
+            Ver histórico completo
+          </a>
+        </div>
+        <p class="hint">
+          Este reporte corresponde al último pipeline que publicó resultados en el repositorio de reportes.
+        </p>
+      `;
+
+      latestBodyEl.appendChild(wrapper);
+      statusLabelEl.textContent = "Datos cargados correctamente desde reports.json.";
+    }
+
+    function renderTable() {
+      tbodyEl.innerHTML = "";
+
+      if (!filteredReports.length) {
+        tableWrapperEl.style.display = "none";
+        noResultsEl.style.display = "block";
+        historyMessageEl.textContent =
+          "Ajusta el filtro o ejecuta nuevamente el pipeline de pruebas para generar más reportes.";
+        return;
+      }
+
+      tableWrapperEl.style.display = "block";
+      noResultsEl.style.display = "none";
+
+      filteredReports.forEach((r) => {
+        const tr = document.createElement("tr");
+
+        const dateLabel = formatDateLabel(r);
+
+        const tdDate = document.createElement("td");
+        tdDate.textContent = dateLabel;
+
+        const tdFolder = document.createElement("td");
+        tdFolder.innerHTML = `
+          <span class="chip-folder">
+            <span class="chip-folder-icon"></span>
+            ${r.folder || r.id}
+          </span>
+        `;
+
+        const tdId = document.createElement("td");
+        tdId.textContent = r.id || "—";
+
+        const tdLink = document.createElement("td");
+        const a = document.createElement("a");
+        a.href = r.url || "#";
+        a.textContent = "Abrir reporte";
+        a.target = "_blank";
+        a.className = "link-table";
+        tdLink.appendChild(a);
+
+        tr.appendChild(tdDate);
+        tr.appendChild(tdFolder);
+        tr.appendChild(tdId);
+        tr.appendChild(tdLink);
+
+        tbodyEl.appendChild(tr);
+      });
+
+      historyMessageEl.textContent =
+        "Listado ordenado por fecha de creación (más reciente primero).";
+    }
+
+    function applyFilter() {
+      const term = searchInputEl.value.trim().toLowerCase();
+      if (!term) {
+        filteredReports = [...reports];
+      } else {
+        filteredReports = reports.filter((r) => {
+          const haystack = [
+            r.id || "",
+            r.folder || "",
+            formatDateLabel(r)
+          ]
+            .join(" ")
+            .toLowerCase();
+          return haystack.includes(term);
+        });
+      }
+
+      renderTable();
+
+      if (filteredReports.length && term) {
+        historySubtitleEl.textContent = `Mostrando ${filteredReports.length} reporte(s) filtrados.`;
+      } else if (reports.length) {
+        historySubtitleEl.textContent = `Total: ${reports.length} reporte(s) almacenados.`;
+      }
+    }
+
+    async function loadReports() {
+      try {
+        statusLabelEl.textContent = "Cargando datos de reports.json…";
+        statusCountEl.textContent = "";
+        historySubtitleEl.textContent = "Cargando historial…";
+
+        const res = await fetch("reports.json", { cache: "no-store" });
+        if (!res.ok) {
+          throw new Error("HTTP " + res.status);
+        }
+
+        const data = await res.json();
+        if (!Array.isArray(data)) {
+          throw new Error("Formato inválido: se esperaba un arreglo.");
+        }
+
+        reports = data;
+        filteredReports = [...reports];
+
+        if (!reports.length) {
+          latestSubtitleEl.textContent = "Aún no se ha publicado ningún reporte.";
+          statusLabelEl.textContent = "Sin datos de ejecución de pruebas.";
+          historySubtitleEl.textContent = "Histórico vacío.";
+          historyMessageEl.textContent =
+            "Cuando el pipeline publique su primer reporte, aparecerá automáticamente en este panel.";
+          return;
+        }
+
+        statusCountEl.textContent = `Total de reportes: ${reports.length}`;
+        historySubtitleEl.textContent = `Total: ${reports.length} reporte(s) almacenados.`;
+
+        renderLatest();
+        renderTable();
+      } catch (err) {
+        console.error(err);
+        statusLabelEl.textContent = "No se pudo leer reports.json.";
+        statusLabelEl.classList.add("status-pill-error");
+        historySubtitleEl.textContent = "Error al cargar el historial.";
+        historyMessageEl.textContent =
+          "Verifica que reports.json exista en la raíz del repositorio público y que tenga un formato válido.";
+      }
+    }
+
+    searchInputEl.addEventListener("input", () => {
+      applyFilter();
+    });
+
+    window.addEventListener("load", () => {
+      loadReports();
+    });
+  </script>
+</body>
+</html>
