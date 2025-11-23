@@ -16,14 +16,14 @@
   />
   <style>
     :root {
-      --bg-main: #020617;          /* fondo principal */
+      --bg-main: #020617;
       --bg-card: #020617;
       --bg-card-soft: #030712;
       --border-soft: #1f2937;
       --text-main: #e5e7eb;
       --text-soft: #9ca3af;
-      --accent: #22c55e;           /* verde de éxito */
-      --accent-soft: #38bdf8;      /* azul de acción */
+      --accent: #22c55e;
+      --accent-soft: #38bdf8;
       --accent-soft-2: #0ea5e9;
       --danger: #f97316;
       --chip-bg: #0b1120;
@@ -34,9 +34,7 @@
       --shadow-card: 0 10px 30px rgba(15, 23, 42, 0.6);
     }
 
-    * {
-      box-sizing: border-box;
-    }
+    * { box-sizing: border-box; }
 
     body {
       margin: 0;
@@ -104,15 +102,8 @@
       gap: 0.4rem;
     }
 
-    .brand-text h1 span.main {
-      color: #e5e7eb;
-    }
-
-    .brand-text h1 span.sub {
-      font-size: 0.85rem;
-      color: var(--accent-soft-2);
-      font-weight: 500;
-    }
+    .brand-text h1 span.main { color: #e5e7eb; }
+    .brand-text h1 span.sub { font-size: 0.85rem; color: var(--accent-soft-2); font-weight: 500; }
 
     .brand-text p {
       margin: 0.15rem 0 0;
@@ -148,9 +139,7 @@
       box-shadow: 0 0 0 5px rgba(34, 197, 94, 0.25);
     }
 
-    .header-badge span.subtext {
-      color: var(--text-soft);
-    }
+    .header-badge span.subtext { color: var(--text-soft); }
 
     main {
       max-width: 1080px;
@@ -199,10 +188,7 @@
       pointer-events: none;
     }
 
-    .card-inner {
-      position: relative;
-      z-index: 1;
-    }
+    .card-inner { position: relative; z-index: 1; }
 
     .card-header {
       display: flex;
@@ -230,22 +216,10 @@
       border: 1px solid rgba(34, 197, 94, 0.45);
     }
 
-    .card-header p {
-      margin: 0.1rem 0 0;
-      font-size: 0.8rem;
-      color: var(--text-soft);
-    }
+    .card-header p { margin: 0.1rem 0 0; font-size: 0.8rem; color: var(--text-soft); }
 
-    .latest-body {
-      margin-top: 0.6rem;
-    }
-
-    .latest-title {
-      font-size: 0.95rem;
-      font-weight: 500;
-      margin: 0 0 0.35rem;
-      color: #f9fafb;
-    }
+    .latest-body { margin-top: 0.6rem; }
+    .latest-title { font-size: 0.95rem; font-weight: 500; margin: 0 0 0.35rem; color: #f9fafb; }
 
     .latest-meta {
       font-size: 0.8rem;
@@ -269,10 +243,7 @@
       color: var(--text-soft);
     }
 
-    .badge strong {
-      color: #e5e7eb;
-      font-weight: 500;
-    }
+    .badge strong { color: #e5e7eb; font-weight: 500; }
 
     .latest-actions {
       display: flex;
@@ -323,9 +294,7 @@
       background: radial-gradient(circle at top left, rgba(56, 189, 248, 0.15), rgba(15, 23, 42, 0.95));
     }
 
-    .icon-arrow {
-      font-size: 0.9rem;
-    }
+    .icon-arrow { font-size: 0.9rem; }
 
     .pill-label {
       font-size: 0.8rem;
@@ -341,7 +310,7 @@
       margin-top: 0.4rem;
     }
 
-    /* Panel derecho: filtro + tabla */
+    /* Panel derecho: filtro + lista */
     .panel-right-header {
       display: flex;
       align-items: center;
@@ -356,14 +325,9 @@
       font-weight: 600;
     }
 
-    .panel-right-header span.count {
-      font-size: 0.8rem;
-      color: var(--text-soft);
-    }
+    .panel-right-header span.count { font-size: 0.8rem; color: var(--text-soft); }
 
-    .search-box {
-      margin-top: 0.4rem;
-    }
+    .search-box { margin-top: 0.4rem; }
 
     .search-input-wrapper {
       border-radius: 999px;
@@ -376,10 +340,7 @@
       box-shadow: inset 0 0 0 1px rgba(15, 23, 42, 0.9);
     }
 
-    .search-icon {
-      font-size: 0.9rem;
-      color: var(--text-soft);
-    }
+    .search-icon { font-size: 0.9rem; color: var(--text-soft); }
 
     .search-input {
       flex: 1;
@@ -392,9 +353,7 @@
       padding: 0.4rem 0.2rem;
     }
 
-    .search-input::placeholder {
-      color: #6b7280;
-    }
+    .search-input::placeholder { color: #6b7280; }
 
     .table-wrapper {
       margin-top: 0.75rem;
@@ -413,34 +372,27 @@
       font-size: 0.8rem;
     }
 
-    thead {
-      background: linear-gradient(to right, #020617, #0b1120);
-    }
+    thead { background: linear-gradient(to right, #020617, #0b1120); }
 
     th, td {
       padding: 0.55rem 0.8rem;
       text-align: left;
       border-bottom: 1px solid rgba(15, 23, 42, 0.9);
+      white-space: nowrap; /* sin word-wrap */
     }
 
     th {
       font-weight: 500;
       color: #9ca3af;
       font-size: 0.78rem;
-      white-space: nowrap;
     }
 
     tbody tr {
       transition: background 0.15s ease-out, transform 0.08s ease-out;
     }
 
-    tbody tr:nth-child(even) {
-      background: rgba(15, 23, 42, 0.85);
-    }
-
-    tbody tr:nth-child(odd) {
-      background: rgba(15, 23, 42, 0.92);
-    }
+    tbody tr:nth-child(even) { background: rgba(15, 23, 42, 0.85); }
+    tbody tr:nth-child(odd)  { background: rgba(15, 23, 42, 0.92); }
 
     tbody tr:hover {
       background: radial-gradient(circle at left, rgba(56, 189, 248, 0.15), rgba(15, 23, 42, 0.96));
@@ -461,17 +413,9 @@
       color: #7dd3fc;
     }
 
-    .row-icon {
-      width: 22px;
-      height: 22px;
-      border-radius: 999px;
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      background: radial-gradient(circle at top, rgba(56, 189, 248, 0.8), rgba(59, 130, 246, 0.9));
-      color: #0b1120;
-      font-size: 0.9rem;
-      box-shadow: 0 0 0 3px rgba(15, 23, 42, 0.9);
+    .folder-icon {
+      font-size: 1rem;
+      margin-right: 4px;
     }
 
     .status-bar {
@@ -484,12 +428,8 @@
       flex-wrap: wrap;
     }
 
-    .status-pill-ok {
-      color: #22c55e;
-    }
-    .status-pill-error {
-      color: var(--danger);
-    }
+    .status-pill-ok { color: #22c55e; }
+    .status-pill-error { color: var(--danger); }
 
     .status-message-error {
       color: var(--danger);
@@ -503,9 +443,7 @@
       margin-top: 0.5rem;
     }
 
-    .muted {
-      color: var(--text-soft);
-    }
+    .muted { color: var(--text-soft); }
 
     .no-results {
       text-align: center;
@@ -591,7 +529,7 @@
                 id="search-input"
                 class="search-input"
                 type="text"
-                placeholder="Filtrar por fecha o id…"
+                placeholder="Filtrar por fecha (Colombia) o id…"
                 autocomplete="off"
               />
             </div>
@@ -601,8 +539,7 @@
             <table>
               <thead>
                 <tr>
-                  <th>Fecha / Hora</th>
-                  <th>Reporte</th>
+                  <th>Reportes (hora local Colombia)</th>
                 </tr>
               </thead>
               <tbody id="reports-tbody">
@@ -636,21 +573,38 @@
     let reports = [];
     let filteredReports = [];
 
+    // Formateador fijo a zona horaria de Colombia
+    const colombiaFormatter = new Intl.DateTimeFormat("es-CO", {
+      timeZone: "America/Bogota",
+      year: "numeric",
+      month: "2-digit",
+      day: "2-digit",
+      hour: "2-digit",
+      minute: "2-digit"
+    });
+
+    function parseAsUtcDate(isoString) {
+      if (!isoString) return null;
+
+      // Si ya tiene zona horaria (Z o +/-hh:mm), la respetamos
+      if (/[zZ]$/.test(isoString) || /[+\-]\d\d:\d\d$/.test(isoString)) {
+        return new Date(isoString);
+      }
+
+      // Si no tiene zona horaria, asumimos UTC
+      return new Date(isoString + "Z");
+    }
+
     function formatDateLabel(report) {
-      // Usar label si viene del JSON, si no usar createdAt, si no id
-      if (report.label) return report.label;
       if (report.createdAt) {
         try {
-          const d = new Date(report.createdAt);
-          return d.toLocaleString("es-CO", {
-            year: "numeric",
-            month: "2-digit",
-            day: "2-digit",
-            hour: "2-digit",
-            minute: "2-digit"
-          });
-        } catch (e) {}
+          const d = parseAsUtcDate(report.createdAt);
+          return colombiaFormatter.format(d); // UTC -> hora Colombia
+        } catch (e) {
+          console.error("Error formateando fecha:", e);
+        }
       }
+      // fallback
       return report.id || "(sin id)";
     }
 
@@ -674,7 +628,7 @@
         <p class="latest-title">${latest.id}</p>
         <div class="latest-meta">
           <span class="badge">
-            <strong>Fecha:</strong> ${dateLabel}
+            <strong>Fecha (Colombia):</strong> ${dateLabel}
           </span>
         </div>
         <div class="latest-actions">
@@ -682,12 +636,9 @@
             Ver último reporte
             <span class="icon-arrow">↗</span>
           </a>
-          <a href="#historico" class="btn-ghost" onclick="document.querySelector('.table-wrapper')?.scrollIntoView({behavior: 'smooth', block: 'start'}); return false;">
-            Ver histórico completo
-          </a>
         </div>
         <p class="hint">
-          Este reporte corresponde al último pipeline que publicó resultados en el repositorio de reportes.
+          Las fechas se muestran en hora de Colombia (America/Bogota), asumiendo que los datos del pipeline están en UTC.
         </p>
       `;
 
@@ -711,26 +662,18 @@
 
       filteredReports.forEach((r) => {
         const tr = document.createElement("tr");
-
-        const dateLabel = formatDateLabel(r);
-
-        const tdDate = document.createElement("td");
-        tdDate.textContent = dateLabel;
-
-        const tdLink = document.createElement("td");
+        const td = document.createElement("td");
         const a = document.createElement("a");
+
+        const label = formatDateLabel(r); // hora local
+        a.innerHTML = `<span class="folder-icon">📁</span>${label}`;
         a.href = r.url || "#";
         a.target = "_blank";
         a.className = "link-table";
-        a.innerHTML = `
-          <span class="row-icon">📊</span>
-          <span>Abrir reporte</span>
-        `;
-        tdLink.appendChild(a);
+        a.title = r.folder || r.id || "";
 
-        tr.appendChild(tdDate);
-        tr.appendChild(tdLink);
-
+        td.appendChild(a);
+        tr.appendChild(td);
         tbodyEl.appendChild(tr);
       });
 
@@ -746,6 +689,7 @@
         filteredReports = reports.filter((r) => {
           const haystack = [
             r.id || "",
+            r.folder || "",
             formatDateLabel(r)
           ]
             .join(" ")
