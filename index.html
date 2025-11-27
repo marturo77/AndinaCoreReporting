@@ -11,6 +11,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/min/moment.min.js"></script>
 
 </head>
 
@@ -86,7 +87,7 @@
           <div class="search-box">
             <div class="search-input-wrapper">
               <span class="search-icon">🔍</span>
-              <input id="search-input" class="search-input" type="text" placeholder="Filtrar por fecha (Colombia) o id…"
+              <input id="search-input" class="search-input" type="text" placeholder="Filtrar por fecha (hora local) o id…"
                 autocomplete="off" />
             </div>
           </div>
@@ -95,7 +96,7 @@
             <table>
               <thead>
                 <tr>
-                  <th>Reportes (hora local Colombia)</th>
+                  <th>Reportes (hora local)</th>
                 </tr>
               </thead>
               <tbody id="reports-tbody">
@@ -129,38 +130,38 @@
     let reports = [];
     let filteredReports = [];
 
-    // Formateador fijo a zona horaria de Colombia
-    const colombiaFormatter = new Intl.DateTimeFormat("es-CO", {
-      timeZone: "America/Bogota",
-      year: "numeric",
-      month: "2-digit",
-      day: "2-digit",
-      hour: "2-digit",
-      minute: "2-digit"
-    });
+    const COLOMBIA_OFFSET = "-05:00"; // Colombia es UTC-5 todo el a\u00f1o
 
-    function parseAsUtcDate(isoString) {
-      if (!isoString) return null;
-
-      // Si ya tiene zona horaria (Z o +/-hh:mm), la respetamos
-      if (/[zZ]$/.test(isoString) || /[+\-]\d\d:\d\d$/.test(isoString)) {
-        return new Date(isoString);
+    // Interpreta createdAt o el nombre del folder como hora de Colombia y la convierte a la zona local del navegador.
+    function getReportMomentColombia(report) {
+      if (report.createdAt) {
+        const base = String(report.createdAt).replace(" ", "T") + COLOMBIA_OFFSET;
+        const mFromCreatedAt = moment.parseZone(
+          base,
+          ["YYYY-MM-DDTHH:mm:ssZ", "YYYY-MM-DDTHH:mmZ", moment.ISO_8601],
+          true
+        );
+        if (mFromCreatedAt.isValid()) return mFromCreatedAt;
       }
 
-      // Si no tiene zona horaria, asumimos UTC
-      return new Date(isoString + "Z");
+      if (report.folder) {
+        const match = String(report.folder).match(/^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})/);
+        if (match) {
+          const base = `${match[1]}T${match[2]}:${match[3]}${COLOMBIA_OFFSET}`;
+          const mFromFolder = moment.parseZone(base, "YYYY-MM-DDTHH:mmZ", true);
+          if (mFromFolder.isValid()) return mFromFolder;
+        }
+      }
+
+      return null;
     }
 
     function formatDateLabel(report) {
-      if (report.createdAt) {
-        try {
-          const d = parseAsUtcDate(report.createdAt);
-          return colombiaFormatter.format(d); // UTC -> hora Colombia
-        } catch (e) {
-          console.error("Error formateando fecha:", e);
-        }
+      const m = getReportMomentColombia(report);
+      if (m) {
+        return m.local().format("YYYY-MM-DD HH:mm");
       }
-      // fallback
+
       return report.id || "(sin id)";
     }
 
@@ -183,7 +184,7 @@
       wrapper.innerHTML = `        
         <div class="latest-meta">
           <span class="badge">
-            <strong>Fecha (Colombia):</strong> ${dateLabel}
+            <strong>Fecha (hora local):</strong> ${dateLabel}
           </span>
         </div>
         <div class="latest-actions">
@@ -193,7 +194,7 @@
           </a>
         </div>
         <p class="hint">
-          Las fechas se muestran en hora de Colombia (America/Bogota), asumiendo que los datos del pipeline están en UTC.
+          Las fechas se muestran en tu hora local; el pipeline publica la hora base en hora de Colombia (UTC-5).
         </p>
       `;
 
@@ -316,3 +317,5 @@
 </body>
 
 </html>
+
+
