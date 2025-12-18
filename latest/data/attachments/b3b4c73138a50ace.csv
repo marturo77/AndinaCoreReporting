@@ -1,0 +1,6 @@
+periodo,parametro,inicio,fin,valor,documento
+2027-1,TMR,2027-01-01,2027-12-31,radicacion 110,tabla_mortalidad.xlsx
+2027-1,TM_Validos,2027-01-01,2027-12-31,SW10,tabla_mortalidad.xlsx
+2027-1,TM_Invalidos,2027-01-01,2027-12-31,IR-05,tabla_mortalidad.xlsx
+2027-1,TM_mejoramiento,2027-01-01,2027-12-31,F mejoramiento 2026,tabla_mortalidad.xlsx
+2027-1,TM_reduccion,2027-01-01,2027-12-31,F reduccion 2026,tabla_mortalidad.xlsx
