@@ -1,0 +1,7 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] Crear vigencia periodo=2027-1 parametro=TMR valor=radicacion 110 inicio=2027-01-01 fin=2027-12-31 documento=tabla_mortalidad.xlsx
+[PENDING] Crear vigencia periodo=2027-1 parametro=TM_Validos valor=SW10 inicio=2027-01-01 fin=2027-12-31 documento=tabla_mortalidad.xlsx
+[PENDING] Crear vigencia periodo=2027-1 parametro=TM_Invalidos valor=IR-05 inicio=2027-01-01 fin=2027-12-31 documento=tabla_mortalidad.xlsx
+[PENDING] Crear vigencia periodo=2027-1 parametro=TM_mejoramiento valor=F mejoramiento 2026 inicio=2027-01-01 fin=2027-12-31 documento=tabla_mortalidad.xlsx
+[PENDING] Crear vigencia periodo=2027-1 parametro=TM_reduccion valor=F reduccion 2026 inicio=2027-01-01 fin=2027-12-31 documento=tabla_mortalidad.xlsx
+[PENDING] Aparece un mensaje de confirmacion (migrado, requiere locator real)
