@@ -1,6 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-[PENDING] Elimino vigencia periodo=2027-1 parametro=TMR
-[PENDING] Elimino vigencia periodo=2027-1 parametro=TM_Validos
-[PENDING] Elimino vigencia periodo=2027-1 parametro=TM_Invalidos
-[PENDING] Elimino vigencia periodo=2027-1 parametro=TM_mejoramiento
-[PENDING] Elimino vigencia periodo=2027-1 parametro=TM_reduccion

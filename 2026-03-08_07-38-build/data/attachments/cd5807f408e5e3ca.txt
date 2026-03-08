@@ -1,2 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-[PENDING] Existe el parametro de nota tecnica (migrado, requiere selector real)
