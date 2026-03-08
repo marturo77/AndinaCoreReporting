@@ -1,0 +1,9 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] que se busca una poliza de vejez
+[PENDING] navego a la pagina de creacion de siniestros
+[PENDING] gestiono un siniestro
+[PENDING] gestiono un reclamante
+[PENDING] gestiono la fecha de muerte
+[PENDING] adjunto documentos
+[PENDING] guardo el siniestro
+[PENDING] se Guarda el siniestro

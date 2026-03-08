@@ -1,0 +1,2 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] Elimino vigencia periodo=2027-1 parametro=Nota Técnica

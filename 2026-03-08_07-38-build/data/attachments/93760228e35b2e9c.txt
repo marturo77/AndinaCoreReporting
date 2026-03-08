@@ -1,0 +1,2 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] Existen los parametros de producto: TMR, TM_Validos, TM_Invalidos, TM_mejoramiento, TM_reduccion

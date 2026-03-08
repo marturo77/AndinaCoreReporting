@@ -1,0 +1,7 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] se diligencia el formulario de cotizacion manual
+[PENDING] se diligencia el formulario de causante
+[PENDING] se diligencia el formulario de beneficiarios
+[PENDING] se valida que no tiene errores los formularios
+[PENDING] se guarda la cotizacion
+[PENDING] se crea la cotizacion manual exitosamente
