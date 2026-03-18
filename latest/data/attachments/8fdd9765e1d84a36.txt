@@ -1,3 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-[PENDING] subo el archivo plano de cotizacion (define COTIZACION_UPLOAD_FILE y COTIZACION_UPLOAD_SELECTOR)
-[PENDING] se descarga un archivo de resultados de cargue de cotizacion masiva (valida con COTIZACION_DOWNLOADED_FILE)
