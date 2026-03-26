@@ -1,0 +1,2 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[LOGIN] Reintento de validacion OTP 1
