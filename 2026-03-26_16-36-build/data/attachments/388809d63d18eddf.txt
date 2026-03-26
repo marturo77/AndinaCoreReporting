@@ -1,0 +1,18 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Inicia diligenciamiento de formulario de cotizacion manual...
+Boton Continuar clickeado.
+Formulario de cotizacion manual diligenciado.
+Inicia diligenciamiento de formulario de causante manual...
+Opciones visibles para seleccionable: CÉDULA CIUDADANIA | CÉDULA CIUDADANIA | CÉDULA CIUDADANIA | CÉDULA EXTRANJERÍA | CÉDULA EXTRANJERÍA | CÉDULA EXTRANJERÍA | NÚMERO DE IDENTIFICACIÓN TRIBUTARIA | NÚMERO DE IDENTIFICACIÓN TRIBUTARIA | NÚMERO DE IDENTIFICACIÓN TRIBUTARIA | PASAPORTE | PASAPORTE | PASAPORTE | PERMISO PERMANENCIA | PERMISO PERMANENCIA | PERMISO PERMANENCIA | PERMISO TEMPORAL | PERMISO TEMPORAL | PERMISO TEMPORAL | REGISTRO CIVIL | REGISTRO CIVIL | REGISTRO CIVIL | TARJETA IDENTIDAD | TARJETA IDENTIDAD | TARJETA IDENTIDAD
+Opciones visibles para seleccionable: CÉDULA CIUDADANIA | CÉDULA EXTRANJERÍA | NÚMERO DE IDENTIFICACIÓN TRIBUTARIA | PASAPORTE | PERMISO PERMANENCIA | PERMISO TEMPORAL | REGISTRO CIVIL | TARJETA IDENTIDAD
+Formulario de causante manual diligenciado.
+Inicia diligenciamiento de formulario de beneficiarios manual...
+Boton Continuar clickeado.
+Ingresando beneficiario: 34364263
+Elemento con nombre 'Estado del causante' no encontrado: Error: No se encontro ningun seleccionable asociado a 'Estado del causante'.
+Boton Agregar beneficiario clickeado.
+se valida que no tiene errores los formularios
+Guardando cotizacion manual...
+Boton Guardar clickeado.

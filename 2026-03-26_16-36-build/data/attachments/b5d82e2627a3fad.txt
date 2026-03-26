@@ -1,0 +1,36 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Inicia diligenciamiento de formulario de cotizacion manual...
+Opciones visibles para seleccionable: COLFONDOS | COLFONDOS | COLFONDOS | COLPENSIONES | COLPENSIONES | COLPENSIONES | PORVENIR | PORVENIR | PORVENIR | PROTECCION | PROTECCION | PROTECCION | SKANDIA | SKANDIA | SKANDIA
+Opciones visibles para seleccionable: COLFONDOS | COLPENSIONES | PORVENIR | PROTECCION | SKANDIA
+Boton Continuar clickeado.
+Formulario de cotizacion manual diligenciado.
+Inicia diligenciamiento de formulario de causante manual...
+Opciones visibles para seleccionable: CÉDULA CIUDADANIA | CÉDULA EXTRANJERÍA | NÚMERO DE IDENTIFICACIÓN TRIBUTARIA | PASAPORTE | PERMISO PERMANENCIA | PERMISO TEMPORAL | REGISTRO CIVIL | TARJETA IDENTIDAD
+Opciones visibles para seleccionable: CASADO(A) | CASADO(A) | CASADO(A) | DIVORCIADO(A) | DIVORCIADO(A) | DIVORCIADO(A) | SOLTERO(A) | SOLTERO(A) | SOLTERO(A) | UNIÓN LIBRE | UNIÓN LIBRE | UNIÓN LIBRE | VIUDO(A) | VIUDO(A) | VIUDO(A)
+Opciones visibles para seleccionable: INVALIDO | INVALIDO | INVALIDO | MUERTO | MUERTO | MUERTO | VALIDO | VALIDO | VALIDO
+Formulario de causante manual diligenciado.
+Inicia diligenciamiento de formulario de beneficiarios manual...
+Boton Continuar clickeado.
+Ingresando beneficiario: 481005399
+Se omite el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' porque no esta editable o visible: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '54': Error: No se encontro ningun campo editable asociado a '% DE PCL CON LA QUE SE RECONOCIO DERECHO'.
+Elemento con nombre 'Estado del causante' no encontrado: Error: No se encontro ningun seleccionable asociado a 'Estado del causante'.
+Boton Agregar beneficiario clickeado.
+Ingresando beneficiario: 1189752617
+Se omite el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' porque no esta editable o visible: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '78': Error: No se encontro ningun campo editable asociado a '% DE PCL CON LA QUE SE RECONOCIO DERECHO'.
+Opciones visibles para seleccionable: CAUSANTE | CAUSANTE | CAUSANTE | COMPAÑERO/A | COMPAÑERO/A | COMPAÑERO/A | CÓNYUGE | CÓNYUGE | CÓNYUGE | HERMANO/A | HERMANO/A | HERMANO/A | HIJO/A | HIJO/A | HIJO/A | MADRE | MADRE | MADRE | PADRE | PADRE | PADRE
+Opciones visibles para seleccionable: CAUSANTE | COMPAÑERO/A | CÓNYUGE | HERMANO/A | HIJO/A | MADRE | PADRE | TEMPORAL | TEMPORAL | TEMPORAL | VITALICIO | VITALICIO | VITALICIO
+Elemento con nombre 'Estado del causante' no encontrado: Error: No se encontro ningun seleccionable asociado a 'Estado del causante'.
+Boton Agregar beneficiario clickeado.
+Ingresando beneficiario: 189453372
+Opciones visibles para seleccionable: FEMENINO | FEMENINO | FEMENINO | MASCULINO | MASCULINO | MASCULINO
+Se omite el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' porque no esta editable o visible: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '53': Error: No se encontro ningun campo editable asociado a '% DE PCL CON LA QUE SE RECONOCIO DERECHO'.
+Opciones visibles para seleccionable: CAUSANTE | CAUSANTE | CAUSANTE | COMPAÑERO/A | COMPAÑERO/A | COMPAÑERO/A | CÓNYUGE | CÓNYUGE | CÓNYUGE | HERMANO/A | HERMANO/A | HERMANO/A | HIJO/A | HIJO/A | HIJO/A | MADRE | MADRE | MADRE | PADRE | PADRE | PADRE
+Opciones visibles para seleccionable: CAUSANTE | COMPAÑERO/A | CÓNYUGE | HERMANO/A | HIJO/A | MADRE | PADRE | TEMPORAL | TEMPORAL | TEMPORAL | VITALICIO | VITALICIO | VITALICIO
+Elemento con nombre 'Estado del causante' no encontrado: Error: No se encontro ningun seleccionable asociado a 'Estado del causante'.
+Boton Agregar beneficiario clickeado.
+se valida que no tiene errores los formularios
+Guardando cotizacion manual...
+Boton Guardar clickeado.
+No se encontro la cotizacion 1
