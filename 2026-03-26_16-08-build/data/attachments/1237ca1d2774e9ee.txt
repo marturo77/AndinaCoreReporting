@@ -1,0 +1,20 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Inicia diligenciamiento de formulario de cotizacion manual...
+Opciones visibles para seleccionable: COLFONDOS | COLFONDOS | COLFONDOS | COLPENSIONES | COLPENSIONES | COLPENSIONES | PORVENIR | PORVENIR | PORVENIR | PROTECCION | PROTECCION | PROTECCION | SKANDIA | SKANDIA | SKANDIA
+Opciones visibles para seleccionable: CAMBIO MODALIDAD | CAMBIO MODALIDAD | CAMBIO MODALIDAD | CONTROL SALDOS | CONTROL SALDOS | CONTROL SALDOS | DIRECTA | DIRECTA | DIRECTA
+Boton Continuar clickeado.
+Formulario de cotizacion manual diligenciado.
+Inicia diligenciamiento de formulario de causante manual...
+Opciones visibles para seleccionable: CÉDULA CIUDADANIA | CÉDULA EXTRANJERÍA | NÚMERO DE IDENTIFICACIÓN TRIBUTARIA | PASAPORTE | PERMISO PERMANENCIA | PERMISO TEMPORAL | REGISTRO CIVIL | TARJETA IDENTIDAD
+Opciones visibles para seleccionable: CASADO(A) | DIVORCIADO(A) | SOLTERO(A) | UNIÓN LIBRE | VIUDO(A)
+Formulario de causante manual diligenciado.
+Inicia diligenciamiento de formulario de beneficiarios manual...
+Boton Continuar clickeado.
+Ingresando beneficiario: 34364263
+Elemento con nombre 'Estado del causante' no encontrado: Error: No se encontro ningun seleccionable asociado a 'Estado del causante'.
+Boton Agregar beneficiario clickeado.
+se valida que no tiene errores los formularios
+Guardando cotizacion manual...
+Boton Guardar clickeado.
