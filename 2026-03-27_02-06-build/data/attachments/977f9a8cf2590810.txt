@@ -1,0 +1,9 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Subiendo archivo de contratacion...
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\tmp_uploads\contratacion_masiva_base_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\detalle_cargue_archivo_contratación.xlsx
