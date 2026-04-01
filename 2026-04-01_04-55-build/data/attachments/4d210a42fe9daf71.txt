@@ -1,0 +1,45 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Subiendo archivo de cotizacion...
+No hay documentos anteriores para actualizar en los archivos Excel.
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\datasets\cotizacion\masiva.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\detalle_cargue_archivo_cotización.xlsx
+Archivo descargado usado para comparacion: D:\a\1\s\tmp_downloads\detalle_cargue_archivo_cotización.xlsx
+Los datos no coinciden por: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -2,10 +2,11 @@
+    "{\"Nombre Dato\":\"Error <ID>\",\"Mensajes\":\"Error, los campos 'numero de llave' y 'numero de causante' no coinciden entre los beneficiarios, no se creo cotizacion para el causante <ID_GRUPO> (fila 3)\"}",
+    "{\"Nombre Dato\":\"Error en persona con id <ID>\",\"Mensajes\":\"Error en la celda 1 El dato debe ser TEXTO (fila 2)\"}",
+    "{\"Nombre Dato\":\"Llave duplicada - <ID_GRUPO>\",\"Mensajes\":\"El valor '1' ya esta asociado al causante con cedula: <ID> (fila 3)\"}",
+    "{\"Nombre Dato\":\"Origenes pension Causante: TEST\",\"Mensajes\":\"Valor invalido. Debe ser uno de: INV, VEJ, SBV (fila 4)\"}",
+    "{\"Nombre Dato\":\"Regla 12 - <ID>\",\"Mensajes\":\"La cotizacion no se puede crear ya que tiene un fallo (fila 3)\"}",
++   "{\"Nombre Dato\":\"Regla 14 - <ID> - Cotizacion existente\",\"Mensajes\":\"Solo se permite crear nueva cotizacion si las existentes estan en estado: rechazada, anulada, no vigente o no cotizada (fila 2)\"}",
+    "{\"Nombre Dato\":\"Regla 15 - <ID> - Origen pension\",\"Mensajes\":\"Origen de pension no existe en el catalogo (fila 4)\"}",
+    "{\"Nombre Dato\":\"Regla 15 - <ID> - Tipo Documento\",\"Mensajes\":\"El tipo de documento no existe en el catalogo (fila 2)\"}",
+    "{\"Nombre Dato\":\"Regla 30 - <ID_GRUPO> - Numero identificacion causante\",\"Mensajes\":\"Numero de identificacion debe ser numerico, sin espacios, entre 4 y 15 caracteres (fila 3)\"}",
+    "{\"Nombre Dato\":\"Regla 63 - <ID> - Origen vs Estado\",\"Mensajes\":\"Origen pension no coincide con estado del causante (fila 4)\"}",
+  ]
+Detalle completo: Error: expect(received).toEqual(expected) // deep equality
+
+- Expected  - 0
++ Received  + 1
+
+@@ -2,10 +2,11 @@
+    "{\"Nombre Dato\":\"Error <ID>\",\"Mensajes\":\"Error, los campos 'numero de llave' y 'numero de causante' no coinciden entre los beneficiarios, no se creo cotizacion para el causante <ID_GRUPO> (fila 3)\"}",
+    "{\"Nombre Dato\":\"Error en persona con id <ID>\",\"Mensajes\":\"Error en la celda 1 El dato debe ser TEXTO (fila 2)\"}",
+    "{\"Nombre Dato\":\"Llave duplicada - <ID_GRUPO>\",\"Mensajes\":\"El valor '1' ya esta asociado al causante con cedula: <ID> (fila 3)\"}",
+    "{\"Nombre Dato\":\"Origenes pension Causante: TEST\",\"Mensajes\":\"Valor invalido. Debe ser uno de: INV, VEJ, SBV (fila 4)\"}",
+    "{\"Nombre Dato\":\"Regla 12 - <ID>\",\"Mensajes\":\"La cotizacion no se puede crear ya que tiene un fallo (fila 3)\"}",
++   "{\"Nombre Dato\":\"Regla 14 - <ID> - Cotizacion existente\",\"Mensajes\":\"Solo se permite crear nueva cotizacion si las existentes estan en estado: rechazada, anulada, no vigente o no cotizada (fila 2)\"}",
+    "{\"Nombre Dato\":\"Regla 15 - <ID> - Origen pension\",\"Mensajes\":\"Origen de pension no existe en el catalogo (fila 4)\"}",
+    "{\"Nombre Dato\":\"Regla 15 - <ID> - Tipo Documento\",\"Mensajes\":\"El tipo de documento no existe en el catalogo (fila 2)\"}",
+    "{\"Nombre Dato\":\"Regla 30 - <ID_GRUPO> - Numero identificacion causante\",\"Mensajes\":\"Numero de identificacion debe ser numerico, sin espacios, entre 4 y 15 caracteres (fila 3)\"}",
+    "{\"Nombre Dato\":\"Regla 63 - <ID> - Origen vs Estado\",\"Mensajes\":\"Origen pension no coincide con estado del causante (fila 4)\"}",
+  ]
