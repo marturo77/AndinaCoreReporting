@@ -1,0 +1,32 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Inicia diligenciamiento de formulario de cotizacion manual...
+Boton Continuar clickeado.
+Formulario de cotizacion manual diligenciado.
+Inicia diligenciamiento de formulario de causante manual...
+Opciones visibles para seleccionable: CASADO(A) | DIVORCIADO(A) | SOLTERO(A) | UNIÓN LIBRE | VIUDO(A)
+Formulario de causante manual diligenciado.
+Inicia diligenciamiento de formulario de beneficiarios manual...
+Boton Continuar clickeado.
+Ingresando beneficiario: 5038741925
+Opciones visibles para seleccionable: TEMPORAL | TEMPORAL | TEMPORAL | VITALICIO | VITALICIO | VITALICIO
+Opciones visibles para seleccionable: INVALIDO | INVALIDO | INVALIDO | MUERTO | MUERTO | MUERTO | VALIDO | VALIDO | VALIDO
+Se omite el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' porque no esta editable o visible: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '54': Error: No se encontro ningun campo editable asociado a '% DE PCL CON LA QUE SE RECONOCIO DERECHO'.
+Boton Agregar beneficiario clickeado.
+Ingresando beneficiario: 5038741926
+Opciones visibles para seleccionable: CAUSANTE | CAUSANTE | CAUSANTE | COMPAÑERO/A | COMPAÑERO/A | COMPAÑERO/A | CÓNYUGE | CÓNYUGE | CÓNYUGE | HERMANO/A | HERMANO/A | HERMANO/A | HIJO/A | HIJO/A | HIJO/A | MADRE | MADRE | MADRE | PADRE | PADRE | PADRE
+Opciones visibles para seleccionable: TEMPORAL | TEMPORAL | TEMPORAL | VITALICIO | VITALICIO | VITALICIO
+Opciones visibles para seleccionable: INVALIDO | INVALIDO | INVALIDO | MUERTO | MUERTO | MUERTO | VALIDO | VALIDO | VALIDO
+Se omite el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' porque no esta editable o visible: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '78': Error: No se encontro ningun campo editable asociado a '% DE PCL CON LA QUE SE RECONOCIO DERECHO'.
+Boton Agregar beneficiario clickeado.
+Ingresando beneficiario: 5038741927
+Opciones visibles para seleccionable: TEMPORAL | TEMPORAL | TEMPORAL | VITALICIO | VITALICIO | VITALICIO
+Opciones visibles para seleccionable: INVALIDO | INVALIDO | INVALIDO | MUERTO | MUERTO | MUERTO | VALIDO | VALIDO | VALIDO
+Se omite el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' porque no esta editable o visible: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '53': Error: No se encontro ningun campo editable asociado a '% DE PCL CON LA QUE SE RECONOCIO DERECHO'.
+se valida que no tiene errores los formularios
+Guardando cotizacion manual...
+Boton Guardar clickeado.
+Navegando a la pagina de consulta de cotizacion...
+Buscando numero de cotizacion generada para cada grupo...
+Todo okis
