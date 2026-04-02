@@ -1,0 +1,12 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Subiendo archivo de cotizacion...
+No hay documentos anteriores para actualizar en los archivos Excel.
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\datasets\cotizacion\masiva.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\detalle_cargue_archivo_cotización.xlsx
+Archivo descargado usado para comparacion: D:\a\1\s\tmp_downloads\detalle_cargue_archivo_cotización.xlsx
+La informacion es igual al archivo de referencia
