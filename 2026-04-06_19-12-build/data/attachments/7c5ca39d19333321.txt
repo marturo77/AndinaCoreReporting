@@ -1,0 +1,89 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Generated document numbers from 1520364074 to 1520364138
+Cargando 20 cotizaciones desde manual.xlsx
+  Cotizacion 1:
+    Causante: 1520364074 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 3
+  Cotizacion 2:
+    Causante: 1520364078 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 2
+  Cotizacion 3:
+    Causante: 1520364081 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 2
+  Cotizacion 4:
+    Causante: 1520364084 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 5:
+    Causante: 1520364087 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+  Cotizacion 6:
+    Causante: 1520364091 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 1
+  Cotizacion 7:
+    Causante: 1520364093 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 8:
+    Causante: 1520364096 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 2
+  Cotizacion 9:
+    Causante: 1520364099 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 3
+  Cotizacion 10:
+    Causante: 1520364103 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 1
+  Cotizacion 11:
+    Causante: 1520364105 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 2
+  Cotizacion 12:
+    Causante: 1520364108 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 2
+  Cotizacion 13:
+    Causante: 1520364111 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 14:
+    Causante: 1520364114 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+  Cotizacion 15:
+    Causante: 1520364118 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 3
+  Cotizacion 16:
+    Causante: 1520364122 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 17:
+    Causante: 1520364125 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+  Cotizacion 18:
+    Causante: 1520364129 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 2
+  Cotizacion 19:
+    Causante: 1520364132 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 20:
+    Causante: 1520364135 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+Inicia diligenciamiento de formulario de cotizacion manual...
+Esperando spinner..
+Opciones visibles para seleccionable: COLFONDOS | COLFONDOS | COLFONDOS | COLPENSIONES | COLPENSIONES | COLPENSIONES | PORVENIR | PORVENIR | PORVENIR | PROTECCION | PROTECCION | PROTECCION | SKANDIA | SKANDIA | SKANDIA
+Opciones visibles para seleccionable: CAMBIO MODALIDAD | CAMBIO MODALIDAD | CAMBIO MODALIDAD | CONTROL SALDOS | CONTROL SALDOS | CONTROL SALDOS | DIRECTA | DIRECTA | DIRECTA
