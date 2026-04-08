@@ -1,0 +1,316 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+resultado: [
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 1,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 2,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 3,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 4,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 5,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 6,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 7,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 8,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 9,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 10,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 11,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 12,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 13,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 14,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 15,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 16,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 17,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 18,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 19,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 20,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 21,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 22,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 23,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 24,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 25,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 26,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 27,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 28,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    }
+]
+{
+  '1': {
+    entidad_solicitante: 'SKANDIA',
+    tipo_solicitud_cotizacion: 'DIRECTA',
+    fecha_fin_vigencia: '2029/10/29',
+    origen_pension: 'VEJEZ',
+    valor_capital: 210583294,
+    valor_pension: '',
+    numero_mesadas: 13,
+    causante: {
+      numero_documento: '1623811452',
+      tipo_documento: 'CÉDULA CIUDADANIA',
+      genero: 'MASCULINO',
+      nombre1: 'JHON',
+      nombre2: 'CAMILO',
+      apellido1: 'ZAMBRANO',
+      pcl: '0',
+      estado_civil: 'SOLTERO(A)',
+      estado_salud: 'VALIDO',
+      fecha_nacimiento: '1973/05/04',
+      fecha_causacion: '2015/01/04'
+    },
+    beneficiarios: [ [Object], [Object], [Object] ],
+    estado_cotizacion: 'RADICADA',
+    numero_cotizacion: 'COT-00054976',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00012376'
+  },
+  '2': {
+    valor_capital: 29602362,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJ',
+    causante: {
+      numero_documento: '5624068233',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 25820,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object], [Object], [Object] ]
+  },
+  '3': {
+    valor_capital: 29602362,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJ',
+    causante: {
+      numero_documento: '5624068237',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 25820,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object], [Object], [Object] ]
+  },
+  '4': {
+    valor_capital: 29602362,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJ',
+    causante: {
+      numero_documento: '5624068241',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 25820,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object], [Object], [Object] ]
+  },
+  '5': {
+    valor_capital: 29602362,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJ',
+    causante: {
+      numero_documento: '5624068245',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 25820,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object], [Object], [Object] ]
+  }
+} object
