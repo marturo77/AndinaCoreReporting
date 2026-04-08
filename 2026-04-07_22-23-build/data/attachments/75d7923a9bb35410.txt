@@ -1,0 +1,6 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] Parametro no visible para crear vigencia: TMR
+[PENDING] Parametro no visible para crear vigencia: TM_Validos
+[PENDING] Parametro no visible para crear vigencia: TM_Invalidos
+[PENDING] Parametro no visible para crear vigencia: TM_mejoramiento
+[PENDING] Parametro no visible para crear vigencia: TM_reduccion
