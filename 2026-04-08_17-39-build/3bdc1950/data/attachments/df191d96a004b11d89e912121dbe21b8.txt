@@ -1,0 +1,42 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Subiendo archivo de contratacion...
+Se omiten 2 cotizaciones de otros flujos para construir la contratacion.
+Usando 2 cotizaciones ya confirmadas en el sistema
+  Cotizacion COT-00055159: Causante 1687548802
+  Cotizacion COT-00055159: Causante 1687548802
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 1687548803 (CC) a fila 2
+  Asignando beneficiario 2: 1687548804 (CC) a fila 3
+  Asignando beneficiario 3: 1687548805 (TI) a fila 4
+Generando contrataci�n para cotizaci�n: COT-00055159
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 1687548802 (CÉDULA CIUDADANIA)
+  Origen: 'VEJEZ'
+  Beneficiarios: 3
+    Beneficiario 1: 1687548803 (CÉDULA CIUDADANIA)
+    Beneficiario 2: 1687548804 (CÉDULA CIUDADANIA)
+    Beneficiario 3: 1687548805 (TARJETA IDENTIDAD)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 1687548803 (CC) a fila 2
+  Asignando beneficiario 2: 1687548804 (CC) a fila 3
+  Asignando beneficiario 3: 1687548805 (TI) a fila 4
+Generando contrataci�n para cotizaci�n: COT-00055159
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 1687548802 (CÉDULA CIUDADANIA)
+  Origen: 'VEJEZ'
+  Beneficiarios: 3
+    Beneficiario 1: 1687548803 (CÉDULA CIUDADANIA)
+    Beneficiario 2: 1687548804 (CÉDULA CIUDADANIA)
+    Beneficiario 3: 1687548805 (TARJETA IDENTIDAD)
+Usando cotizaciones confirmadas, no es necesario guardar cambios.
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\tmp_uploads\contratacion_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\1775687883222-1een11\detalle_cargue_archivo_contratación.xlsx
+Cargue de contratacion completado con 1 advertencia(s) no bloqueante(s).
+  Advertencia 1. El beneficiario con número de cedula: 1687548805: El beneficiario no existe (fila 9 )
