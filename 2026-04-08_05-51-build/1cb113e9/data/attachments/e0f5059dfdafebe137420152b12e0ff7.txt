@@ -1,0 +1,2 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] Aparece un mensaje de confirmacion (sin datos en modulo de parametria)
