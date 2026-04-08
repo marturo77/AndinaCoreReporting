@@ -1,0 +1,9 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de Emision...
+Selecciono boton emision de polizas...
+Esperando spinner..
+Esperando spinner..
+Esperando spinner..
+Esperando spinner..
+Emitiendo poliza de la cotizacion COT-00054936
+Esperando spinner..
