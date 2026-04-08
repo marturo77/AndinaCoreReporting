@@ -1,0 +1,46 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Esperando spinner..
+Subiendo archivo de contratacion...
+Usando 2 cotizaciones ya confirmadas en el sistema
+  Cotizacion COT-00055026: Causante 5659569302
+  Cotizacion COT-00055027: Causante 1659644171
+Procesando origen de prestacion: 'VEJ'
+  -> 'VEJ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5659569305 (CC) a fila 2
+  Asignando beneficiario 2: 5659569303 (TI) a fila 3
+  Asignando beneficiario 3: 5659569304 (RC) a fila 4
+Generando contrataci�n para cotizaci�n: COT-00055026
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5659569302 (CC)
+  Origen: 'VEJ'
+  Beneficiarios: 4
+    Beneficiario 1: 5659569302 (CC)
+    Beneficiario 2: 5659569303 (TI)
+    Beneficiario 3: 5659569304 (RC)
+    Beneficiario 4: 5659569305 (CC)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 1659644172 (CC) a fila 2
+  Asignando beneficiario 2: 1659644173 (CC) a fila 3
+  Asignando beneficiario 3: 1659644174 (TI) a fila 4
+Generando contrataci�n para cotizaci�n: COT-00055027
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 1659644171 (CÉDULA CIUDADANIA)
+  Origen: 'VEJEZ'
+  Beneficiarios: 3
+    Beneficiario 1: 1659644172 (CÉDULA CIUDADANIA)
+    Beneficiario 2: 1659644173 (CÉDULA CIUDADANIA)
+    Beneficiario 3: 1659644174 (TARJETA IDENTIDAD)
+Usando cotizaciones confirmadas, no es necesario guardar cambios.
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\tmp_uploads\contratacion_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\detalle_cargue_archivo_contratación.xlsx
+Se encontraron 5 errores de validacion en 6 registros:
+  1. Regla 49 - 01 - [5659569302]: La sumatoria del % pensión debe ser exactamente 100% (fila 2)
+  2. Regla 60 - EPS - 5659569302: La EPS es obligatoria (fila 2)
+  3. Regla 1 - 01 - [5659569302]: Los beneficiarios sin derecho a la cotización no pueden tener % de pensión (fila 2)
+  4. Regla 2 - EPS - 5659569302: EPS es obligatorio (fila 2)
+  5. El beneficiario con número de cedula: 1659644174: El beneficiario no existe (fila 9 )
