@@ -1,2 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","41387","R05-C01 carga masiva de cotizacion y consulta de resultados","cotizacion","2026-03-26","passed","2026-03-26","R05 Carga masiva de cotizacion","features\cotizacion\crear_cotizacion_masiva.feature.spec.js","",""
