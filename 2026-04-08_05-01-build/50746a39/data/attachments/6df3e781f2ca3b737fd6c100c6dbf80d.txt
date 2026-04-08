@@ -1,0 +1,17 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de Emision...
+Selecciono boton emision de polizas...
+Esperando spinner..
+Se omiten 4 registro(s) sin numero_cotizacion en cotizaciones_generadas.json.
+Emitiendo poliza de la cotizacion COT-00054994
+Esperando spinner..
+se emiten las polizas a partir de las cotizaciones generadas
+Obteniendo numeros de polizas emitidas...
+Se omiten 4 registro(s) sin numero_cotizacion en cotizaciones_generadas.json.
+Esperando spinner..
+Esperando spinner..
+Esperando spinner..
+Esperando spinner..
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012378', cotizacion: 'COT-00054994'
+Todo okis
+se obtienen los numeros de polizas emitidas
