@@ -535,12 +535,10 @@
           dayEl.classList.add('has-tests');
           dayEl.title = `${reportsForDay.length} prueba(s) ejecutada(s)`;
           
-          if (reportsForDay.length > 1) {
-            const badge = document.createElement('span');
-            badge.className = 'test-count-badge';
-            badge.textContent = reportsForDay.length;
-            dayEl.appendChild(badge);
-          }
+          const badge = document.createElement('span');
+          badge.className = 'test-count-badge';
+          badge.textContent = reportsForDay.length;
+          dayEl.appendChild(badge);
         }
 
         dayEl.innerHTML = `<span class="day-number">${dayNumber}</span>` + dayEl.innerHTML;
