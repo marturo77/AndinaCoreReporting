@@ -14,7 +14,40 @@
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/min/moment.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/locale/es.js"></script>
   <script>
-    moment.locale('es'); // Configurar moment.js en español
+    // Configurar moment.js en español si está disponible, sino usar fallback
+    if (typeof moment !== 'undefined') {
+      moment.locale('es');
+    } else {
+      console.warn('Moment.js no está disponible, usando funciones de fecha nativas');
+    }
+    
+    // Fallback para funciones de fecha si moment.js no está disponible
+    window.dateHelper = {
+      format: function(date, format) {
+        if (typeof moment !== 'undefined') {
+          return moment(date).format(format);
+        }
+        // Fallback simple
+        const d = new Date(date);
+        if (format === 'DD/MM/YYYY') {
+          return d.toLocaleDateString('es-ES');
+        } else if (format === 'HH:mm') {
+          return d.toLocaleTimeString('es-ES', {hour: '2-digit', minute: '2-digit'});
+        } else if (format === 'YYYY-MM-DD') {
+          return d.toISOString().split('T')[0];
+        }
+        return d.toLocaleDateString('es-ES');
+      },
+      
+      isSame: function(date1, date2, unit) {
+        const d1 = new Date(date1);
+        const d2 = new Date(date2);
+        if (unit === 'day') {
+          return d1.toDateString() === d2.toDateString();
+        }
+        return d1.getTime() === d2.getTime();
+      }
+    };
   </script>
 
 </head>
@@ -179,41 +212,102 @@
 
     let reports = [];
     let filteredReports = [];
-    let currentCalendarDate = moment();
+    let currentCalendarDate = typeof moment !== 'undefined' ? moment() : new Date();
     let currentView = 'calendar'; // 'list' o 'calendar'
 
-    const COLOMBIA_OFFSET = "-05:00"; // Colombia es UTC-5 todo el a\u00f1o
+    const COLOMBIA_OFFSET = "-05:00"; // Colombia es UTC-5 todo el año
+
+    // Función auxiliar para crear fechas con fallback
+    function createMoment(dateStr) {
+      if (typeof moment !== 'undefined') {
+        return moment(dateStr);
+      }
+      return new Date(dateStr);
+    }
+
+    // Función auxiliar para formatear fechas con fallback  
+    function formatDateSafe(date, format) {
+      if (typeof moment !== 'undefined' && moment.isMoment(date)) {
+        return date.format(format);
+      } else if (typeof moment !== 'undefined') {
+        return moment(date).format(format);
+      }
+      
+      // Fallback nativo
+      const d = date instanceof Date ? date : new Date(date);
+      if (format === 'dddd, DD [de] MMMM [de] YYYY') {
+        return d.toLocaleDateString('es-ES', { 
+          weekday: 'long', 
+          day: 'numeric', 
+          month: 'long', 
+          year: 'numeric' 
+        });
+      } else if (format === 'DD/MM/YYYY') {
+        return d.toLocaleDateString('es-ES');
+      } else if (format === 'HH:mm') {
+        return d.toLocaleTimeString('es-ES', {hour: '2-digit', minute: '2-digit'});
+      } else if (format === 'YYYY-MM-DD') {
+        return d.toISOString().split('T')[0];
+      } else if (format === 'MMMM YYYY') {
+        return d.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+      } else if (format === 'YYYY-MM-DD HH:mm') {
+        return d.toLocaleDateString('es-ES') + ' ' + d.toLocaleTimeString('es-ES', {hour: '2-digit', minute: '2-digit'});
+      }
+      return d.toLocaleDateString('es-ES');
+    }
 
     // Interpreta createdAt o el nombre del folder como hora de Colombia y la convierte a la zona local del navegador.
     function getReportMomentColombia(report) {
-      if (report.createdAt) {
-        const base = String(report.createdAt).replace(" ", "T") + COLOMBIA_OFFSET;
-        const mFromCreatedAt = moment.parseZone(
-          base,
-          ["YYYY-MM-DDTHH:mm:ssZ", "YYYY-MM-DDTHH:mmZ", moment.ISO_8601],
-          true
-        );
-        if (mFromCreatedAt.isValid()) return mFromCreatedAt;
-      }
-
-      if (report.folder) {
-        const match = String(report.folder).match(/^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})/);
-        if (match) {
-          const base = `${match[1]}T${match[2]}:${match[3]}${COLOMBIA_OFFSET}`;
-          const mFromFolder = moment.parseZone(base, "YYYY-MM-DDTHH:mmZ", true);
-          if (mFromFolder.isValid()) return mFromFolder;
+      if (typeof moment !== 'undefined') {
+        if (report.createdAt) {
+          const base = String(report.createdAt).replace(" ", "T") + COLOMBIA_OFFSET;
+          const mFromCreatedAt = moment.parseZone(
+            base,
+            ["YYYY-MM-DDTHH:mm:ssZ", "YYYY-MM-DDTHH:mmZ", moment.ISO_8601],
+            true
+          );
+          if (mFromCreatedAt.isValid()) return mFromCreatedAt;
         }
-      }
 
-      return null;
+        if (report.folder) {
+          const match = String(report.folder).match(/^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})/);
+          if (match) {
+            const base = `${match[1]}T${match[2]}:${match[3]}${COLOMBIA_OFFSET}`;
+            const mFromFolder = moment.parseZone(base, "YYYY-MM-DDTHH:mmZ", true);
+            if (mFromFolder.isValid()) return mFromFolder;
+          }
+        }
+        return null;
+      } else {
+        // Fallback sin moment.js
+        if (report.createdAt) {
+          try {
+            const dateStr = String(report.createdAt).replace(" ", "T");
+            return new Date(dateStr + (dateStr.includes('T') ? '' : 'T00:00:00'));
+          } catch (e) {
+            console.warn('Error parsing createdAt:', e);
+          }
+        }
+        
+        if (report.folder) {
+          const match = String(report.folder).match(/^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})/);
+          if (match) {
+            try {
+              return new Date(`${match[1]}T${match[2]}:${match[3]}:00`);
+            } catch (e) {
+              console.warn('Error parsing folder date:', e);
+            }
+          }
+        }
+        return null;
+      }
     }
 
     function formatDateLabel(report) {
-      const m = getReportMomentColombia(report);
-      if (m) {
-        return m.local().format("YYYY-MM-DD HH:mm");
+      const reportDate = getReportMomentColombia(report);
+      if (reportDate) {
+        return formatDateSafe(reportDate, "YYYY-MM-DD HH:mm");
       }
-
       return report.id || "(sin id)";
     }
 
@@ -338,17 +432,43 @@
     }
 
     function getReportsForDate(date) {
-      const dateStr = date.format('YYYY-MM-DD');
+      let dateStr;
+      if (typeof moment !== 'undefined' && moment.isMoment(date)) {
+        dateStr = date.local().format('YYYY-MM-DD');
+      } else if (typeof moment !== 'undefined') {
+        dateStr = moment(date).format('YYYY-MM-DD');
+      } else {
+        const d = date instanceof Date ? date : new Date(date);
+        dateStr = d.toISOString().split('T')[0];
+      }
+      
       return reports.filter(r => {
         const reportMoment = getReportMomentColombia(r);
-        return reportMoment && reportMoment.local().format('YYYY-MM-DD') === dateStr;
+        if (!reportMoment) return false;
+        
+        const reportDateStr = formatDateSafe(reportMoment, 'YYYY-MM-DD');
+        return reportDateStr === dateStr;
       });
     }
 
     function renderCalendar() {
-      const month = currentCalendarDate.month();
-      const year = currentCalendarDate.year();
-      const monthName = currentCalendarDate.format('MMMM YYYY');
+      let month, year, monthName;
+      
+      if (typeof moment !== 'undefined' && moment.isMoment(currentCalendarDate)) {
+        month = currentCalendarDate.month();
+        year = currentCalendarDate.year();
+        monthName = currentCalendarDate.format('MMMM YYYY');
+      } else if (typeof moment !== 'undefined') {
+        const m = moment(currentCalendarDate);
+        month = m.month();
+        year = m.year();
+        monthName = m.format('MMMM YYYY');
+      } else {
+        const d = currentCalendarDate instanceof Date ? currentCalendarDate : new Date(currentCalendarDate);
+        month = d.getMonth();
+        year = d.getFullYear();
+        monthName = d.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+      }
       
       currentMonthYearEl.textContent = monthName;
       calendarContainerEl.innerHTML = '';
@@ -362,23 +482,46 @@
         calendarContainerEl.appendChild(dayHeader);
       });
 
-      // Obtener primer día del mes y total de días
-      const firstDay = moment([year, month, 1]);
-      const lastDay = moment([year, month]).endOf('month');
-      const startDate = firstDay.startOf('week');
-      const endDate = lastDay.endOf('week');
-
-      // Generar días del calendario
-      const currentDate = startDate.clone();
+      // Generar días del calendario usando funciones nativas si es necesario
+      let firstDay, lastDay, startDate, endDate;
       
-      while (currentDate.isSameOrBefore(endDate, 'day')) {
+      if (typeof moment !== 'undefined') {
+        firstDay = moment([year, month, 1]);
+        lastDay = moment([year, month]).endOf('month');
+        startDate = firstDay.clone().startOf('week');
+        endDate = lastDay.clone().endOf('week');
+      } else {
+        firstDay = new Date(year, month, 1);
+        lastDay = new Date(year, month + 1, 0);
+        startDate = new Date(firstDay);
+        startDate.setDate(startDate.getDate() - firstDay.getDay());
+        endDate = new Date(lastDay);
+        endDate.setDate(endDate.getDate() + (6 - lastDay.getDay()));
+      }
+
+      const currentDate = typeof moment !== 'undefined' ? startDate.clone() : new Date(startDate);
+      const today = new Date();
+      
+      while (
+        (typeof moment !== 'undefined' && currentDate.isSameOrBefore(endDate, 'day')) ||
+        (typeof moment === 'undefined' && currentDate <= endDate)
+      ) {
         const dayEl = document.createElement('div');
         dayEl.className = 'calendar-day';
         
-        const dayNumber = currentDate.date();
-        const isCurrentMonth = currentDate.month() === month;
-        const isToday = currentDate.isSame(moment(), 'day');
-        const reportsForDay = getReportsForDate(currentDate);
+        let dayNumber, isCurrentMonth, isToday, reportsForDay;
+        
+        if (typeof moment !== 'undefined') {
+          dayNumber = currentDate.date();
+          isCurrentMonth = currentDate.month() === month;
+          isToday = currentDate.isSame(moment(), 'day');
+          reportsForDay = getReportsForDate(currentDate);
+        } else {
+          dayNumber = currentDate.getDate();
+          isCurrentMonth = currentDate.getMonth() === month;
+          isToday = currentDate.toDateString() === today.toDateString();
+          reportsForDay = getReportsForDate(currentDate);
+        }
         
         if (!isCurrentMonth) {
           dayEl.classList.add('other-month');
@@ -392,7 +535,6 @@
           dayEl.classList.add('has-tests');
           dayEl.title = `${reportsForDay.length} prueba(s) ejecutada(s)`;
           
-          // Agregar indicador de cantidad si hay múltiples reportes
           if (reportsForDay.length > 1) {
             const badge = document.createElement('span');
             badge.className = 'test-count-badge';
@@ -403,28 +545,46 @@
 
         dayEl.innerHTML = `<span class="day-number">${dayNumber}</span>` + dayEl.innerHTML;
         
-        // Evento click para mostrar detalles
         if (reportsForDay.length > 0) {
           dayEl.style.cursor = 'pointer';
-          dayEl.addEventListener('click', () => showDayReports(currentDate.clone(), reportsForDay));
+          dayEl.addEventListener('click', () => {
+            const clickDate = typeof moment !== 'undefined' ? currentDate.clone() : new Date(currentDate);
+            showDayReports(clickDate, reportsForDay);
+          });
         }
         
         calendarContainerEl.appendChild(dayEl);
-        currentDate.add(1, 'day');
+        
+        if (typeof moment !== 'undefined') {
+          currentDate.add(1, 'day');
+        } else {
+          currentDate.setDate(currentDate.getDate() + 1);
+        }
       }
     }
 
     function showDayReports(date, reports) {
-      const dateStr = date.format('dddd, DD [de] MMMM [de] YYYY');
-      const shortDateStr = date.format('DD/MM/YYYY');
+      const dateStr = formatDateSafe(date, 'dddd, DD [de] MMMM [de] YYYY');
+      const shortDateStr = formatDateSafe(date, 'DD/MM/YYYY');
       
       // Crear modal con estructura mejorada
       const modalOverlay = document.createElement('div');
       modalOverlay.className = 'calendar-modal-overlay';
       
       const reportItems = reports.map((r, index) => {
-        const time = getReportMomentColombia(r).local().format('HH:mm');
-        const relativeTime = getReportMomentColombia(r).local().from(moment());
+        const reportDate = getReportMomentColombia(r);
+        const time = reportDate ? formatDateSafe(reportDate, 'HH:mm') : 'N/A';
+        
+        let relativeTime = 'hace un tiempo';
+        if (typeof moment !== 'undefined' && reportDate) {
+          try {
+            relativeTime = typeof moment !== 'undefined' && moment.isMoment(reportDate) ? 
+              reportDate.local().from(moment()) : 
+              moment(reportDate).from(moment());
+          } catch (e) {
+            relativeTime = 'hace un tiempo';
+          }
+        }
         
         return `
           <li class="calendar-report-item">
@@ -508,10 +668,28 @@
     }
 
     function navigateMonth(direction) {
-      if (direction === 'prev') {
-        currentCalendarDate.subtract(1, 'month');
+      if (typeof moment !== 'undefined') {
+        if (direction === 'prev') {
+          if (moment.isMoment(currentCalendarDate)) {
+            currentCalendarDate.subtract(1, 'month');
+          } else {
+            currentCalendarDate = moment(currentCalendarDate).subtract(1, 'month');
+          }
+        } else {
+          if (moment.isMoment(currentCalendarDate)) {
+            currentCalendarDate.add(1, 'month');
+          } else {
+            currentCalendarDate = moment(currentCalendarDate).add(1, 'month');
+          }
+        }
       } else {
-        currentCalendarDate.add(1, 'month');
+        const d = currentCalendarDate instanceof Date ? currentCalendarDate : new Date(currentCalendarDate);
+        if (direction === 'prev') {
+          d.setMonth(d.getMonth() - 1);
+        } else {
+          d.setMonth(d.getMonth() + 1);
+        }
+        currentCalendarDate = d;
       }
       renderCalendar();
     }
@@ -617,8 +795,14 @@
         renderLatest();
         renderTable();
         
-        // Inicializar vista de calendario por defecto
-        renderCalendar();
+        // Inicializar vista de calendario por defecto con verificación
+        try {
+          renderCalendar();
+        } catch (error) {
+          console.warn('Error al renderizar calendario:', error);
+          // Fallback: cambiar a vista lista si el calendario falla
+          switchView('list');
+        }
       } catch (err) {
         console.error(err);
         statusLabelEl.textContent = "No se pudo leer reports.json.";
@@ -640,7 +824,10 @@
     nextMonthBtn.addEventListener("click", () => navigateMonth('next'));
 
     window.addEventListener("load", () => {
-      loadReports();
+      // Dar tiempo para que moment.js se cargue si está disponible
+      setTimeout(() => {
+        loadReports();
+      }, 100);
     });
   </script>
 </body>
