@@ -1,0 +1,65 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Subiendo archivo de contratacion...
+Usando 3 cotizaciones ya confirmadas en el sistema
+  Cotizacion COT-00055519: Causante 5843608772
+  Cotizacion COT-00055520: Causante 1843709500
+  Cotizacion COT-00055521: Causante 5843934746
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5843608775 (CC) a fila 2
+  Asignando beneficiario 2: 5843608773 (TI) a fila 3
+  Asignando beneficiario 3: 5843608774 (RC) a fila 4
+  EPS del causante completado desde plantilla: 890102257
+  AFP del causante completado desde plantilla: 800229739
+Generando contrataciÃ³n para cotizaciÃ³n: COT-00055519
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5843608772 (CC)
+  Origen: 'VEJEZ'
+  Beneficiarios: 4
+    Beneficiario 1: 5843608772 (CC)
+    Beneficiario 2: 5843608773 (TI)
+    Beneficiario 3: 5843608774 (RC)
+    Beneficiario 4: 5843608775 (CC)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 1843709501 (CC) a fila 2
+  Asignando beneficiario 2: 1843709502 (CC) a fila 3
+  Asignando beneficiario 3: 1843709503 (TI) a fila 4
+Generando contrataciÃ³n para cotizaciÃ³n: COT-00055520
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 1843709500 (CÉDULA CIUDADANIA)
+  Origen: 'VEJEZ'
+  Beneficiarios: 3
+    Beneficiario 1: 1843709501 (CÉDULA CIUDADANIA)
+    Beneficiario 2: 1843709502 (CÉDULA CIUDADANIA)
+    Beneficiario 3: 1843709503 (TARJETA IDENTIDAD)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5843934749 (CC) a fila 2
+  Asignando beneficiario 2: 5843934747 (TI) a fila 3
+  Asignando beneficiario 3: 5843934748 (RC) a fila 4
+  EPS del causante completado desde plantilla: 890102257
+  AFP del causante completado desde plantilla: 800229739
+Generando contrataciÃ³n para cotizaciÃ³n: COT-00055521
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5843934746 (CC)
+  Origen: 'VEJEZ'
+  Beneficiarios: 4
+    Beneficiario 1: 5843934746 (CC)
+    Beneficiario 2: 5843934747 (TI)
+    Beneficiario 3: 5843934748 (RC)
+    Beneficiario 4: 5843934749 (CC)
+Usando cotizaciones confirmadas, no es necesario guardar cambios.
+Copia de contratacion masiva disponible en results: D:\a\1\s\results\contratacion_masiva.xlsx
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\tmp_uploads\contratacion_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\1775844301415-jkpw0o\detalle_cargue_archivo_contratación.xlsx
+Cargue de contratacion completado con 1 advertencia(s) no bloqueante(s).
+  Advertencia 1. El beneficiario con número de cedula: 1843709503: El beneficiario no existe (fila 9 )
+Sincronizando cotizaciones persistidas desde consulta...
+Resultado detectado para causante 5843608772: cotizacion COT-00055519, estado EMITIR PÓLIZA.
+Resultado detectado para causante 1843709500: cotizacion COT-00055520, estado EMITIR PÓLIZA.
+Resultado detectado para causante 5843934746: cotizacion COT-00055521, estado EMITIR PÓLIZA.
