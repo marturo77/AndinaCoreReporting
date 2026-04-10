@@ -17,6 +17,13 @@
     // Configurar moment.js en español si está disponible, sino usar fallback
     if (typeof moment !== 'undefined') {
       moment.locale('es');
+      // Configurar para que la semana empiece en lunes (día 1)
+      moment.updateLocale('es', {
+        week: {
+          dow: 1, // Monday is the first day of the week
+          doy: 4  // First week that contains Jan 4th is the first week of the year
+        }
+      });
     } else {
       console.warn('Moment.js no está disponible, usando funciones de fecha nativas');
     }
@@ -525,8 +532,8 @@
       currentMonthYearEl.textContent = monthName;
       calendarContainerEl.innerHTML = '';
 
-      // Crear encabezados de días
-      const daysOfWeek = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+      // Crear encabezados de días (empezando por lunes como es tradicional en España)
+      const daysOfWeek = ['Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb', 'Dom'];
       daysOfWeek.forEach(day => {
         const dayHeader = document.createElement('div');
         dayHeader.className = 'calendar-day-header';
@@ -546,9 +553,12 @@
         firstDay = new Date(year, month, 1);
         lastDay = new Date(year, month + 1, 0);
         startDate = new Date(firstDay);
-        startDate.setDate(startDate.getDate() - firstDay.getDay());
+        // Ajustar para que lunes sea el primer día de la semana
+        const firstDayOfWeek = (firstDay.getDay() + 6) % 7; // Convertir domingo=0 a lunes=0
+        startDate.setDate(startDate.getDate() - firstDayOfWeek);
         endDate = new Date(lastDay);
-        endDate.setDate(endDate.getDate() + (6 - lastDay.getDay()));
+        const lastDayOfWeek = (lastDay.getDay() + 6) % 7;
+        endDate.setDate(endDate.getDate() + (6 - lastDayOfWeek));
       }
 
       const currentDate = typeof moment !== 'undefined' ? startDate.clone() : new Date(startDate);
