@@ -311,6 +311,54 @@
       return report.id || "(sin id)";
     }
 
+    // Función para calcular tiempo transcurrido
+    function getTimeAgo(report) {
+      const reportDate = getReportMomentColombia(report);
+      if (!reportDate) return "tiempo desconocido";
+      
+      const now = typeof moment !== 'undefined' ? moment() : new Date();
+      
+      if (typeof moment !== 'undefined' && moment.isMoment(reportDate)) {
+        const duration = moment.duration(now.diff(reportDate));
+        const totalMinutes = Math.floor(duration.asMinutes());
+        const hours = Math.floor(totalMinutes / 60);
+        const minutes = totalMinutes % 60;
+        const days = Math.floor(duration.asDays());
+        
+        if (totalMinutes < 1) {
+          return "hace menos de 1 minuto";
+        } else if (totalMinutes < 60) {
+          return `hace ${totalMinutes} ${totalMinutes === 1 ? 'minuto' : 'minutos'}`;
+        } else if (hours < 24) {
+          return `hace ${hours} ${hours === 1 ? 'hora' : 'horas'}${minutes > 0 ? ` y ${minutes} ${minutes === 1 ? 'minuto' : 'minutos'}` : ''}`;
+        } else {
+          const remainingHours = hours % 24;
+          return `hace ${days} ${days === 1 ? 'día' : 'días'}${remainingHours > 0 ? ` y ${remainingHours} ${remainingHours === 1 ? 'hora' : 'horas'}` : ''}`;
+        }
+      } else {
+        // Fallback sin moment.js
+        const reportTime = reportDate instanceof Date ? reportDate.getTime() : new Date(reportDate).getTime();
+        const nowTime = now instanceof Date ? now.getTime() : new Date().getTime();
+        const diffMs = nowTime - reportTime;
+        const totalMinutes = Math.floor(diffMs / (1000 * 60));
+        const hours = Math.floor(totalMinutes / 60);
+        const days = Math.floor(hours / 24);
+        const minutes = totalMinutes % 60;
+        
+        if (totalMinutes < 1) {
+          return "hace menos de 1 minuto";
+        } else if (totalMinutes < 60) {
+          return `hace ${totalMinutes} ${totalMinutes === 1 ? 'minuto' : 'minutos'}`;
+        } else if (hours < 24) {
+          const remainingMinutes = minutes;
+          return `hace ${hours} ${hours === 1 ? 'hora' : 'horas'}${remainingMinutes > 0 ? ` y ${remainingMinutes} ${remainingMinutes === 1 ? 'minuto' : 'minutos'}` : ''}`;
+        } else {
+          const remainingHours = hours % 24;
+          return `hace ${days} ${days === 1 ? 'día' : 'días'}${remainingHours > 0 ? ` y ${remainingHours} ${remainingHours === 1 ? 'hora' : 'horas'}` : ''}`;
+        }
+      }
+    }
+
     function renderLatest() {
       latestBodyEl.innerHTML = "";
 
@@ -322,8 +370,9 @@
 
       const latest = reports[0]; // ya viene ordenado del JSON
       const dateLabel = formatDateLabel(latest);
+      const timeAgo = getTimeAgo(latest);
 
-      latestSubtitleEl.textContent = `Build más reciente publicado: ${dateLabel} (${reports.length} reportes en total)`;
+      latestSubtitleEl.innerHTML = `Build más reciente publicado: ${dateLabel} · <span class="time-ago">${timeAgo}</span> (${reports.length} reportes en total)`;
 
       const wrapper = document.createElement("div");
 
@@ -331,6 +380,9 @@
         <div class="latest-meta">
           <span class="badge">
             <strong>Fecha (hora local):</strong> ${dateLabel}
+          </span>
+          <span class="badge time-badge">
+            <strong>Publicado:</strong> ${timeAgo}
           </span>
           <span class="badge">
             <strong>Total de reportes:</strong> ${reports.length}
@@ -700,6 +752,8 @@
 
         // Datos incluidos directamente para evitar problemas de CORS
         const data = [
+          {"id":"2026-04-10_13-28-build","label":"2026-04-10 13:28","folder":"2026-04-10_13-28-build","url":"./2026-04-10_13-28-build/index.html","createdAt":"2026-04-10T13:28:20"},
+          {"id":"2026-04-10_03-27-build","label":"2026-04-10 03:27","folder":"2026-04-10_03-27-build","url":"./2026-04-10_03-27-build/index.html","createdAt":"2026-04-10T03:27:06"},
           {"id":"2026-04-09_15-29-build","label":"2026-04-09 15:29","folder":"2026-04-09_15-29-build","url":"./2026-04-09_15-29-build/index.html","createdAt":"2026-04-09T15:29:05"},
           {"id":"2026-04-08_20-28-build","label":"2026-04-08 20:28","folder":"2026-04-08_20-28-build","url":"./2026-04-08_20-28-build/index.html","createdAt":"2026-04-08T20:28:44"},
           {"id":"2026-04-08_19-37-build","label":"2026-04-08 19:37","folder":"2026-04-08_19-37-build","url":"./2026-04-08_19-37-build/index.html","createdAt":"2026-04-08T19:37:00"},
@@ -770,6 +824,80 @@
           {"id":"2025-11-22_20-56-build","label":"2025-11-22 20:56","folder":"2025-11-22_20-56-build","url":"./2025-11-22_20-56-build/index.html","createdAt":"2025-11-22T20:56:00"},
           {"id":"2025-11-22_20-40-build","label":"2025-11-22 20:40","folder":"2025-11-22_20-40-build","url":"./2025-11-22_20-40-build/index.html","createdAt":"2025-11-22T20:40:00"},
           {"id":"2025-11-22_20-20-build","label":"2025-11-22 20:20","folder":"2025-11-22_20-20-build","url":"./2025-11-22_20-20-build/index.html","createdAt":"2025-11-22T20:20:00"},
+          {"id":"2025-11-22_20-06-build","label":"2025-11-22 20:06","folder":"2025-11-22_20-06-build","url":"./2025-11-22_20-06-build/index.html","createdAt":"2025-11-22T20:06:00"},
+          {"id":"2025-11-22_19-30-build","label":"2025-11-22 19:30","folder":"2025-11-22_19-30-build","url":"./2025-11-22_19-30-build/index.html","createdAt":"2025-11-22T19:30:00"},
+          {"id":"2025-11-22_19-26-build","label":"2025-11-22 19:26","folder":"2025-11-22_19-26-build","url":"./2025-11-22_19-26-build/index.html","createdAt":"2025-11-22T19:26:00"}
+        ];
+
+        reports = data;
+        filteredReports = [...reports];
+
+        if (!reports.length) {
+          latestSubtitleEl.textContent = "Aún no se ha publicado ningún reporte.";
+          statusLabelEl.textContent = "Sin datos de ejecución de pruebas.";
+          historySubtitleEl.textContent = "Histórico vacío.";
+          historyMessageEl.textContent =
+            "Cuando el pipeline publique su primer reporte, aparecerá automáticamente en este panel.";
+          return;
+        }
+
+        statusCountEl.textContent = `Total de reportes: ${reports.length}`;
+        historySubtitleEl.textContent = `Total: ${reports.length} reporte(s) almacenados.`;
+
+        renderLatest();
+        renderTable();
+        
+        // Inicializar vista de calendario por defecto
+        renderCalendar();
+        
+      } catch (error) {
+        console.error("Error al cargar reportes:", error);
+        statusLabelEl.textContent = "No se pudo cargar la información de reportes.";
+        latestSubtitleEl.textContent = "Error al cargar datos.";
+        historySubtitleEl.textContent = "Error de carga.";
+        historyMessageEl.textContent =
+          "Verifica la conexión o que el archivo reports.json sea válido.";
+      }
+    }
+
+    // Función para actualizar automáticamente el tiempo transcurrido
+    function updateTimeAgo() {
+      if (reports.length > 0) {
+        const latest = reports[0];
+        const timeAgo = getTimeAgo(latest);
+        
+        // Actualizar en subtítulo
+        const timeAgoSpan = latestSubtitleEl.querySelector('.time-ago');
+        if (timeAgoSpan) {
+          timeAgoSpan.textContent = timeAgo;
+        }
+        
+        // Actualizar en badge
+        const timeBadge = latestBodyEl.querySelector('.time-badge');
+        if (timeBadge) {
+          const strong = timeBadge.querySelector('strong');
+          if (strong && strong.nextSibling) {
+            strong.nextSibling.textContent = ' ' + timeAgo;
+          }
+        }
+      }
+    }
+
+    // Event listeners
+    searchInputEl.addEventListener("input", applyFilter);
+    listViewBtn.addEventListener('click', () => switchView('list'));
+    calendarViewBtn.addEventListener('click', () => switchView('calendar'));
+    prevMonthBtn.addEventListener('click', () => navigateMonth('prev'));
+    nextMonthBtn.addEventListener('click', () => navigateMonth('next'));
+
+    // Inicializar aplicación
+    loadReports();
+
+    // Actualizar el tiempo transcurrido cada minuto
+    setInterval(updateTimeAgo, 60000); // 60 segundos = 1 minuto
+  </script>
+</body>
+</html>
           {"id":"2025-11-22_20-06-build","label":"2025-11-22 20:06","folder":"2025-11-22_20-06-build","url":"./2025-11-22_20-06-build/index.html","createdAt":"2025-11-22T20:06:00"},
           {"id":"2025-11-22_19-30-build","label":"2025-11-22 19:30","folder":"2025-11-22_19-30-build","url":"./2025-11-22_19-30-build/index.html","createdAt":"2025-11-22T19:30:00"},
           {"id":"2025-11-22_19-26-build","label":"2025-11-22 19:26","folder":"2025-11-22_19-26-build","url":"./2025-11-22_19-26-build/index.html","createdAt":"2025-11-22T19:26:00"}
