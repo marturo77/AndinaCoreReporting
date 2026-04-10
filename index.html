@@ -12,6 +12,43 @@
 
   <link rel="stylesheet" href="styles.css" />
   <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/min/moment.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/moment@2.30.1/locale/es.js"></script>
+  <script>
+    // Configurar moment.js en español si está disponible, sino usar fallback
+    if (typeof moment !== 'undefined') {
+      moment.locale('es');
+    } else {
+      console.warn('Moment.js no está disponible, usando funciones de fecha nativas');
+    }
+    
+    // Fallback para funciones de fecha si moment.js no está disponible
+    window.dateHelper = {
+      format: function(date, format) {
+        if (typeof moment !== 'undefined') {
+          return moment(date).format(format);
+        }
+        // Fallback simple
+        const d = new Date(date);
+        if (format === 'DD/MM/YYYY') {
+          return d.toLocaleDateString('es-ES');
+        } else if (format === 'HH:mm') {
+          return d.toLocaleTimeString('es-ES', {hour: '2-digit', minute: '2-digit'});
+        } else if (format === 'YYYY-MM-DD') {
+          return d.toISOString().split('T')[0];
+        }
+        return d.toLocaleDateString('es-ES');
+      },
+      
+      isSame: function(date1, date2, unit) {
+        const d1 = new Date(date1);
+        const d2 = new Date(date2);
+        if (unit === 'day') {
+          return d1.toDateString() === d2.toDateString();
+        }
+        return d1.getTime() === d2.getTime();
+      }
+    };
+  </script>
 
 </head>
 
@@ -84,29 +121,65 @@
             </div>
           </div>
 
-          <div class="search-box">
-            <div class="search-input-wrapper">
-              <span class="search-icon">🔍</span>
-              <input id="search-input" class="search-input" type="text" placeholder="Filtrar por fecha (hora local) o id…"
-                autocomplete="off" />
+          <div class="view-controls">
+            <div class="view-toggle">
+              <button id="list-view-btn" class="view-btn">📋 Lista</button>
+              <button id="calendar-view-btn" class="view-btn active">📅 Calendario</button>
             </div>
           </div>
 
-          <div class="table-wrapper" id="table-wrapper" style="display:none;">
-            <table>
-              <thead>
-                <tr>
-                  <th>Reportes (hora local)</th>
-                </tr>
-              </thead>
-              <tbody id="reports-tbody">
-                <!-- Filas dinámicas -->
-              </tbody>
-            </table>
+          <div id="list-view" class="view-content" style="display:none;">
+            <div class="search-box">
+              <div class="search-input-wrapper">
+                <span class="search-icon">🔍</span>
+                <input id="search-input" class="search-input" type="text" placeholder="Filtrar por fecha (hora local) o id…"
+                  autocomplete="off" />
+              </div>
+            </div>
+
+            <div class="table-wrapper" id="table-wrapper" style="display:none;">
+              <table>
+                <thead>
+                  <tr>
+                    <th>Reportes (hora local)</th>
+                  </tr>
+                </thead>
+                <tbody id="reports-tbody">
+                  <!-- Filas dinámicas -->
+                </tbody>
+              </table>
+            </div>
+
+            <div id="no-results" class="no-results" style="display:none;">
+              No hay resultados que coincidan con el filtro aplicado.
+            </div>
           </div>
 
-          <div id="no-results" class="no-results" style="display:none;">
-            No hay resultados que coincidan con el filtro aplicado.
+          <div id="calendar-view" class="view-content">
+            <div class="calendar-controls">
+              <button id="prev-month-btn" class="nav-btn">‹</button>
+              <span id="current-month-year" class="month-year-label"></span>
+              <button id="next-month-btn" class="nav-btn">›</button>
+            </div>
+            
+            <div id="calendar-container" class="calendar-grid">
+              <!-- Calendario generado dinámicamente -->
+            </div>
+
+            <div class="calendar-legend">
+              <div class="legend-item">
+                <div class="legend-dot has-tests"></div>
+                <span>Días con pruebas automatizadas</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot no-tests"></div>
+                <span>Días sin pruebas</span>
+              </div>
+              <div class="legend-item">
+                <div class="legend-dot today"></div>
+                <span>Hoy</span>
+              </div>
+            </div>
           </div>
 
           <div id="history-message" class="status-message-muted"></div>
@@ -127,41 +200,114 @@
     const noResultsEl = document.getElementById("no-results");
     const searchInputEl = document.getElementById("search-input");
 
+    // Elementos del calendario
+    const listViewBtn = document.getElementById("list-view-btn");
+    const calendarViewBtn = document.getElementById("calendar-view-btn");
+    const listViewEl = document.getElementById("list-view");
+    const calendarViewEl = document.getElementById("calendar-view");
+    const prevMonthBtn = document.getElementById("prev-month-btn");
+    const nextMonthBtn = document.getElementById("next-month-btn");
+    const currentMonthYearEl = document.getElementById("current-month-year");
+    const calendarContainerEl = document.getElementById("calendar-container");
+
     let reports = [];
     let filteredReports = [];
+    let currentCalendarDate = typeof moment !== 'undefined' ? moment() : new Date();
+    let currentView = 'calendar'; // 'list' o 'calendar'
 
-    const COLOMBIA_OFFSET = "-05:00"; // Colombia es UTC-5 todo el a\u00f1o
+    const COLOMBIA_OFFSET = "-05:00"; // Colombia es UTC-5 todo el año
+
+    // Función auxiliar para crear fechas con fallback
+    function createMoment(dateStr) {
+      if (typeof moment !== 'undefined') {
+        return moment(dateStr);
+      }
+      return new Date(dateStr);
+    }
+
+    // Función auxiliar para formatear fechas con fallback  
+    function formatDateSafe(date, format) {
+      if (typeof moment !== 'undefined' && moment.isMoment(date)) {
+        return date.format(format);
+      } else if (typeof moment !== 'undefined') {
+        return moment(date).format(format);
+      }
+      
+      // Fallback nativo
+      const d = date instanceof Date ? date : new Date(date);
+      if (format === 'dddd, DD [de] MMMM [de] YYYY') {
+        return d.toLocaleDateString('es-ES', { 
+          weekday: 'long', 
+          day: 'numeric', 
+          month: 'long', 
+          year: 'numeric' 
+        });
+      } else if (format === 'DD/MM/YYYY') {
+        return d.toLocaleDateString('es-ES');
+      } else if (format === 'HH:mm') {
+        return d.toLocaleTimeString('es-ES', {hour: '2-digit', minute: '2-digit'});
+      } else if (format === 'YYYY-MM-DD') {
+        return d.toISOString().split('T')[0];
+      } else if (format === 'MMMM YYYY') {
+        return d.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+      } else if (format === 'YYYY-MM-DD HH:mm') {
+        return d.toLocaleDateString('es-ES') + ' ' + d.toLocaleTimeString('es-ES', {hour: '2-digit', minute: '2-digit'});
+      }
+      return d.toLocaleDateString('es-ES');
+    }
 
     // Interpreta createdAt o el nombre del folder como hora de Colombia y la convierte a la zona local del navegador.
     function getReportMomentColombia(report) {
-      if (report.createdAt) {
-        const base = String(report.createdAt).replace(" ", "T") + COLOMBIA_OFFSET;
-        const mFromCreatedAt = moment.parseZone(
-          base,
-          ["YYYY-MM-DDTHH:mm:ssZ", "YYYY-MM-DDTHH:mmZ", moment.ISO_8601],
-          true
-        );
-        if (mFromCreatedAt.isValid()) return mFromCreatedAt;
-      }
-
-      if (report.folder) {
-        const match = String(report.folder).match(/^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})/);
-        if (match) {
-          const base = `${match[1]}T${match[2]}:${match[3]}${COLOMBIA_OFFSET}`;
-          const mFromFolder = moment.parseZone(base, "YYYY-MM-DDTHH:mmZ", true);
-          if (mFromFolder.isValid()) return mFromFolder;
+      if (typeof moment !== 'undefined') {
+        if (report.createdAt) {
+          const base = String(report.createdAt).replace(" ", "T") + COLOMBIA_OFFSET;
+          const mFromCreatedAt = moment.parseZone(
+            base,
+            ["YYYY-MM-DDTHH:mm:ssZ", "YYYY-MM-DDTHH:mmZ", moment.ISO_8601],
+            true
+          );
+          if (mFromCreatedAt.isValid()) return mFromCreatedAt;
         }
-      }
 
-      return null;
+        if (report.folder) {
+          const match = String(report.folder).match(/^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})/);
+          if (match) {
+            const base = `${match[1]}T${match[2]}:${match[3]}${COLOMBIA_OFFSET}`;
+            const mFromFolder = moment.parseZone(base, "YYYY-MM-DDTHH:mmZ", true);
+            if (mFromFolder.isValid()) return mFromFolder;
+          }
+        }
+        return null;
+      } else {
+        // Fallback sin moment.js
+        if (report.createdAt) {
+          try {
+            const dateStr = String(report.createdAt).replace(" ", "T");
+            return new Date(dateStr + (dateStr.includes('T') ? '' : 'T00:00:00'));
+          } catch (e) {
+            console.warn('Error parsing createdAt:', e);
+          }
+        }
+        
+        if (report.folder) {
+          const match = String(report.folder).match(/^(\d{4}-\d{2}-\d{2})_(\d{2})-(\d{2})/);
+          if (match) {
+            try {
+              return new Date(`${match[1]}T${match[2]}:${match[3]}:00`);
+            } catch (e) {
+              console.warn('Error parsing folder date:', e);
+            }
+          }
+        }
+        return null;
+      }
     }
 
     function formatDateLabel(report) {
-      const m = getReportMomentColombia(report);
-      if (m) {
-        return m.local().format("YYYY-MM-DD HH:mm");
+      const reportDate = getReportMomentColombia(report);
+      if (reportDate) {
+        return formatDateSafe(reportDate, "YYYY-MM-DD HH:mm");
       }
-
       return report.id || "(sin id)";
     }
 
@@ -177,7 +323,7 @@
       const latest = reports[0]; // ya viene ordenado del JSON
       const dateLabel = formatDateLabel(latest);
 
-      latestSubtitleEl.textContent = `Build más reciente publicado: ${dateLabel}`;
+      latestSubtitleEl.textContent = `Build más reciente publicado: ${dateLabel} (${reports.length} reportes en total)`;
 
       const wrapper = document.createElement("div");
 
@@ -185,6 +331,9 @@
         <div class="latest-meta">
           <span class="badge">
             <strong>Fecha (hora local):</strong> ${dateLabel}
+          </span>
+          <span class="badge">
+            <strong>Total de reportes:</strong> ${reports.length}
           </span>
         </div>
         <div class="latest-actions">
@@ -194,7 +343,8 @@
           </a>
         </div>
         <p class="hint">
-          Las fechas se muestran en tu hora local; el pipeline publica la hora base en hora de Colombia (UTC-5).
+          Las fechas se muestran en tu hora local; el pipeline publica la hora base en hora de Colombia (UTC-5).<br>
+          �️ <strong>Vista por defecto:</strong> Calendario - Cambia a vista lista usando el botón "📋 Lista".
         </p>
       `;
 
@@ -263,21 +413,369 @@
       }
     }
 
+    // Funciones del calendario
+    function switchView(viewType) {
+      currentView = viewType;
+      
+      if (viewType === 'list') {
+        listViewBtn.classList.add('active');
+        calendarViewBtn.classList.remove('active');
+        listViewEl.style.display = 'block';
+        calendarViewEl.style.display = 'none';
+      } else {
+        calendarViewBtn.classList.add('active');
+        listViewBtn.classList.remove('active');
+        listViewEl.style.display = 'none';
+        calendarViewEl.style.display = 'block';
+        renderCalendar();
+      }
+    }
+
+    function getReportsForDate(date) {
+      let dateStr;
+      if (typeof moment !== 'undefined' && moment.isMoment(date)) {
+        dateStr = date.local().format('YYYY-MM-DD');
+      } else if (typeof moment !== 'undefined') {
+        dateStr = moment(date).format('YYYY-MM-DD');
+      } else {
+        const d = date instanceof Date ? date : new Date(date);
+        dateStr = d.toISOString().split('T')[0];
+      }
+      
+      return reports.filter(r => {
+        const reportMoment = getReportMomentColombia(r);
+        if (!reportMoment) return false;
+        
+        const reportDateStr = formatDateSafe(reportMoment, 'YYYY-MM-DD');
+        return reportDateStr === dateStr;
+      });
+    }
+
+    function renderCalendar() {
+      let month, year, monthName;
+      
+      if (typeof moment !== 'undefined' && moment.isMoment(currentCalendarDate)) {
+        month = currentCalendarDate.month();
+        year = currentCalendarDate.year();
+        monthName = currentCalendarDate.format('MMMM YYYY');
+      } else if (typeof moment !== 'undefined') {
+        const m = moment(currentCalendarDate);
+        month = m.month();
+        year = m.year();
+        monthName = m.format('MMMM YYYY');
+      } else {
+        const d = currentCalendarDate instanceof Date ? currentCalendarDate : new Date(currentCalendarDate);
+        month = d.getMonth();
+        year = d.getFullYear();
+        monthName = d.toLocaleDateString('es-ES', { month: 'long', year: 'numeric' });
+      }
+      
+      currentMonthYearEl.textContent = monthName;
+      calendarContainerEl.innerHTML = '';
+
+      // Crear encabezados de días
+      const daysOfWeek = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
+      daysOfWeek.forEach(day => {
+        const dayHeader = document.createElement('div');
+        dayHeader.className = 'calendar-day-header';
+        dayHeader.textContent = day;
+        calendarContainerEl.appendChild(dayHeader);
+      });
+
+      // Generar días del calendario usando funciones nativas si es necesario
+      let firstDay, lastDay, startDate, endDate;
+      
+      if (typeof moment !== 'undefined') {
+        firstDay = moment([year, month, 1]);
+        lastDay = moment([year, month]).endOf('month');
+        startDate = firstDay.clone().startOf('week');
+        endDate = lastDay.clone().endOf('week');
+      } else {
+        firstDay = new Date(year, month, 1);
+        lastDay = new Date(year, month + 1, 0);
+        startDate = new Date(firstDay);
+        startDate.setDate(startDate.getDate() - firstDay.getDay());
+        endDate = new Date(lastDay);
+        endDate.setDate(endDate.getDate() + (6 - lastDay.getDay()));
+      }
+
+      const currentDate = typeof moment !== 'undefined' ? startDate.clone() : new Date(startDate);
+      const today = new Date();
+      
+      while (
+        (typeof moment !== 'undefined' && currentDate.isSameOrBefore(endDate, 'day')) ||
+        (typeof moment === 'undefined' && currentDate <= endDate)
+      ) {
+        const dayEl = document.createElement('div');
+        dayEl.className = 'calendar-day';
+        
+        let dayNumber, isCurrentMonth, isToday, reportsForDay;
+        
+        if (typeof moment !== 'undefined') {
+          dayNumber = currentDate.date();
+          isCurrentMonth = currentDate.month() === month;
+          isToday = currentDate.isSame(moment(), 'day');
+          reportsForDay = getReportsForDate(currentDate);
+        } else {
+          dayNumber = currentDate.getDate();
+          isCurrentMonth = currentDate.getMonth() === month;
+          isToday = currentDate.toDateString() === today.toDateString();
+          reportsForDay = getReportsForDate(currentDate);
+        }
+        
+        if (!isCurrentMonth) {
+          dayEl.classList.add('other-month');
+        }
+        
+        if (isToday) {
+          dayEl.classList.add('today');
+        }
+        
+        if (reportsForDay.length > 0) {
+          dayEl.classList.add('has-tests');
+          dayEl.title = `${reportsForDay.length} prueba(s) ejecutada(s)`;
+          
+          if (reportsForDay.length > 1) {
+            const badge = document.createElement('span');
+            badge.className = 'test-count-badge';
+            badge.textContent = reportsForDay.length;
+            dayEl.appendChild(badge);
+          }
+        }
+
+        dayEl.innerHTML = `<span class="day-number">${dayNumber}</span>` + dayEl.innerHTML;
+        
+        if (reportsForDay.length > 0) {
+          dayEl.style.cursor = 'pointer';
+          dayEl.addEventListener('click', () => {
+            const clickDate = typeof moment !== 'undefined' ? currentDate.clone() : new Date(currentDate);
+            showDayReports(clickDate, reportsForDay);
+          });
+        }
+        
+        calendarContainerEl.appendChild(dayEl);
+        
+        if (typeof moment !== 'undefined') {
+          currentDate.add(1, 'day');
+        } else {
+          currentDate.setDate(currentDate.getDate() + 1);
+        }
+      }
+    }
+
+    function showDayReports(date, reports) {
+      const dateStr = formatDateSafe(date, 'dddd, DD [de] MMMM [de] YYYY');
+      const shortDateStr = formatDateSafe(date, 'DD/MM/YYYY');
+      
+      // Crear modal con estructura mejorada
+      const modalOverlay = document.createElement('div');
+      modalOverlay.className = 'calendar-modal-overlay';
+      
+      const reportItems = reports.map((r, index) => {
+        const reportDate = getReportMomentColombia(r);
+        const time = reportDate ? formatDateSafe(reportDate, 'HH:mm') : 'N/A';
+        
+        let relativeTime = 'hace un tiempo';
+        if (typeof moment !== 'undefined' && reportDate) {
+          try {
+            relativeTime = typeof moment !== 'undefined' && moment.isMoment(reportDate) ? 
+              reportDate.local().from(moment()) : 
+              moment(reportDate).from(moment());
+          } catch (e) {
+            relativeTime = 'hace un tiempo';
+          }
+        }
+        
+        return `
+          <li class="calendar-report-item">
+            <a href="${r.url}" target="_blank" class="calendar-report-link">
+              <div class="calendar-report-time">
+                <span>🕐</span>
+                <span>${time}</span>
+              </div>
+              <div class="calendar-report-id">${r.id}</div>
+              <div class="calendar-report-meta">
+                <span>📊 Reporte #${index + 1}</span>
+                <span>•</span>
+                <span>${relativeTime}</span>
+              </div>
+              <div class="external-link-icon">↗</div>
+            </a>
+          </li>
+        `;
+      }).join('');
+      
+      modalOverlay.innerHTML = `
+        <div class="calendar-modal">
+          <div class="calendar-modal-header">
+            <h3 class="calendar-modal-title">
+              <span>📅</span>
+              <span>Pruebas del ${shortDateStr}</span>
+            </h3>
+            <button class="calendar-modal-close" title="Cerrar">×</button>
+          </div>
+          <div class="calendar-modal-body">
+            <p style="margin: 0 0 1rem 0; color: var(--text-soft); font-size: 0.9rem;">
+              <strong>${dateStr}</strong>
+            </p>
+            <ul class="calendar-reports-list">
+              ${reportItems}
+            </ul>
+          </div>
+          <div class="calendar-modal-footer">
+            <span class="calendar-modal-count">
+              <strong>${reports.length}</strong> ${reports.length === 1 ? 'prueba ejecutada' : 'pruebas ejecutadas'}
+            </span>
+            <span>Haz clic en cualquier elemento para ver el reporte completo</span>
+          </div>
+        </div>
+      `;
+      
+      // Funciones para cerrar el modal
+      const closeModal = () => {
+        modalOverlay.style.animation = 'fadeOut 0.2s ease-in forwards';
+        setTimeout(() => {
+          if (modalOverlay.parentNode) {
+            modalOverlay.parentNode.removeChild(modalOverlay);
+          }
+        }, 200);
+        document.removeEventListener('keydown', handleEscapeKey);
+      };
+      
+      const handleEscapeKey = (e) => {
+        if (e.key === 'Escape') {
+          closeModal();
+        }
+      };
+      
+      // Event listeners
+      modalOverlay.addEventListener('click', (e) => {
+        if (e.target === modalOverlay) {
+          closeModal();
+        }
+      });
+      
+      const closeButton = modalOverlay.querySelector('.calendar-modal-close');
+      closeButton.addEventListener('click', closeModal);
+      
+      document.addEventListener('keydown', handleEscapeKey);
+      
+      // Agregar al DOM
+      document.body.appendChild(modalOverlay);
+      
+      // Focus para accesibilidad
+      closeButton.focus();
+    }
+
+    function navigateMonth(direction) {
+      if (typeof moment !== 'undefined') {
+        if (direction === 'prev') {
+          if (moment.isMoment(currentCalendarDate)) {
+            currentCalendarDate.subtract(1, 'month');
+          } else {
+            currentCalendarDate = moment(currentCalendarDate).subtract(1, 'month');
+          }
+        } else {
+          if (moment.isMoment(currentCalendarDate)) {
+            currentCalendarDate.add(1, 'month');
+          } else {
+            currentCalendarDate = moment(currentCalendarDate).add(1, 'month');
+          }
+        }
+      } else {
+        const d = currentCalendarDate instanceof Date ? currentCalendarDate : new Date(currentCalendarDate);
+        if (direction === 'prev') {
+          d.setMonth(d.getMonth() - 1);
+        } else {
+          d.setMonth(d.getMonth() + 1);
+        }
+        currentCalendarDate = d;
+      }
+      renderCalendar();
+    }
+
     async function loadReports() {
       try {
-        statusLabelEl.textContent = "Cargando datos de reports.json…";
+        statusLabelEl.textContent = "Cargando datos de reportes…";
         statusCountEl.textContent = "";
         historySubtitleEl.textContent = "Cargando historial…";
 
-        const res = await fetch("reports.json", { cache: "no-store" });
-        if (!res.ok) {
-          throw new Error("HTTP " + res.status);
-        }
-
-        const data = await res.json();
-        if (!Array.isArray(data)) {
-          throw new Error("Formato inválido: se esperaba un arreglo.");
-        }
+        // Datos incluidos directamente para evitar problemas de CORS
+        const data = [
+          {"id":"2026-04-09_15-29-build","label":"2026-04-09 15:29","folder":"2026-04-09_15-29-build","url":"./2026-04-09_15-29-build/index.html","createdAt":"2026-04-09T15:29:05"},
+          {"id":"2026-04-08_20-28-build","label":"2026-04-08 20:28","folder":"2026-04-08_20-28-build","url":"./2026-04-08_20-28-build/index.html","createdAt":"2026-04-08T20:28:44"},
+          {"id":"2026-04-08_19-37-build","label":"2026-04-08 19:37","folder":"2026-04-08_19-37-build","url":"./2026-04-08_19-37-build/index.html","createdAt":"2026-04-08T19:37:00"},
+          {"id":"2026-04-08_17-39-build","label":"2026-04-08 17:39","folder":"2026-04-08_17-39-build","url":"./2026-04-08_17-39-build/index.html","createdAt":"2026-04-08T17:39:25"},
+          {"id":"2026-04-08_09-53-build","label":"2026-04-08 09:53","folder":"2026-04-08_09-53-build","url":"./2026-04-08_09-53-build/index.html","createdAt":"2026-04-08T09:53:43"},
+          {"id":"2026-04-08_09-18-build","label":"2026-04-08 09:18","folder":"2026-04-08_09-18-build","url":"./2026-04-08_09-18-build/index.html","createdAt":"2026-04-08T09:18:00"},
+          {"id":"2026-04-08_05-51-build","label":"2026-04-08 05:51","folder":"2026-04-08_05-51-build","url":"./2026-04-08_05-51-build/index.html","createdAt":"2026-04-08T05:51:00"},
+          {"id":"2026-04-08_00-10-build","label":"2026-04-08 00:10","folder":"2026-04-08_00-10-build","url":"./2026-04-08_00-10-build/index.html","createdAt":"2026-04-08T00:10:00"},
+          {"id":"2026-04-07_22-23-build","label":"2026-04-07 22:23","folder":"2026-04-07_22-23-build","url":"./2026-04-07_22-23-build/index.html","createdAt":"2026-04-07T22:23:00"},
+          {"id":"2026-04-07_20-58-build","label":"2026-04-07 20:58","folder":"2026-04-07_20-58-build","url":"./2026-04-07_20-58-build/index.html","createdAt":"2026-04-07T20:58:00"},
+          {"id":"2026-04-07_19-29-build","label":"2026-04-07 19:29","folder":"2026-04-07_19-29-build","url":"./2026-04-07_19-29-build/index.html","createdAt":"2026-04-07T19:29:00"},
+          {"id":"2026-04-07_19-15-build","label":"2026-04-07 19:15","folder":"2026-04-07_19-15-build","url":"./2026-04-07_19-15-build/index.html","createdAt":"2026-04-07T19:15:00"},
+          {"id":"2026-04-07_17-25-build","label":"2026-04-07 17:25","folder":"2026-04-07_17-25-build","url":"./2026-04-07_17-25-build/index.html","createdAt":"2026-04-07T17:25:00"},
+          {"id":"2026-04-07_17-12-build","label":"2026-04-07 17:12","folder":"2026-04-07_17-12-build","url":"./2026-04-07_17-12-build/index.html","createdAt":"2026-04-07T17:12:00"},
+          {"id":"2026-04-07_16-47-build","label":"2026-04-07 16:47","folder":"2026-04-07_16-47-build","url":"./2026-04-07_16-47-build/index.html","createdAt":"2026-04-07T16:47:00"},
+          {"id":"2026-04-07_10-21-build","label":"2026-04-07 10:21","folder":"2026-04-07_10-21-build","url":"./2026-04-07_10-21-build/index.html","createdAt":"2026-04-07T10:21:00"},
+          {"id":"2026-04-07_03-59-build","label":"2026-04-07 03:59","folder":"2026-04-07_03-59-build","url":"./2026-04-07_03-59-build/index.html","createdAt":"2026-04-07T03:59:00"},
+          {"id":"2026-04-07_03-53-build","label":"2026-04-07 03:53","folder":"2026-04-07_03-53-build","url":"./2026-04-07_03-53-build/index.html","createdAt":"2026-04-07T03:53:00"},
+          {"id":"2026-04-06_21-35-build","label":"2026-04-06 21:35","folder":"2026-04-06_21-35-build","url":"./2026-04-06_21-35-build/index.html","createdAt":"2026-04-06T21:35:00"},
+          {"id":"2026-04-06_19-18-build","label":"2026-04-06 19:18","folder":"2026-04-06_19-18-build","url":"./2026-04-06_19-18-build/index.html","createdAt":"2026-04-06T19:18:00"},
+          {"id":"2026-04-06_19-12-build","label":"2026-04-06 19:12","folder":"2026-04-06_19-12-build","url":"./2026-04-06_19-12-build/index.html","createdAt":"2026-04-06T19:12:00"},
+          {"id":"2026-04-06_18-59-build","label":"2026-04-06 18:59","folder":"2026-04-06_18-59-build","url":"./2026-04-06_18-59-build/index.html","createdAt":"2026-04-06T18:59:00"},
+          {"id":"2026-04-06_04-48-build","label":"2026-04-06 04:48","folder":"2026-04-06_04-48-build","url":"./2026-04-06_04-48-build/index.html","createdAt":"2026-04-06T04:48:00"},
+          {"id":"2026-04-06_04-33-build","label":"2026-04-06 04:33","folder":"2026-04-06_04-33-build","url":"./2026-04-06_04-33-build/index.html","createdAt":"2026-04-06T04:33:00"},
+          {"id":"2026-04-05_16-32-build","label":"2026-04-05 16:32","folder":"2026-04-05_16-32-build","url":"./2026-04-05_16-32-build/index.html","createdAt":"2026-04-05T16:32:00"},
+          {"id":"2026-04-05_13-14-build","label":"2026-04-05 13:14","folder":"2026-04-05_13-14-build","url":"./2026-04-05_13-14-build/index.html","createdAt":"2026-04-05T13:14:00"},
+          {"id":"2026-04-03_23-08-build","label":"2026-04-03 23:08","folder":"2026-04-03_23-08-build","url":"./2026-04-03_23-08-build/index.html","createdAt":"2026-04-03T23:08:00"},
+          {"id":"2026-04-02_09-56-build","label":"2026-04-02 09:56","folder":"2026-04-02_09-56-build","url":"./2026-04-02_09-56-build/index.html","createdAt":"2026-04-02T09:56:00"},
+          {"id":"2026-04-01_11-19-build","label":"2026-04-01 11:19","folder":"2026-04-01_11-19-build","url":"./2026-04-01_11-19-build/index.html","createdAt":"2026-04-01T11:19:00"},
+          {"id":"2026-04-01_06-05-build","label":"2026-04-01 06:05","folder":"2026-04-01_06-05-build","url":"./2026-04-01_06-05-build/index.html","createdAt":"2026-04-01T06:05:00"},
+          {"id":"2026-04-01_05-21-build","label":"2026-04-01 05:21","folder":"2026-04-01_05-21-build","url":"./2026-04-01_05-21-build/index.html","createdAt":"2026-04-01T05:21:00"},
+          {"id":"2026-04-01_04-55-build","label":"2026-04-01 04:55","folder":"2026-04-01_04-55-build","url":"./2026-04-01_04-55-build/index.html","createdAt":"2026-04-01T04:55:00"},
+          {"id":"2026-03-27_23-06-build","label":"2026-03-27 23:06","folder":"2026-03-27_23-06-build","url":"./2026-03-27_23-06-build/index.html","createdAt":"2026-03-27T23:06:00"},
+          {"id":"2026-03-27_02-06-build","label":"2026-03-27 02:06","folder":"2026-03-27_02-06-build","url":"./2026-03-27_02-06-build/index.html","createdAt":"2026-03-27T02:06:00"},
+          {"id":"2026-03-26_22-30-build","label":"2026-03-26 22:30","folder":"2026-03-26_22-30-build","url":"./2026-03-26_22-30-build/index.html","createdAt":"2026-03-26T22:30:00"},
+          {"id":"2026-03-26_19-30-build","label":"2026-03-26 19:30","folder":"2026-03-26_19-30-build","url":"./2026-03-26_19-30-build/index.html","createdAt":"2026-03-26T19:30:00"},
+          {"id":"2026-03-26_16-36-build","label":"2026-03-26 16:36","folder":"2026-03-26_16-36-build","url":"./2026-03-26_16-36-build/index.html","createdAt":"2026-03-26T16:36:00"},
+          {"id":"2026-03-26_16-08-build","label":"2026-03-26 16:08","folder":"2026-03-26_16-08-build","url":"./2026-03-26_16-08-build/index.html","createdAt":"2026-03-26T16:08:00"},
+          {"id":"2026-03-26_15-47-build","label":"2026-03-26 15:47","folder":"2026-03-26_15-47-build","url":"./2026-03-26_15-47-build/index.html","createdAt":"2026-03-26T15:47:00"},
+          {"id":"2026-03-26_15-28-build","label":"2026-03-26 15:28","folder":"2026-03-26_15-28-build","url":"./2026-03-26_15-28-build/index.html","createdAt":"2026-03-26T15:28:00"},
+          {"id":"2026-03-26_13-08-build","label":"2026-03-26 13:08","folder":"2026-03-26_13-08-build","url":"./2026-03-26_13-08-build/index.html","createdAt":"2026-03-26T13:08:00"},
+          {"id":"2026-03-26_12-19-build","label":"2026-03-26 12:19","folder":"2026-03-26_12-19-build","url":"./2026-03-26_12-19-build/index.html","createdAt":"2026-03-26T12:19:00"},
+          {"id":"2026-03-17_23-02-build","label":"2026-03-17 23:02","folder":"2026-03-17_23-02-build","url":"./2026-03-17_23-02-build/index.html","createdAt":"2026-03-17T23:02:00"},
+          {"id":"2026-03-17_19-49-build","label":"2026-03-17 19:49","folder":"2026-03-17_19-49-build","url":"./2026-03-17_19-49-build/index.html","createdAt":"2026-03-17T19:49:00"},
+          {"id":"2026-03-08_07-52-build","label":"2026-03-08 07:52","folder":"2026-03-08_07-52-build","url":"./2026-03-08_07-52-build/index.html","createdAt":"2026-03-08T07:52:00"},
+          {"id":"2026-02-20_09-33-build","label":"2026-02-20 09:33","folder":"2026-02-20_09-33-build","url":"./2026-02-20_09-33-build/index.html","createdAt":"2026-02-20T09:33:00"},
+          {"id":"2025-12-23_07-50-build","label":"2025-12-23 07:50","folder":"2025-12-23_07-50-build","url":"./2025-12-23_07-50-build/index.html","createdAt":"2025-12-23T07:50:00"},
+          {"id":"2025-12-18_08-31-build","label":"2025-12-18 08:31","folder":"2025-12-18_08-31-build","url":"./2025-12-18_08-31-build/index.html","createdAt":"2025-12-18T08:31:00"},
+          {"id":"2025-12-17_00-23-build","label":"2025-12-17 00:23","folder":"2025-12-17_00-23-build","url":"./2025-12-17_00-23-build/index.html","createdAt":"2025-12-17T00:23:00"},
+          {"id":"2025-12-15_22-50-build","label":"2025-12-15 22:50","folder":"2025-12-15_22-50-build","url":"./2025-12-15_22-50-build/index.html","createdAt":"2025-12-15T22:50:00"},
+          {"id":"2025-12-15_07-02-build","label":"2025-12-15 07:02","folder":"2025-12-15_07-02-build","url":"./2025-12-15_07-02-build/index.html","createdAt":"2025-12-15T07:02:00"},
+          {"id":"2025-12-11_02-21-build","label":"2025-12-11 02:21","folder":"2025-12-11_02-21-build","url":"./2025-12-11_02-21-build/index.html","createdAt":"2025-12-11T02:21:00"},
+          {"id":"2025-11-27_21-43-build","label":"2025-11-27 21:43","folder":"2025-11-27_21-43-build","url":"./2025-11-27_21-43-build/index.html","createdAt":"2025-11-27T21:43:00"},
+          {"id":"2025-11-27_21-39-build","label":"2025-11-27 21:39","folder":"2025-11-27_21-39-build","url":"./2025-11-27_21-39-build/index.html","createdAt":"2025-11-27T21:39:00"},
+          {"id":"2025-11-27_21-15-build","label":"2025-11-27 21:15","folder":"2025-11-27_21-15-build","url":"./2025-11-27_21-15-build/index.html","createdAt":"2025-11-27T21:15:00"},
+          {"id":"2025-11-27_21-12-build","label":"2025-11-27 21:12","folder":"2025-11-27_21-12-build","url":"./2025-11-27_21-12-build/index.html","createdAt":"2025-11-27T21:12:00"},
+          {"id":"2025-11-27_17-57-build","label":"2025-11-27 17:57","folder":"2025-11-27_17-57-build","url":"./2025-11-27_17-57-build/index.html","createdAt":"2025-11-27T17:57:00"},
+          {"id":"2025-11-27_01-23-build","label":"2025-11-27 01:23","folder":"2025-11-27_01-23-build","url":"./2025-11-27_01-23-build/index.html","createdAt":"2025-11-27T01:23:00"},
+          {"id":"2025-11-24_22-40-build","label":"2025-11-24 22:40","folder":"2025-11-24_22-40-build","url":"./2025-11-24_22-40-build/index.html","createdAt":"2025-11-24T22:40:00"},
+          {"id":"2025-11-24_21-38-build","label":"2025-11-24 21:38","folder":"2025-11-24_21-38-build","url":"./2025-11-24_21-38-build/index.html","createdAt":"2025-11-24T21:38:00"},
+          {"id":"2025-11-24_21-28-build","label":"2025-11-24 21:28","folder":"2025-11-24_21-28-build","url":"./2025-11-24_21-28-build/index.html","createdAt":"2025-11-24T21:28:00"},
+          {"id":"2025-11-24_21-22-build","label":"2025-11-24 21:22","folder":"2025-11-24_21-22-build","url":"./2025-11-24_21-22-build/index.html","createdAt":"2025-11-24T21:22:00"},
+          {"id":"2025-11-23_10-41-build","label":"2025-11-23 10:41","folder":"2025-11-23_10-41-build","url":"./2025-11-23_10-41-build/index.html","createdAt":"2025-11-23T10:41:00"},
+          {"id":"2025-11-23_01-18-build","label":"2025-11-23 01:18","folder":"2025-11-23_01-18-build","url":"./2025-11-23_01-18-build/index.html","createdAt":"2025-11-23T01:18:00"},
+          {"id":"2025-11-22_22-25-build","label":"2025-11-22 22:25","folder":"2025-11-22_22-25-build","url":"./2025-11-22_22-25-build/index.html","createdAt":"2025-11-22T22:25:00"},
+          {"id":"2025-11-22_22-07-build","label":"2025-11-22 22:07","folder":"2025-11-22_22-07-build","url":"./2025-11-22_22-07-build/index.html","createdAt":"2025-11-22T22:07:00"},
+          {"id":"2025-11-22_21-44-build","label":"2025-11-22 21:44","folder":"2025-11-22_21-44-build","url":"./2025-11-22_21-44-build/index.html","createdAt":"2025-11-22T21:44:00"},
+          {"id":"2025-11-22_20-56-build","label":"2025-11-22 20:56","folder":"2025-11-22_20-56-build","url":"./2025-11-22_20-56-build/index.html","createdAt":"2025-11-22T20:56:00"},
+          {"id":"2025-11-22_20-40-build","label":"2025-11-22 20:40","folder":"2025-11-22_20-40-build","url":"./2025-11-22_20-40-build/index.html","createdAt":"2025-11-22T20:40:00"},
+          {"id":"2025-11-22_20-20-build","label":"2025-11-22 20:20","folder":"2025-11-22_20-20-build","url":"./2025-11-22_20-20-build/index.html","createdAt":"2025-11-22T20:20:00"},
+          {"id":"2025-11-22_20-06-build","label":"2025-11-22 20:06","folder":"2025-11-22_20-06-build","url":"./2025-11-22_20-06-build/index.html","createdAt":"2025-11-22T20:06:00"},
+          {"id":"2025-11-22_19-30-build","label":"2025-11-22 19:30","folder":"2025-11-22_19-30-build","url":"./2025-11-22_19-30-build/index.html","createdAt":"2025-11-22T19:30:00"},
+          {"id":"2025-11-22_19-26-build","label":"2025-11-22 19:26","folder":"2025-11-22_19-26-build","url":"./2025-11-22_19-26-build/index.html","createdAt":"2025-11-22T19:26:00"}
+        ];
 
         reports = data;
         filteredReports = [...reports];
@@ -296,6 +794,15 @@
 
         renderLatest();
         renderTable();
+        
+        // Inicializar vista de calendario por defecto con verificación
+        try {
+          renderCalendar();
+        } catch (error) {
+          console.warn('Error al renderizar calendario:', error);
+          // Fallback: cambiar a vista lista si el calendario falla
+          switchView('list');
+        }
       } catch (err) {
         console.error(err);
         statusLabelEl.textContent = "No se pudo leer reports.json.";
@@ -310,8 +817,17 @@
       applyFilter();
     });
 
+    // Event listeners del calendario
+    listViewBtn.addEventListener("click", () => switchView('list'));
+    calendarViewBtn.addEventListener("click", () => switchView('calendar'));
+    prevMonthBtn.addEventListener("click", () => navigateMonth('prev'));
+    nextMonthBtn.addEventListener("click", () => navigateMonth('next'));
+
     window.addEventListener("load", () => {
-      loadReports();
+      // Dar tiempo para que moment.js se cargue si está disponible
+      setTimeout(() => {
+        loadReports();
+      }, 100);
     });
   </script>
 </body>
