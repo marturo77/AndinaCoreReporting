@@ -893,71 +893,14 @@
     // Inicializar aplicación
     loadReports();
 
+    // Inicializar vista de calendario después de cargar datos
+    setTimeout(() => {
+      switchView('calendar');
+    }, 100);
+
     // Actualizar el tiempo transcurrido cada minuto
     setInterval(updateTimeAgo, 60000); // 60 segundos = 1 minuto
   </script>
 </body>
 </html>
-          {"id":"2025-11-22_20-06-build","label":"2025-11-22 20:06","folder":"2025-11-22_20-06-build","url":"./2025-11-22_20-06-build/index.html","createdAt":"2025-11-22T20:06:00"},
-          {"id":"2025-11-22_19-30-build","label":"2025-11-22 19:30","folder":"2025-11-22_19-30-build","url":"./2025-11-22_19-30-build/index.html","createdAt":"2025-11-22T19:30:00"},
-          {"id":"2025-11-22_19-26-build","label":"2025-11-22 19:26","folder":"2025-11-22_19-26-build","url":"./2025-11-22_19-26-build/index.html","createdAt":"2025-11-22T19:26:00"}
-        ];
-
-        reports = data;
-        filteredReports = [...reports];
-
-        if (!reports.length) {
-          latestSubtitleEl.textContent = "Aún no se ha publicado ningún reporte.";
-          statusLabelEl.textContent = "Sin datos de ejecución de pruebas.";
-          historySubtitleEl.textContent = "Histórico vacío.";
-          historyMessageEl.textContent =
-            "Cuando el pipeline publique su primer reporte, aparecerá automáticamente en este panel.";
-          return;
-        }
-
-        statusCountEl.textContent = `Total de reportes: ${reports.length}`;
-        historySubtitleEl.textContent = `Total: ${reports.length} reporte(s) almacenados.`;
-
-        renderLatest();
-        renderTable();
-        
-        // Inicializar vista de calendario por defecto con verificación
-        try {
-          renderCalendar();
-        } catch (error) {
-          console.warn('Error al renderizar calendario:', error);
-          // Fallback: cambiar a vista lista si el calendario falla
-          switchView('list');
-        }
-      } catch (err) {
-        console.error(err);
-        statusLabelEl.textContent = "No se pudo leer reports.json.";
-        statusLabelEl.classList.add("status-pill-error");
-        historySubtitleEl.textContent = "Error al cargar el historial.";
-        historyMessageEl.textContent =
-          "Verifica que reports.json exista en la raíz del repositorio público y que tenga un formato válido.";
-      }
-    }
-
-    searchInputEl.addEventListener("input", () => {
-      applyFilter();
-    });
-
-    // Event listeners del calendario
-    listViewBtn.addEventListener("click", () => switchView('list'));
-    calendarViewBtn.addEventListener("click", () => switchView('calendar'));
-    prevMonthBtn.addEventListener("click", () => navigateMonth('prev'));
-    nextMonthBtn.addEventListener("click", () => navigateMonth('next'));
-
-    window.addEventListener("load", () => {
-      // Dar tiempo para que moment.js se cargue si está disponible
-      setTimeout(() => {
-        loadReports();
-      }, 100);
-    });
-  </script>
-</body>
-
 </html>
-
-
