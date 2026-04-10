@@ -1,8 +1,0 @@
-"DESCRIPTION","DURATION IN MS","NAME","PARENT SUITE","START TIME","STATUS","STOP TIME","SUB SUITE","SUITE","TEST CLASS","TEST METHOD"
-"","15967","Carga exitosa del archivo masivo y descarga de resultados","","Sat Nov 22 20:50:04 UTC 2025","broken","Sat Nov 22 20:50:20 UTC 2025","","","",""
-"","78154","R30 C25-C29 Eliminar las vigencias de los parametros","","Sat Nov 22 20:54:01 UTC 2025","passed","Sat Nov 22 20:55:19 UTC 2025","","","",""
-"","13611","creacion manual de cotizacion","","Sat Nov 22 20:49:50 UTC 2025","passed","Sat Nov 22 20:50:04 UTC 2025","","","",""
-"","32711","Comparacion de resultados de cotización masiva con archivo de referencia","","Sat Nov 22 20:55:32 UTC 2025","broken","Sat Nov 22 20:56:04 UTC 2025","","","",""
-"","12620","Creacion de un siniestro","","Sat Nov 22 20:55:19 UTC 2025","passed","Sat Nov 22 20:55:32 UTC 2025","","","",""
-"","202387","R30 C02-C13,C45 Crear vigencias verificando el archivo cargado","","Sat Nov 22 20:50:39 UTC 2025","passed","Sat Nov 22 20:54:01 UTC 2025","","","",""
-"","18590","R30 C01,C42 Listado de parametros de producto de renta vitalicia, reserva matematica","","Sat Nov 22 20:50:20 UTC 2025","passed","Sat Nov 22 20:50:39 UTC 2025","","","",""
