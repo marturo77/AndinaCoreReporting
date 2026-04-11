@@ -1,0 +1,3 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] parametria sin datos disponibles
+[PENDING] Elimino las vigencias para los parametros (sin datos en modulo de parametria)

@@ -1,0 +1,3 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[PENDING] parametria sin datos disponibles
+[PENDING] Existe el parametro de nota tecnica (sin datos en modulo de parametria)
