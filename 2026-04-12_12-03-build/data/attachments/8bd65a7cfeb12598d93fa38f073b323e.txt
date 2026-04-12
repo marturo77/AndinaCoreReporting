@@ -1,0 +1,60 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Abriendo la pagina de cotizacion...
+Subiendo archivo de contratacion...
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\results\contratacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+La cotizacion aun no aparece como COTIZADA para contratacion. Reintentando en 15s (intento 2/3).
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\results\contratacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+La cotizacion aun no aparece como COTIZADA para contratacion. Reintentando en 30s (intento 3/3).
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\results\contratacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+La cotizacion sigue sin estado COTIZADA despues de los reintentos permitidos.
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\1776012486326-m0cfto\detalle_cargue_archivo_contratación.xlsx
+Se encontraron 30 errores de validacion en 34 registros:
+  1. No cotizada 5800051125: La cotización de este causante, no está en estado 'COTIZADA'  (fila 2)
+  2. No cotizada 5800051127: La cotización de este causante, no está en estado 'COTIZADA'  (fila 4)
+  3. No cotizada 5800051129: La cotización de este causante, no está en estado 'COTIZADA'  (fila 6)
+  4. No cotizada 5800051131: La cotización de este causante, no está en estado 'COTIZADA'  (fila 8)
+  5. No cotizada 5800051133: La cotización de este causante, no está en estado 'COTIZADA'  (fila 10)
+  6. No cotizada 5800051135: La cotización de este causante, no está en estado 'COTIZADA'  (fila 12)
+  7. No cotizada 5800051137: La cotización de este causante, no está en estado 'COTIZADA'  (fila 14)
+  8. No cotizada 5800051139: La cotización de este causante, no está en estado 'COTIZADA'  (fila 16)
+  9. No cotizada 5800051141: La cotización de este causante, no está en estado 'COTIZADA'  (fila 18)
+  10. No cotizada 5800051144: La cotización de este causante, no está en estado 'COTIZADA'  (fila 21)
+Sincronizando cotizaciones persistidas desde consulta...
+Resultado detectado para causante 5800051125: cotizacion COT-00057214, estado EMITIR PÓLIZA, tiempo 29.47 s.
+Resultado detectado para causante 5800051127: cotizacion COT-00057218, estado EMITIR PÓLIZA, tiempo 13.16 s.
+Resultado detectado para causante 5800051129: cotizacion COT-00057215, estado EMITIR PÓLIZA, tiempo 13.18 s.
+Resultado detectado para causante 5800051131: cotizacion COT-00057212, estado EMITIR PÓLIZA, tiempo 13.05 s.
+Resultado detectado para causante 5800051133: cotizacion COT-00057216, estado EMITIR PÓLIZA, tiempo 13.38 s.
+Resultado detectado para causante 5800051135: cotizacion COT-00057226, estado EMITIR PÓLIZA, tiempo 13.93 s.
+Resultado detectado para causante 5800051137: cotizacion COT-00057217, estado EMITIR PÓLIZA, tiempo 13.62 s.
+Resultado detectado para causante 5800051139: cotizacion COT-00057221, estado EMITIR PÓLIZA, tiempo 13.47 s.
+Resultado detectado para causante 5800051141: cotizacion COT-00057225, estado EMITIR PÓLIZA, tiempo 13.42 s.
+Resultado detectado para causante 5800051144: cotizacion COT-00057213, estado EMITIR PÓLIZA, tiempo 13.00 s.
+Resultado detectado para causante 5800051146: cotizacion COT-00057223, estado EMITIR PÓLIZA, tiempo 13.84 s.
+Resultado detectado para causante 5800051149: cotizacion COT-00057234, estado COTIZADA, tiempo 13.07 s.
+Resultado detectado para causante 5800051153: cotizacion COT-00057227, estado COTIZADA, tiempo 13.06 s.
+Resultado detectado para causante 5800051155: cotizacion COT-00057222, estado EMITIR PÓLIZA, tiempo 12.54 s.
+Resultado detectado para causante 5800051157: cotizacion COT-00057220, estado EMITIR PÓLIZA, tiempo 13.57 s.
+Resultado detectado para causante 5800051159: cotizacion COT-00057219, estado EMITIR PÓLIZA, tiempo 13.43 s.
+Resultado detectado para causante 5800051161: cotizacion COT-00057230, estado EMITIR PÓLIZA, tiempo 13.82 s.
+Resultado detectado para causante 5800051163: cotizacion COT-00057224, estado COTIZADA, tiempo 13.34 s.
+Resultado detectado para causante 5800051165: cotizacion COT-00057231, estado EMITIR PÓLIZA, tiempo 12.59 s.
+Resultado detectado para causante 5800051167: cotizacion COT-00057228, estado EMITIR PÓLIZA, tiempo 13.40 s.
+Resultado detectado para causante 5800051169: cotizacion COT-00057229, estado EMITIR PÓLIZA, tiempo 13.32 s.
+Resultado detectado para causante 5800051171: cotizacion COT-00057232, estado EMITIR PÓLIZA, tiempo 12.98 s.
+Resultado detectado para causante 5800051173: cotizacion COT-00057235, estado EMITIR PÓLIZA, tiempo 13.57 s.
+Resultado detectado para causante 5800051176: cotizacion COT-00057233, estado EMITIR PÓLIZA, tiempo 12.77 s.
+Resultado detectado para causante 5800051178: cotizacion COT-00057236, estado EMITIR PÓLIZA, tiempo 12.78 s.
+Resultado detectado para causante 5800051181: cotizacion COT-00057238, estado COTIZADA, tiempo 12.91 s.
+Resultado detectado para causante 5800051184: cotizacion COT-00057237, estado EMITIR PÓLIZA, tiempo 12.85 s.
+Resultado detectado para causante 5800051225: cotizacion COT-00057279, estado COTIZADA, tiempo 13.12 s.
