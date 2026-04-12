@@ -754,92 +754,64 @@
       renderCalendar();
     }
 
+    const FALLBACK_REPORTS = [
+      {"id":"2026-04-12_12-59-build","label":"2026-04-12 12:59","folder":"2026-04-12_12-59-build","url":"./2026-04-12_12-59-build/index.html","createdAt":"2026-04-12T12:59:44"},
+      {"id":"2026-04-12_12-03-build","label":"2026-04-12 12:03","folder":"2026-04-12_12-03-build","url":"./2026-04-12_12-03-build/index.html","createdAt":"2026-04-12T12:03:09"},
+      {"id":"2026-04-12_06-22-build","label":"2026-04-12 06:22","folder":"2026-04-12_06-22-build","url":"./2026-04-12_06-22-build/index.html","createdAt":"2026-04-12T06:22:27"},
+      {"id":"2026-04-12_03-57-build","label":"2026-04-12 03:57","folder":"2026-04-12_03-57-build","url":"./2026-04-12_03-57-build/index.html","createdAt":"2026-04-12T03:57:28"},
+      {"id":"2026-04-12_03-23-build","label":"2026-04-12 03:23","folder":"2026-04-12_03-23-build","url":"./2026-04-12_03-23-build/index.html","createdAt":"2026-04-12T03:23:16"},
+      {"id":"2026-04-11_22-22-build","label":"2026-04-11 22:22","folder":"2026-04-11_22-22-build","url":"./2026-04-11_22-22-build/index.html","createdAt":"2026-04-11T22:22:46"},
+      {"id":"2026-04-11_19-23-build","label":"2026-04-11 19:23","folder":"2026-04-11_19-23-build","url":"./2026-04-11_19-23-build/index.html","createdAt":"2026-04-11T19:23:14"},
+      {"id":"2026-04-11_15-32-build","label":"2026-04-11 15:32","folder":"2026-04-11_15-32-build","url":"./2026-04-11_15-32-build/index.html","createdAt":"2026-04-11T15:32:07"},
+      {"id":"2026-04-10_23-25-build","label":"2026-04-10 23:25","folder":"2026-04-10_23-25-build","url":"./2026-04-10_23-25-build/index.html","createdAt":"2026-04-10T23:25:40"},
+      {"id":"2026-04-10_13-28-build","label":"2026-04-10 13:28","folder":"2026-04-10_13-28-build","url":"./2026-04-10_13-28-build/index.html","createdAt":"2026-04-10T13:28:20"},
+      {"id":"2026-04-10_03-27-build","label":"2026-04-10 03:27","folder":"2026-04-10_03-27-build","url":"./2026-04-10_03-27-build/index.html","createdAt":"2026-04-10T03:27:06"},
+      {"id":"2026-04-09_15-29-build","label":"2026-04-09 15:29","folder":"2026-04-09_15-29-build","url":"./2026-04-09_15-29-build/index.html","createdAt":"2026-04-09T15:29:05"},
+      {"id":"2026-04-08_20-28-build","label":"2026-04-08 20:28","folder":"2026-04-08_20-28-build","url":"./2026-04-08_20-28-build/index.html","createdAt":"2026-04-08T20:28:44"},
+      {"id":"2026-04-08_19-37-build","label":"2026-04-08 19:37","folder":"2026-04-08_19-37-build","url":"./2026-04-08_19-37-build/index.html","createdAt":"2026-04-08T19:37:00"},
+      {"id":"2026-04-08_17-39-build","label":"2026-04-08 17:39","folder":"2026-04-08_17-39-build","url":"./2026-04-08_17-39-build/index.html","createdAt":"2026-04-08T17:39:25"},
+      {"id":"2026-04-08_09-53-build","label":"2026-04-08 09:53","folder":"2026-04-08_09-53-build","url":"./2026-04-08_09-53-build/index.html","createdAt":"2026-04-08T09:53:43"},
+      {"id":"2026-04-08_09-18-build","label":"2026-04-08 09:18","folder":"2026-04-08_09-18-build","url":"./2026-04-08_09-18-build/index.html","createdAt":"2026-04-08T09:18:00"},
+      {"id":"2026-04-08_05-51-build","label":"2026-04-08 05:51","folder":"2026-04-08_05-51-build","url":"./2026-04-08_05-51-build/index.html","createdAt":"2026-04-08T05:51:00"},
+      {"id":"2026-04-08_00-10-build","label":"2026-04-08 00:10","folder":"2026-04-08_00-10-build","url":"./2026-04-08_00-10-build/index.html","createdAt":"2026-04-08T00:10:00"}
+    ];
+
     async function loadReports() {
       try {
         statusLabelEl.textContent = "Cargando datos de reportes…";
         statusCountEl.textContent = "";
         historySubtitleEl.textContent = "Cargando historial…";
 
-        // Datos incluidos directamente para evitar problemas de CORS
-        const data = [
-          {"id":"2026-04-10_13-28-build","label":"2026-04-10 13:28","folder":"2026-04-10_13-28-build","url":"./2026-04-10_13-28-build/index.html","createdAt":"2026-04-10T13:28:20"},
-          {"id":"2026-04-10_03-27-build","label":"2026-04-10 03:27","folder":"2026-04-10_03-27-build","url":"./2026-04-10_03-27-build/index.html","createdAt":"2026-04-10T03:27:06"},
-          {"id":"2026-04-09_15-29-build","label":"2026-04-09 15:29","folder":"2026-04-09_15-29-build","url":"./2026-04-09_15-29-build/index.html","createdAt":"2026-04-09T15:29:05"},
-          {"id":"2026-04-08_20-28-build","label":"2026-04-08 20:28","folder":"2026-04-08_20-28-build","url":"./2026-04-08_20-28-build/index.html","createdAt":"2026-04-08T20:28:44"},
-          {"id":"2026-04-08_19-37-build","label":"2026-04-08 19:37","folder":"2026-04-08_19-37-build","url":"./2026-04-08_19-37-build/index.html","createdAt":"2026-04-08T19:37:00"},
-          {"id":"2026-04-08_17-39-build","label":"2026-04-08 17:39","folder":"2026-04-08_17-39-build","url":"./2026-04-08_17-39-build/index.html","createdAt":"2026-04-08T17:39:25"},
-          {"id":"2026-04-08_09-53-build","label":"2026-04-08 09:53","folder":"2026-04-08_09-53-build","url":"./2026-04-08_09-53-build/index.html","createdAt":"2026-04-08T09:53:43"},
-          {"id":"2026-04-08_09-18-build","label":"2026-04-08 09:18","folder":"2026-04-08_09-18-build","url":"./2026-04-08_09-18-build/index.html","createdAt":"2026-04-08T09:18:00"},
-          {"id":"2026-04-08_05-51-build","label":"2026-04-08 05:51","folder":"2026-04-08_05-51-build","url":"./2026-04-08_05-51-build/index.html","createdAt":"2026-04-08T05:51:00"},
-          {"id":"2026-04-08_00-10-build","label":"2026-04-08 00:10","folder":"2026-04-08_00-10-build","url":"./2026-04-08_00-10-build/index.html","createdAt":"2026-04-08T00:10:00"},
-          {"id":"2026-04-07_22-23-build","label":"2026-04-07 22:23","folder":"2026-04-07_22-23-build","url":"./2026-04-07_22-23-build/index.html","createdAt":"2026-04-07T22:23:00"},
-          {"id":"2026-04-07_20-58-build","label":"2026-04-07 20:58","folder":"2026-04-07_20-58-build","url":"./2026-04-07_20-58-build/index.html","createdAt":"2026-04-07T20:58:00"},
-          {"id":"2026-04-07_19-29-build","label":"2026-04-07 19:29","folder":"2026-04-07_19-29-build","url":"./2026-04-07_19-29-build/index.html","createdAt":"2026-04-07T19:29:00"},
-          {"id":"2026-04-07_19-15-build","label":"2026-04-07 19:15","folder":"2026-04-07_19-15-build","url":"./2026-04-07_19-15-build/index.html","createdAt":"2026-04-07T19:15:00"},
-          {"id":"2026-04-07_17-25-build","label":"2026-04-07 17:25","folder":"2026-04-07_17-25-build","url":"./2026-04-07_17-25-build/index.html","createdAt":"2026-04-07T17:25:00"},
-          {"id":"2026-04-07_17-12-build","label":"2026-04-07 17:12","folder":"2026-04-07_17-12-build","url":"./2026-04-07_17-12-build/index.html","createdAt":"2026-04-07T17:12:00"},
-          {"id":"2026-04-07_16-47-build","label":"2026-04-07 16:47","folder":"2026-04-07_16-47-build","url":"./2026-04-07_16-47-build/index.html","createdAt":"2026-04-07T16:47:00"},
-          {"id":"2026-04-07_10-21-build","label":"2026-04-07 10:21","folder":"2026-04-07_10-21-build","url":"./2026-04-07_10-21-build/index.html","createdAt":"2026-04-07T10:21:00"},
-          {"id":"2026-04-07_03-59-build","label":"2026-04-07 03:59","folder":"2026-04-07_03-59-build","url":"./2026-04-07_03-59-build/index.html","createdAt":"2026-04-07T03:59:00"},
-          {"id":"2026-04-07_03-53-build","label":"2026-04-07 03:53","folder":"2026-04-07_03-53-build","url":"./2026-04-07_03-53-build/index.html","createdAt":"2026-04-07T03:53:00"},
-          {"id":"2026-04-06_21-35-build","label":"2026-04-06 21:35","folder":"2026-04-06_21-35-build","url":"./2026-04-06_21-35-build/index.html","createdAt":"2026-04-06T21:35:00"},
-          {"id":"2026-04-06_19-18-build","label":"2026-04-06 19:18","folder":"2026-04-06_19-18-build","url":"./2026-04-06_19-18-build/index.html","createdAt":"2026-04-06T19:18:00"},
-          {"id":"2026-04-06_19-12-build","label":"2026-04-06 19:12","folder":"2026-04-06_19-12-build","url":"./2026-04-06_19-12-build/index.html","createdAt":"2026-04-06T19:12:00"},
-          {"id":"2026-04-06_18-59-build","label":"2026-04-06 18:59","folder":"2026-04-06_18-59-build","url":"./2026-04-06_18-59-build/index.html","createdAt":"2026-04-06T18:59:00"},
-          {"id":"2026-04-06_04-48-build","label":"2026-04-06 04:48","folder":"2026-04-06_04-48-build","url":"./2026-04-06_04-48-build/index.html","createdAt":"2026-04-06T04:48:00"},
-          {"id":"2026-04-06_04-33-build","label":"2026-04-06 04:33","folder":"2026-04-06_04-33-build","url":"./2026-04-06_04-33-build/index.html","createdAt":"2026-04-06T04:33:00"},
-          {"id":"2026-04-05_16-32-build","label":"2026-04-05 16:32","folder":"2026-04-05_16-32-build","url":"./2026-04-05_16-32-build/index.html","createdAt":"2026-04-05T16:32:00"},
-          {"id":"2026-04-05_13-14-build","label":"2026-04-05 13:14","folder":"2026-04-05_13-14-build","url":"./2026-04-05_13-14-build/index.html","createdAt":"2026-04-05T13:14:00"},
-          {"id":"2026-04-03_23-08-build","label":"2026-04-03 23:08","folder":"2026-04-03_23-08-build","url":"./2026-04-03_23-08-build/index.html","createdAt":"2026-04-03T23:08:00"},
-          {"id":"2026-04-02_09-56-build","label":"2026-04-02 09:56","folder":"2026-04-02_09-56-build","url":"./2026-04-02_09-56-build/index.html","createdAt":"2026-04-02T09:56:00"},
-          {"id":"2026-04-01_11-19-build","label":"2026-04-01 11:19","folder":"2026-04-01_11-19-build","url":"./2026-04-01_11-19-build/index.html","createdAt":"2026-04-01T11:19:00"},
-          {"id":"2026-04-01_06-05-build","label":"2026-04-01 06:05","folder":"2026-04-01_06-05-build","url":"./2026-04-01_06-05-build/index.html","createdAt":"2026-04-01T06:05:00"},
-          {"id":"2026-04-01_05-21-build","label":"2026-04-01 05:21","folder":"2026-04-01_05-21-build","url":"./2026-04-01_05-21-build/index.html","createdAt":"2026-04-01T05:21:00"},
-          {"id":"2026-04-01_04-55-build","label":"2026-04-01 04:55","folder":"2026-04-01_04-55-build","url":"./2026-04-01_04-55-build/index.html","createdAt":"2026-04-01T04:55:00"},
-          {"id":"2026-03-27_23-06-build","label":"2026-03-27 23:06","folder":"2026-03-27_23-06-build","url":"./2026-03-27_23-06-build/index.html","createdAt":"2026-03-27T23:06:00"},
-          {"id":"2026-03-27_02-06-build","label":"2026-03-27 02:06","folder":"2026-03-27_02-06-build","url":"./2026-03-27_02-06-build/index.html","createdAt":"2026-03-27T02:06:00"},
-          {"id":"2026-03-26_22-30-build","label":"2026-03-26 22:30","folder":"2026-03-26_22-30-build","url":"./2026-03-26_22-30-build/index.html","createdAt":"2026-03-26T22:30:00"},
-          {"id":"2026-03-26_19-30-build","label":"2026-03-26 19:30","folder":"2026-03-26_19-30-build","url":"./2026-03-26_19-30-build/index.html","createdAt":"2026-03-26T19:30:00"},
-          {"id":"2026-03-26_16-36-build","label":"2026-03-26 16:36","folder":"2026-03-26_16-36-build","url":"./2026-03-26_16-36-build/index.html","createdAt":"2026-03-26T16:36:00"},
-          {"id":"2026-03-26_16-08-build","label":"2026-03-26 16:08","folder":"2026-03-26_16-08-build","url":"./2026-03-26_16-08-build/index.html","createdAt":"2026-03-26T16:08:00"},
-          {"id":"2026-03-26_15-47-build","label":"2026-03-26 15:47","folder":"2026-03-26_15-47-build","url":"./2026-03-26_15-47-build/index.html","createdAt":"2026-03-26T15:47:00"},
-          {"id":"2026-03-26_15-28-build","label":"2026-03-26 15:28","folder":"2026-03-26_15-28-build","url":"./2026-03-26_15-28-build/index.html","createdAt":"2026-03-26T15:28:00"},
-          {"id":"2026-03-26_13-08-build","label":"2026-03-26 13:08","folder":"2026-03-26_13-08-build","url":"./2026-03-26_13-08-build/index.html","createdAt":"2026-03-26T13:08:00"},
-          {"id":"2026-03-26_12-19-build","label":"2026-03-26 12:19","folder":"2026-03-26_12-19-build","url":"./2026-03-26_12-19-build/index.html","createdAt":"2026-03-26T12:19:00"},
-          {"id":"2026-03-17_23-02-build","label":"2026-03-17 23:02","folder":"2026-03-17_23-02-build","url":"./2026-03-17_23-02-build/index.html","createdAt":"2026-03-17T23:02:00"},
-          {"id":"2026-03-17_19-49-build","label":"2026-03-17 19:49","folder":"2026-03-17_19-49-build","url":"./2026-03-17_19-49-build/index.html","createdAt":"2026-03-17T19:49:00"},
-          {"id":"2026-03-08_07-52-build","label":"2026-03-08 07:52","folder":"2026-03-08_07-52-build","url":"./2026-03-08_07-52-build/index.html","createdAt":"2026-03-08T07:52:00"},
-          {"id":"2026-02-20_09-33-build","label":"2026-02-20 09:33","folder":"2026-02-20_09-33-build","url":"./2026-02-20_09-33-build/index.html","createdAt":"2026-02-20T09:33:00"},
-          {"id":"2025-12-23_07-50-build","label":"2025-12-23 07:50","folder":"2025-12-23_07-50-build","url":"./2025-12-23_07-50-build/index.html","createdAt":"2025-12-23T07:50:00"},
-          {"id":"2025-12-18_08-31-build","label":"2025-12-18 08:31","folder":"2025-12-18_08-31-build","url":"./2025-12-18_08-31-build/index.html","createdAt":"2025-12-18T08:31:00"},
-          {"id":"2025-12-17_00-23-build","label":"2025-12-17 00:23","folder":"2025-12-17_00-23-build","url":"./2025-12-17_00-23-build/index.html","createdAt":"2025-12-17T00:23:00"},
-          {"id":"2025-12-15_22-50-build","label":"2025-12-15 22:50","folder":"2025-12-15_22-50-build","url":"./2025-12-15_22-50-build/index.html","createdAt":"2025-12-15T22:50:00"},
-          {"id":"2025-12-15_07-02-build","label":"2025-12-15 07:02","folder":"2025-12-15_07-02-build","url":"./2025-12-15_07-02-build/index.html","createdAt":"2025-12-15T07:02:00"},
-          {"id":"2025-12-11_02-21-build","label":"2025-12-11 02:21","folder":"2025-12-11_02-21-build","url":"./2025-12-11_02-21-build/index.html","createdAt":"2025-12-11T02:21:00"},
-          {"id":"2025-11-27_21-43-build","label":"2025-11-27 21:43","folder":"2025-11-27_21-43-build","url":"./2025-11-27_21-43-build/index.html","createdAt":"2025-11-27T21:43:00"},
-          {"id":"2025-11-27_21-39-build","label":"2025-11-27 21:39","folder":"2025-11-27_21-39-build","url":"./2025-11-27_21-39-build/index.html","createdAt":"2025-11-27T21:39:00"},
-          {"id":"2025-11-27_21-15-build","label":"2025-11-27 21:15","folder":"2025-11-27_21-15-build","url":"./2025-11-27_21-15-build/index.html","createdAt":"2025-11-27T21:15:00"},
-          {"id":"2025-11-27_21-12-build","label":"2025-11-27 21:12","folder":"2025-11-27_21-12-build","url":"./2025-11-27_21-12-build/index.html","createdAt":"2025-11-27T21:12:00"},
-          {"id":"2025-11-27_17-57-build","label":"2025-11-27 17:57","folder":"2025-11-27_17-57-build","url":"./2025-11-27_17-57-build/index.html","createdAt":"2025-11-27T17:57:00"},
-          {"id":"2025-11-27_01-23-build","label":"2025-11-27 01:23","folder":"2025-11-27_01-23-build","url":"./2025-11-27_01-23-build/index.html","createdAt":"2025-11-27T01:23:00"},
-          {"id":"2025-11-24_22-40-build","label":"2025-11-24 22:40","folder":"2025-11-24_22-40-build","url":"./2025-11-24_22-40-build/index.html","createdAt":"2025-11-24T22:40:00"},
-          {"id":"2025-11-24_21-38-build","label":"2025-11-24 21:38","folder":"2025-11-24_21-38-build","url":"./2025-11-24_21-38-build/index.html","createdAt":"2025-11-24T21:38:00"},
-          {"id":"2025-11-24_21-28-build","label":"2025-11-24 21:28","folder":"2025-11-24_21-28-build","url":"./2025-11-24_21-28-build/index.html","createdAt":"2025-11-24T21:28:00"},
-          {"id":"2025-11-24_21-22-build","label":"2025-11-24 21:22","folder":"2025-11-24_21-22-build","url":"./2025-11-24_21-22-build/index.html","createdAt":"2025-11-24T21:22:00"},
-          {"id":"2025-11-23_10-41-build","label":"2025-11-23 10:41","folder":"2025-11-23_10-41-build","url":"./2025-11-23_10-41-build/index.html","createdAt":"2025-11-23T10:41:00"},
-          {"id":"2025-11-23_01-18-build","label":"2025-11-23 01:18","folder":"2025-11-23_01-18-build","url":"./2025-11-23_01-18-build/index.html","createdAt":"2025-11-23T01:18:00"},
-          {"id":"2025-11-22_22-25-build","label":"2025-11-22 22:25","folder":"2025-11-22_22-25-build","url":"./2025-11-22_22-25-build/index.html","createdAt":"2025-11-22T22:25:00"},
-          {"id":"2025-11-22_22-07-build","label":"2025-11-22 22:07","folder":"2025-11-22_22-07-build","url":"./2025-11-22_22-07-build/index.html","createdAt":"2025-11-22T22:07:00"},
-          {"id":"2025-11-22_21-44-build","label":"2025-11-22 21:44","folder":"2025-11-22_21-44-build","url":"./2025-11-22_21-44-build/index.html","createdAt":"2025-11-22T21:44:00"},
-          {"id":"2025-11-22_20-56-build","label":"2025-11-22 20:56","folder":"2025-11-22_20-56-build","url":"./2025-11-22_20-56-build/index.html","createdAt":"2025-11-22T20:56:00"},
-          {"id":"2025-11-22_20-40-build","label":"2025-11-22 20:40","folder":"2025-11-22_20-40-build","url":"./2025-11-22_20-40-build/index.html","createdAt":"2025-11-22T20:40:00"},
-          {"id":"2025-11-22_20-20-build","label":"2025-11-22 20:20","folder":"2025-11-22_20-20-build","url":"./2025-11-22_20-20-build/index.html","createdAt":"2025-11-22T20:20:00"},
-          {"id":"2025-11-22_20-06-build","label":"2025-11-22 20:06","folder":"2025-11-22_20-06-build","url":"./2025-11-22_20-06-build/index.html","createdAt":"2025-11-22T20:06:00"},
-          {"id":"2025-11-22_19-30-build","label":"2025-11-22 19:30","folder":"2025-11-22_19-30-build","url":"./2025-11-22_19-30-build/index.html","createdAt":"2025-11-22T19:30:00"},
-          {"id":"2025-11-22_19-26-build","label":"2025-11-22 19:26","folder":"2025-11-22_19-26-build","url":"./2025-11-22_19-26-build/index.html","createdAt":"2025-11-22T19:26:00"}
-        ];
+        let data = [];
 
-        reports = data;
+        try {
+          const response = await fetch("./reports.json", { cache: "no-store" });
+          if (!response.ok) {
+            throw new Error(`No se pudo leer reports.json (${response.status})`);
+          }
+
+          const remoteData = await response.json();
+          if (!Array.isArray(remoteData)) {
+            throw new Error("reports.json no contiene un arreglo válido");
+          }
+
+          data = remoteData;
+          historyMessageEl.textContent = "Histórico cargado desde reports.json.";
+        } catch (fetchError) {
+          console.warn("No se pudo cargar reports.json; usando datos de respaldo.", fetchError);
+          data = FALLBACK_REPORTS;
+          historyMessageEl.textContent = "No se pudo leer reports.json en este contexto; se muestran datos de respaldo.";
+        }
+
+        reports = [...data].sort((left, right) => {
+          const leftDate = getReportMomentColombia(left);
+          const rightDate = getReportMomentColombia(right);
+
+          const leftValue = leftDate && typeof leftDate.valueOf === "function" ? leftDate.valueOf() : 0;
+          const rightValue = rightDate && typeof rightDate.valueOf === "function" ? rightDate.valueOf() : 0;
+
+          return rightValue - leftValue;
+        });
         filteredReports = [...reports];
 
         if (!reports.length) {
@@ -866,7 +838,7 @@
         latestSubtitleEl.textContent = "Error al cargar datos.";
         historySubtitleEl.textContent = "Error de carga.";
         historyMessageEl.textContent =
-          "Verifica la conexión o que el archivo reports.json sea válido.";
+          "Verifica que reports.json exista y tenga un arreglo JSON válido.";
       }
     }
 
@@ -912,5 +884,4 @@
     setInterval(updateTimeAgo, 60000); // 60 segundos = 1 minuto
   </script>
 </body>
-</html>
 </html>
