@@ -1,0 +1,12 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Subiendo archivo de cotizacion...
+Runtime de cotizacion disponible en: D:\a\1\s\results\cotizacion_masiva_runtime.xlsx
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\results\cotizacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\1775984217087-5vxit0\detalle_cotizacion.xlsx
+Archivo descargado usado para comparacion: D:\a\1\s\tmp_downloads\1775984217087-5vxit0\detalle_cotizacion.xlsx
+Los datos no coinciden por: Faltan 1 fila(s) esperada(s). Ejemplo: {"mensajes":"cotizacion radicada exitosamente","nombre dato":"el causante: <id>"} Sobran 27 fila(s) descargada(s). Ejemplo: {"mensajes":"solo se permite crear nueva cotizacion si las existentes estan en estado: rechazada, anulada, no vigente o no cotizada (fila 11)","nombre dato":"regla 14 - <id> - cotizacion existente"} | {"mensajes":"solo se permite crear nueva cotizacion si las existentes estan en estado: rechazada, anulada, no vigente o no cotizada (fila 13)","nombre dato":"regla 14 - <id> - cotizacion existente"}
+Detalle completo: Error: Faltan 1 fila(s) esperada(s). Ejemplo: {"mensajes":"cotizacion radicada exitosamente","nombre dato":"el causante: <id>"} Sobran 27 fila(s) descargada(s). Ejemplo: {"mensajes":"solo se permite crear nueva cotizacion si las existentes estan en estado: rechazada, anulada, no vigente o no cotizada (fila 11)","nombre dato":"regla 14 - <id> - cotizacion existente"} | {"mensajes":"solo se permite crear nueva cotizacion si las existentes estan en estado: rechazada, anulada, no vigente o no cotizada (fila 13)","nombre dato":"regla 14 - <id> - cotizacion existente"}
