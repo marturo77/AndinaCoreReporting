@@ -1,0 +1,69 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Selecciono boton Actualizar calculos...
+Subiendo archivo de calculos...
+Archivo de calculos generado en: D:\a\1\s\datasets\cotizacion\calculos.csv
+Filas generadas para calculos: 28
+Contexto establecido con cotizaciones: COT-00057362, COT-00057372, COT-00057367, COT-00057376, COT-00057368, COT-00057373, COT-00057382, COT-00057374, COT-00057369, COT-00057365, COT-00057378, COT-00057377, COT-00057370, COT-00057364, COT-00057380, COT-00057371, COT-00057360, COT-00057379, COT-00057361, COT-00057386, COT-00057366, COT-00057383, COT-00057375, COT-00057363, COT-00057381, COT-00057385, COT-00057384, COT-00057387
+No se detecto boton visible de Cargar; se espera que el cargue inicie automaticamente.
+Proceso de subida finalizado correctamente
+Navego a la pagina de consulta de cotizacion
+Buscando numero de cotizacion generada para cada grupo y validando estado 'COTIZADA'...
+Resultado detectado para causante 5800000066: cotizacion COT-00057362, estado COTIZADA, tiempo 28.66 s.
+Progreso de validacion: 4% (1/28)
+Resultado detectado para causante 5800000068: cotizacion COT-00057372, estado COTIZADA, tiempo 13.00 s.
+Progreso de validacion: 7% (2/28)
+Resultado detectado para causante 5800000070: cotizacion COT-00057367, estado COTIZADA, tiempo 13.90 s.
+Progreso de validacion: 11% (3/28)
+Resultado detectado para causante 5800000072: cotizacion COT-00057376, estado COTIZADA, tiempo 13.39 s.
+Progreso de validacion: 14% (4/28)
+Resultado detectado para causante 5800000074: cotizacion COT-00057368, estado COTIZADA, tiempo 13.84 s.
+Progreso de validacion: 18% (5/28)
+Resultado detectado para causante 5800000076: cotizacion COT-00057373, estado COTIZADA, tiempo 13.43 s.
+Progreso de validacion: 21% (6/28)
+Resultado detectado para causante 5800000078: cotizacion COT-00057382, estado COTIZADA, tiempo 12.86 s.
+Progreso de validacion: 25% (7/28)
+Resultado detectado para causante 5800000080: cotizacion COT-00057374, estado COTIZADA, tiempo 13.09 s.
+Progreso de validacion: 29% (8/28)
+Resultado detectado para causante 5800000082: cotizacion COT-00057369, estado COTIZADA, tiempo 13.84 s.
+Progreso de validacion: 32% (9/28)
+Resultado detectado para causante 5800000085: cotizacion COT-00057365, estado COTIZADA, tiempo 13.64 s.
+Progreso de validacion: 36% (10/28)
+Resultado detectado para causante 5800000087: cotizacion COT-00057378, estado COTIZADA, tiempo 14.06 s.
+Progreso de validacion: 39% (11/28)
+Resultado detectado para causante 5800000090: cotizacion COT-00057377, estado COTIZADA, tiempo 13.86 s.
+Progreso de validacion: 43% (12/28)
+Resultado detectado para causante 5800000094: cotizacion COT-00057370, estado COTIZADA, tiempo 13.55 s.
+Progreso de validacion: 46% (13/28)
+Resultado detectado para causante 5800000096: cotizacion COT-00057364, estado COTIZADA, tiempo 13.81 s.
+Progreso de validacion: 50% (14/28)
+Resultado detectado para causante 5800000098: cotizacion COT-00057380, estado COTIZADA, tiempo 13.48 s.
+Progreso de validacion: 54% (15/28)
+Resultado detectado para causante 5800000100: cotizacion COT-00057371, estado COTIZADA, tiempo 14.06 s.
+Progreso de validacion: 57% (16/28)
+Resultado detectado para causante 5800000102: cotizacion COT-00057360, estado COTIZADA, tiempo 13.47 s.
+Progreso de validacion: 61% (17/28)
+Resultado detectado para causante 5800000104: cotizacion COT-00057379, estado COTIZADA, tiempo 14.03 s.
+Progreso de validacion: 64% (18/28)
+Resultado detectado para causante 5800000106: cotizacion COT-00057361, estado COTIZADA, tiempo 13.06 s.
+Progreso de validacion: 68% (19/28)
+Resultado detectado para causante 5800000108: cotizacion COT-00057386, estado COTIZADA, tiempo 13.06 s.
+Progreso de validacion: 71% (20/28)
+Resultado detectado para causante 5800000110: cotizacion COT-00057366, estado COTIZADA, tiempo 13.66 s.
+Progreso de validacion: 75% (21/28)
+Resultado detectado para causante 5800000112: cotizacion COT-00057383, estado COTIZADA, tiempo 13.15 s.
+Progreso de validacion: 79% (22/28)
+Resultado detectado para causante 5800000114: cotizacion COT-00057375, estado COTIZADA, tiempo 13.56 s.
+Progreso de validacion: 82% (23/28)
+Resultado detectado para causante 5800000117: cotizacion COT-00057363, estado COTIZADA, tiempo 12.97 s.
+Progreso de validacion: 86% (24/28)
+Resultado detectado para causante 5800000119: cotizacion COT-00057381, estado COTIZADA, tiempo 13.13 s.
+Progreso de validacion: 89% (25/28)
+Resultado detectado para causante 5800000122: cotizacion COT-00057385, estado COTIZADA, tiempo 12.99 s.
+Progreso de validacion: 93% (26/28)
+Resultado detectado para causante 5800000125: cotizacion COT-00057384, estado COTIZADA, tiempo 13.83 s.
+Progreso de validacion: 96% (27/28)
+Resultado detectado para causante 5800000166: cotizacion COT-00057387, estado COTIZADA, tiempo 13.30 s.
+Progreso de validacion: 100% (28/28)
+Total de cotizaciones procesadas: 28.
+la cotizacion ha cambiado el estado a COTIZADA
