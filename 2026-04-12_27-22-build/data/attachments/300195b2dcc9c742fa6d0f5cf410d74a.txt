@@ -1,0 +1,45 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+Abriendo la pagina de cotizacion...
+Subiendo archivo de contratacion...
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: C:\Proyectos\TestingCore\results\contratacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+La cotizacion aun no aparece como COTIZADA para contratacion. Reintentando en 15s (intento 2/3).
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: C:\Proyectos\TestingCore\results\contratacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+La cotizacion aun no aparece como COTIZADA para contratacion. Reintentando en 30s (intento 3/3).
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: C:\Proyectos\TestingCore\results\contratacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+La cotizacion sigue sin estado COTIZADA despues de los reintentos permitidos.
+Archivo de resultados descargado en: C:\Proyectos\TestingCore\tmp_downloads\1776009943853-436k4q\detalle_cargue_archivo_contratación.xlsx
+Se encontraron 30 errores de validacion en 34 registros:
+  1. No cotizada 5800050895: La cotización de este causante, no está en estado 'COTIZADA'  (fila 2)
+  2. No cotizada 5800050897: La cotización de este causante, no está en estado 'COTIZADA'  (fila 4)
+  3. No cotizada 5800050899: La cotización de este causante, no está en estado 'COTIZADA'  (fila 6)
+  4. No cotizada 5800050901: La cotización de este causante, no está en estado 'COTIZADA'  (fila 8)
+  5. No cotizada 5800050903: La cotización de este causante, no está en estado 'COTIZADA'  (fila 10)
+  6. No cotizada 5800050905: La cotización de este causante, no está en estado 'COTIZADA'  (fila 12)
+  7. No cotizada 5800050907: La cotización de este causante, no está en estado 'COTIZADA'  (fila 14)
+  8. No cotizada 5800050909: La cotización de este causante, no está en estado 'COTIZADA'  (fila 16)
+  9. No cotizada 5800050911: La cotización de este causante, no está en estado 'COTIZADA'  (fila 18)
+  10. No cotizada 5800050914: La cotización de este causante, no está en estado 'COTIZADA'  (fila 21)
+Sincronizando cotizaciones persistidas desde consulta...
+Resultado detectado para causante 5800050895: cotizacion COT-00057148, estado EMITIR PÓLIZA, tiempo 27.08 s.
+Resultado detectado para causante 5800050897: cotizacion COT-00057147, estado EMITIR PÓLIZA, tiempo 12.20 s.
+Resultado detectado para causante 5800050899: cotizacion COT-00057144, estado EMITIR PÓLIZA, tiempo 11.94 s.
+Resultado detectado para causante 5800050901: cotizacion COT-00057145, estado EMITIR PÓLIZA, tiempo 12.03 s.
+Resultado detectado para causante 5800050903: cotizacion COT-00057154, estado EMITIR PÓLIZA, tiempo 11.88 s.
+Resultado detectado para causante 5800050905: cotizacion COT-00057152, estado EMITIR PÓLIZA, tiempo 12.30 s.
+Resultado detectado para causante 5800050907: cotizacion COT-00057150, estado EMITIR PÓLIZA, tiempo 12.26 s.
+Resultado detectado para causante 5800050909: cotizacion COT-00057169, estado EMITIR PÓLIZA, tiempo 12.12 s.
+Resultado detectado para causante 5800050911: cotizacion COT-00057157, estado EMITIR PÓLIZA, tiempo 12.27 s.
+Resultado detectado para causante 5800050914: cotizacion COT-00057149, estado EMITIR PÓLIZA, tiempo 12.28 s.
+Resultado detectado para causante 5800050916: cotizacion COT-00057164, estado EMITIR PÓLIZA, tiempo 12.39 s.
+Resultado detectado para causante 5800050919: cotizacion COT-00057166, estado COTIZADA, tiempo 12.73 s.
+Resultado detectado para causante 5800050923: cotizacion COT-00057155, estado COTIZADA, tiempo 12.51 s.

@@ -1,0 +1,1 @@
+{"stats":{"total":20,"retries":20,"passed":14,"skipped":5,"failed":1},"status":"failed","newTests":[],"flakyTests":[],"retryTests":[],"name":"TestingCore","duration":3084672,"createdAt":1776028516676,"plugin":"Awesome","meta":{"reportId":"9732d6ed-91d6-44c4-92ca-eafe3e62e255","singleFile":false,"withTestResultsLinks":true},"pullRequestHref":"","jobHref":""}

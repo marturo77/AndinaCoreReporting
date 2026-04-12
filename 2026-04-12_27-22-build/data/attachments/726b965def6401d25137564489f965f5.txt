@@ -1,0 +1,92 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de Emision...
+Selecciono boton emision de polizas...
+Sincronizando cotizaciones persistidas desde consulta...
+Resultado detectado para causante 5800051626: cotizacion COT-00057403, estado EMITIR PÓLIZA, tiempo 27.19 s.
+Resultado detectado para causante 5800051628: cotizacion COT-00057411, estado EMITIR PÓLIZA, tiempo 11.96 s.
+Resultado detectado para causante 5800051630: cotizacion COT-00057393, estado EMITIR PÓLIZA, tiempo 11.91 s.
+Resultado detectado para causante 5800051632: cotizacion COT-00057388, estado EMITIR PÓLIZA, tiempo 12.14 s.
+Resultado detectado para causante 5800051634: cotizacion COT-00057413, estado EMITIR PÓLIZA, tiempo 12.01 s.
+Resultado detectado para causante 5800051636: cotizacion COT-00057391, estado EMITIR PÓLIZA, tiempo 12.35 s.
+Resultado detectado para causante 5800051638: cotizacion COT-00057404, estado EMITIR PÓLIZA, tiempo 11.98 s.
+Resultado detectado para causante 5800051640: cotizacion COT-00057412, estado EMITIR PÓLIZA, tiempo 12.17 s.
+Resultado detectado para causante 5800051642: cotizacion COT-00057398, estado EMITIR PÓLIZA, tiempo 12.31 s.
+Resultado detectado para causante 5800051645: cotizacion COT-00057402, estado EMITIR PÓLIZA, tiempo 12.39 s.
+Resultado detectado para causante 5800051647: cotizacion COT-00057390, estado EMITIR PÓLIZA, tiempo 12.07 s.
+Resultado detectado para causante 5800051650: cotizacion COT-00057409, estado EMITIR PÓLIZA, tiempo 12.21 s.
+Resultado detectado para causante 5800051654: cotizacion COT-00057389, estado EMITIR PÓLIZA, tiempo 12.27 s.
+Resultado detectado para causante 5800051656: cotizacion COT-00057394, estado EMITIR PÓLIZA, tiempo 11.91 s.
+Resultado detectado para causante 5800051658: cotizacion COT-00057408, estado EMITIR PÓLIZA, tiempo 11.92 s.
+Resultado detectado para causante 5800051660: cotizacion COT-00057395, estado EMITIR PÓLIZA, tiempo 12.20 s.
+Resultado detectado para causante 5800051662: cotizacion COT-00057392, estado EMITIR PÓLIZA, tiempo 12.09 s.
+Resultado detectado para causante 5800051664: cotizacion COT-00057405, estado EMITIR PÓLIZA, tiempo 12.18 s.
+Resultado detectado para causante 5800051666: cotizacion COT-00057410, estado EMITIR PÓLIZA, tiempo 12.14 s.
+Resultado detectado para causante 5800051668: cotizacion COT-00057414, estado EMITIR PÓLIZA, tiempo 12.12 s.
+Resultado detectado para causante 5800051670: cotizacion COT-00057400, estado EMITIR PÓLIZA, tiempo 12.34 s.
+Resultado detectado para causante 5800051672: cotizacion COT-00057396, estado EMITIR PÓLIZA, tiempo 11.77 s.
+Resultado detectado para causante 5800051674: cotizacion COT-00057399, estado EMITIR PÓLIZA, tiempo 12.03 s.
+Resultado detectado para causante 5800051677: cotizacion COT-00057397, estado EMITIR PÓLIZA, tiempo 12.44 s.
+Resultado detectado para causante 5800051679: cotizacion COT-00057401, estado EMITIR PÓLIZA, tiempo 11.88 s.
+Resultado detectado para causante 5800051682: cotizacion COT-00057406, estado EMITIR PÓLIZA, tiempo 13.05 s.
+Resultado detectado para causante 5800051685: cotizacion COT-00057407, estado EMITIR PÓLIZA, tiempo 12.02 s.
+Resultado detectado para causante 5800051726: cotizacion COT-00057415, estado EMITIR PÓLIZA, tiempo 12.70 s.
+Emitiendo poliza de la cotizacion COT-00057403
+Emitiendo poliza de la cotizacion COT-00057411
+Emitiendo poliza de la cotizacion COT-00057393
+Emitiendo poliza de la cotizacion COT-00057388
+Emitiendo poliza de la cotizacion COT-00057413
+Emitiendo poliza de la cotizacion COT-00057391
+Emitiendo poliza de la cotizacion COT-00057404
+Emitiendo poliza de la cotizacion COT-00057412
+Emitiendo poliza de la cotizacion COT-00057398
+Emitiendo poliza de la cotizacion COT-00057402
+Emitiendo poliza de la cotizacion COT-00057390
+Emitiendo poliza de la cotizacion COT-00057409
+Emitiendo poliza de la cotizacion COT-00057389
+Emitiendo poliza de la cotizacion COT-00057394
+Emitiendo poliza de la cotizacion COT-00057408
+Emitiendo poliza de la cotizacion COT-00057395
+Emitiendo poliza de la cotizacion COT-00057392
+Emitiendo poliza de la cotizacion COT-00057405
+Emitiendo poliza de la cotizacion COT-00057410
+Emitiendo poliza de la cotizacion COT-00057414
+Emitiendo poliza de la cotizacion COT-00057400
+Emitiendo poliza de la cotizacion COT-00057396
+Emitiendo poliza de la cotizacion COT-00057399
+Emitiendo poliza de la cotizacion COT-00057397
+Emitiendo poliza de la cotizacion COT-00057401
+Emitiendo poliza de la cotizacion COT-00057406
+Emitiendo poliza de la cotizacion COT-00057407
+Emitiendo poliza de la cotizacion COT-00057415
+se emiten las polizas a partir de las cotizaciones generadas
+Obteniendo numeros de polizas emitidas...
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012618', cotizacion: 'COT-00057403'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012619', cotizacion: 'COT-00057411'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012620', cotizacion: 'COT-00057393'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012621', cotizacion: 'COT-00057388'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012622', cotizacion: 'COT-00057413'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012623', cotizacion: 'COT-00057391'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012624', cotizacion: 'COT-00057404'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012625', cotizacion: 'COT-00057412'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012626', cotizacion: 'COT-00057398'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012627', cotizacion: 'COT-00057402'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012628', cotizacion: 'COT-00057390'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012629', cotizacion: 'COT-00057409'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012630', cotizacion: 'COT-00057389'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012631', cotizacion: 'COT-00057394'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012632', cotizacion: 'COT-00057408'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012633', cotizacion: 'COT-00057395'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012634', cotizacion: 'COT-00057392'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012635', cotizacion: 'COT-00057405'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012636', cotizacion: 'COT-00057410'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012637', cotizacion: 'COT-00057414'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012638', cotizacion: 'COT-00057400'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012639', cotizacion: 'COT-00057396'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012640', cotizacion: 'COT-00057399'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012641', cotizacion: 'COT-00057397'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012642', cotizacion: 'COT-00057401'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012643', cotizacion: 'COT-00057406'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012644', cotizacion: 'COT-00057407'
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00012645', cotizacion: 'COT-00057415'
+Todo okis. Total de cotizaciones procesadas: 28.
+se obtienen los numeros de polizas emitidas
