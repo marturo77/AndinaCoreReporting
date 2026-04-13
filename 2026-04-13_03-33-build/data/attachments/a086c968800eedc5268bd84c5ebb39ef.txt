@@ -1,0 +1,66 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+PAGINA CARGADA: COTIZACION
+Subiendo archivo de cotizacion...
+Runtime de cotizacion disponible en: D:\a\1\s\results\cotizacion_masiva_runtime.xlsx
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\results\cotizacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+PAGINA CARGADA: CONSULTA COTIZACIONES
+Buscando numero de cotizacion generada para cada grupo y validando estado 'RADICADA'...
+Resultado detectado para causante 5800065292: cotizacion COT-00057583, estado RADICADA, tiempo 30.35 s.
+Progreso de validacion: 4% (1/27)
+Resultado detectado para causante 5800065294: cotizacion COT-00057585, estado RADICADA, tiempo 13.71 s.
+Progreso de validacion: 7% (2/27)
+Resultado detectado para causante 5800065296: cotizacion COT-00057581, estado RADICADA, tiempo 14.27 s.
+Progreso de validacion: 11% (3/27)
+Resultado detectado para causante 5800065298: cotizacion COT-00057587, estado RADICADA, tiempo 14.41 s.
+Progreso de validacion: 15% (4/27)
+Resultado detectado para causante 5800065300: cotizacion COT-00057593, estado RADICADA, tiempo 13.82 s.
+Progreso de validacion: 19% (5/27)
+Resultado detectado para causante 5800065302: cotizacion COT-00057600, estado RADICADA, tiempo 13.74 s.
+Progreso de validacion: 22% (6/27)
+Resultado detectado para causante 5800065304: cotizacion COT-00057589, estado RADICADA, tiempo 13.34 s.
+Progreso de validacion: 26% (7/27)
+Resultado detectado para causante 5800065306: cotizacion COT-00057590, estado RADICADA, tiempo 13.53 s.
+Progreso de validacion: 30% (8/27)
+Resultado detectado para causante 5800065308: cotizacion COT-00057594, estado RADICADA, tiempo 13.44 s.
+Progreso de validacion: 33% (9/27)
+Resultado detectado para causante 5800065311: cotizacion COT-00057599, estado RADICADA, tiempo 14.60 s.
+Progreso de validacion: 37% (10/27)
+Resultado detectado para causante 5800065313: cotizacion COT-00057601, estado RADICADA, tiempo 13.94 s.
+Progreso de validacion: 41% (11/27)
+Resultado detectado para causante 5800065316: cotizacion COT-00057604, estado RADICADA, tiempo 13.56 s.
+Progreso de validacion: 44% (12/27)
+Resultado detectado para causante 5800065320: cotizacion COT-00057586, estado RADICADA, tiempo 13.54 s.
+Progreso de validacion: 48% (13/27)
+Resultado detectado para causante 5800065322: cotizacion COT-00057591, estado RADICADA, tiempo 13.03 s.
+Progreso de validacion: 52% (14/27)
+Resultado detectado para causante 5800065324: cotizacion COT-00057584, estado RADICADA, tiempo 13.16 s.
+Progreso de validacion: 56% (15/27)
+Resultado detectado para causante 5800065326: cotizacion COT-00057588, estado RADICADA, tiempo 13.40 s.
+Progreso de validacion: 59% (16/27)
+Resultado detectado para causante 5800065328: cotizacion COT-00057596, estado RADICADA, tiempo 12.91 s.
+Progreso de validacion: 63% (17/27)
+Resultado detectado para causante 5800065330: cotizacion COT-00057603, estado RADICADA, tiempo 13.77 s.
+Progreso de validacion: 67% (18/27)
+Resultado detectado para causante 5800065332: cotizacion COT-00057597, estado RADICADA, tiempo 13.59 s.
+Progreso de validacion: 70% (19/27)
+Resultado detectado para causante 5800065334: cotizacion COT-00057592, estado RADICADA, tiempo 13.62 s.
+Progreso de validacion: 74% (20/27)
+Resultado detectado para causante 5800065336: cotizacion COT-00057595, estado RADICADA, tiempo 13.05 s.
+Progreso de validacion: 78% (21/27)
+Resultado detectado para causante 5800065338: cotizacion COT-00057602, estado RADICADA, tiempo 13.57 s.
+Progreso de validacion: 81% (22/27)
+Resultado detectado para causante 5800065340: cotizacion COT-00057598, estado RADICADA, tiempo 14.48 s.
+Progreso de validacion: 85% (23/27)
+Resultado detectado para causante 5800065343: cotizacion COT-00057582, estado RADICADA, tiempo 13.36 s.
+Progreso de validacion: 89% (24/27)
+Resultado detectado para causante 5800065345: cotizacion COT-00057606, estado RADICADA, tiempo 13.40 s.
+Progreso de validacion: 93% (25/27)
+Resultado detectado para causante 5800065348: cotizacion COT-00057607, estado RADICADA, tiempo 13.70 s.
+Progreso de validacion: 96% (26/27)
+Resultado detectado para causante 5800065351: cotizacion COT-00057605, estado RADICADA, tiempo 13.66 s.
+Progreso de validacion: 100% (27/27)
+Total de cotizaciones procesadas: 27.

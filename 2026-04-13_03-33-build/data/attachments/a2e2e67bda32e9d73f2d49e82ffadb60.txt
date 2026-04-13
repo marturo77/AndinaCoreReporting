@@ -1,0 +1,5 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+PAGINA CARGADA: PARAMETROS RESERVA MATEMATICA
+[PENDING] parametria sin datos disponibles
+[PENDING] Pagino el listado para ver todos los parametros (sin datos en modulo de parametria)
+[PENDING] Verifico que los archivos quedaron cargados (sin datos en modulo de parametria)
