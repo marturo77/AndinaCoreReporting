@@ -1,0 +1,34 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de Emision...
+Selecciono boton emision de polizas...
+PAGINA CARGADA: EMISION DE POLIZAS
+Sincronizando cotizaciones persistidas desde consulta...
+PAGINA CARGADA: CONSULTA COTIZACIONES
+Resultado detectado para causante 5800067885: cotizacion COT-00058037, estado EMITIR PÓLIZA, tiempo 49.22 s.
+Resultado detectado para causante 5800067887: cotizacion COT-00058044, estado EMITIR PÓLIZA, tiempo 13.98 s.
+Resultado detectado para causante 5800067889: cotizacion COT-00058038, estado EMITIR PÓLIZA, tiempo 13.22 s.
+Resultado detectado para causante 5800067891: cotizacion COT-00058035, estado EMITIR PÓLIZA, tiempo 12.79 s.
+Resultado detectado para causante 5800067893: cotizacion COT-00058036, estado EMITIR PÓLIZA, tiempo 12.49 s.
+Resultado detectado para causante 5800067895: cotizacion COT-00058045, estado EMITIR PÓLIZA, tiempo 12.88 s.
+Resultado detectado para causante 5800067897: cotizacion COT-00058041, estado EMITIR PÓLIZA, tiempo 13.53 s.
+Resultado detectado para causante 5800067899: cotizacion COT-00058055, estado EMITIR PÓLIZA, tiempo 13.01 s.
+Resultado detectado para causante 5800067901: cotizacion COT-00058040, estado EMITIR PÓLIZA, tiempo 12.97 s.
+Resultado detectado para causante 5800067904: cotizacion COT-00058034, estado EMITIR PÓLIZA, tiempo 13.25 s.
+Resultado detectado para causante 5800067906: cotizacion COT-00058048, estado EMITIR PÓLIZA, tiempo 12.99 s.
+Resultado detectado para causante 5800067909: cotizacion COT-00058043, estado EMITIR PÓLIZA, tiempo 12.88 s.
+Resultado detectado para causante 5800067913: cotizacion COT-00058056, estado EMITIR PÓLIZA, tiempo 12.50 s.
+Resultado detectado para causante 5800067915: cotizacion COT-00058039, estado EMITIR PÓLIZA, tiempo 12.91 s.
+Resultado detectado para causante 5800067917: cotizacion COT-00058046, estado EMITIR PÓLIZA, tiempo 13.62 s.
+Resultado detectado para causante 5800067919: cotizacion COT-00058049, estado EMITIR PÓLIZA, tiempo 13.45 s.
+Resultado detectado para causante 5800067921: cotizacion COT-00058047, estado EMITIR PÓLIZA, tiempo 13.93 s.
+Resultado detectado para causante 5800067923: cotizacion COT-00058052, estado EMITIR PÓLIZA, tiempo 13.25 s.
+Resultado detectado para causante 5800067925: cotizacion COT-00058060, estado EMITIR PÓLIZA, tiempo 13.45 s.
+Resultado detectado para causante 5800067927: cotizacion COT-00058050, estado EMITIR PÓLIZA, tiempo 13.17 s.
+Resultado detectado para causante 5800067929: cotizacion COT-00058057, estado EMITIR PÓLIZA, tiempo 13.24 s.
+Resultado detectado para causante 5800067931: cotizacion COT-00058051, estado EMITIR PÓLIZA, tiempo 12.84 s.
+Resultado detectado para causante 5800067933: cotizacion COT-00058042, estado EMITIR PÓLIZA, tiempo 12.88 s.
+Resultado detectado para causante 5800067936: cotizacion COT-00058053, estado EMITIR PÓLIZA, tiempo 13.48 s.
+Resultado detectado para causante 5800067938: cotizacion COT-00058054, estado EMITIR PÓLIZA, tiempo 13.42 s.
+Resultado detectado para causante 5800067941: cotizacion COT-00058058, estado EMITIR PÓLIZA, tiempo 13.47 s.
+Resultado detectado para causante 5800067944: cotizacion COT-00058059, estado EMITIR PÓLIZA, tiempo 13.28 s.
+Resultado detectado para causante 5800067946: cotizacion COT-00058061, estado EMITIR PÓLIZA, tiempo 13.21 s.
