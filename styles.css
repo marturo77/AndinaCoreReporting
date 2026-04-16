@@ -295,6 +295,16 @@ main {
   color: #1f4a1f;
 }
 
+.progress-badge {
+  background: linear-gradient(135deg, #eef6ff, #dbeafe);
+  border-color: #93c5fd;
+  color: #1e3a8a;
+}
+
+.progress-badge strong {
+  color: #1e3a8a;
+}
+
 /* Estilo en subtítulo para tiempo transcurrido */
 .time-ago {
   color: var(--primary-blue);
@@ -485,11 +495,27 @@ tbody tr:hover {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
+  width: 100%;
 }
 
 .link-table:hover {
   text-decoration: underline;
   color: var(--primary-blue-light);
+}
+
+.report-link-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.report-link-title {
+  color: inherit;
+}
+
+.report-link-meta {
+  font-size: 0.74rem;
+  color: var(--text-soft);
 }
 
 .folder-icon {

@@ -1,6 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-PAGINA CARGADA: PARAMETROS RESERVA MATEMATICA
-[PENDING] Parametro no visible para verificar archivo: TM_Validos
-[PENDING] Parametro no visible para verificar archivo: TM_Invalidos
-[PENDING] Parametro no visible para verificar archivo: TM_mejoramiento
-[PENDING] Parametro no visible para verificar archivo: TM_reduccion

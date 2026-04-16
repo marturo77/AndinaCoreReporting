@@ -366,6 +366,15 @@
       }
     }
 
+    function formatProgressPercent(report) {
+      const value = Number(report?.progressPercent);
+      if (!Number.isFinite(value)) {
+        return "N/D";
+      }
+
+      return `${value.toFixed(value % 1 === 0 ? 0 : 2)}%`;
+    }
+
     function renderLatest() {
       latestBodyEl.innerHTML = "";
 
@@ -390,6 +399,9 @@
           </span>
           <span class="badge time-badge">
             <strong>Publicado:</strong> ${timeAgo}
+          </span>
+          <span class="badge progress-badge">
+            <strong>Avance:</strong> ${formatProgressPercent(latest)}
           </span>
           <span class="badge">
             <strong>Total de reportes:</strong> ${reports.length}
@@ -431,7 +443,13 @@
         const a = document.createElement("a");
 
         const label = formatDateLabel(r); // hora local
-        a.innerHTML = `<span class="folder-icon">📁</span>${label}`;
+        a.innerHTML = `
+          <span class="folder-icon">📁</span>
+          <span class="report-link-content">
+            <span class="report-link-title">${label}</span>
+            <span class="report-link-meta">Avance: ${formatProgressPercent(r)}</span>
+          </span>
+        `;
         a.href = r.url || "#";
         a.target = "_blank";
         a.className = "link-table";
@@ -656,6 +674,8 @@
               <div class="calendar-report-id">${r.id}</div>
               <div class="calendar-report-meta">
                 <span>📊 Reporte #${index + 1}</span>
+                <span>•</span>
+                <span>Avance ${formatProgressPercent(r)}</span>
                 <span>•</span>
                 <span>${relativeTime}</span>
               </div>
