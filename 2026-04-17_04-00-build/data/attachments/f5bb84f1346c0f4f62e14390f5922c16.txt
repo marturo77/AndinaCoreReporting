@@ -1,0 +1,11 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[reservas] Abriendo la pantalla de parametros de producto reserva matematica.
+[reservas] Pantalla cargada: parametros de reserva matematica.
+[reservas] Captura inicial del listado de parametros registrada en Allure.
+[reservas] Inicio de creacion de vigencias. Total de registros: 1.
+[reservas] Procesando creacion de vigencia: parametro=NOTA TÉCNICA, periodo=2027-1, documento=nota_tecnica.pdf.
+[reservas] Adjuntando documento nota_tecnica.pdf para NOTA TÉCNICA periodo 2027-1.
+[reservas] Vigencia creada correctamente: parametro=NOTA TÉCNICA, periodo=2027-1.
+[reservas] Fin de creacion de vigencias del escenario actual.
+[reservas] Validando mensaje de confirmacion de la operacion actual.
+[reservas] Validacion de confirmacion completada.

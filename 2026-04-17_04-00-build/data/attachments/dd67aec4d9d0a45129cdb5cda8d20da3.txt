@@ -1,0 +1,894 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+resultado: [
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 1,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 2,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 3,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 4,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 5,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 6,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 7,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 8,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 9,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 10,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 11,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 12,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": "1, 11, 6",
+        "Numero de Grupo": 13,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": "1, 11",
+        "Numero de Grupo": 14,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "CORRECCIÓN DE DATOS",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 15,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 16,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 17,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 18,
+        "Origen": "VEJEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 19,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 20,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 21,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 22,
+        "Origen": "INVALIDEZ",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 23,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 24,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 25,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "ORIGEN LABORAL"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 26,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "SOLICITUD AFP"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 27,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "CESACIÓN INVALIDEZ"
+    },
+    {
+        "CP": 1,
+        "Numero de Grupo": 28,
+        "Origen": "SOBREVIVENCIA",
+        "Clasificacion de Cambio": "SOLICITUD DE PENSIONADO Y/O TERCERO",
+        "Tipo de Novedad": "REVERSIÓN",
+        "Causal Reversion": "FALLO JUDICIAL"
+    }
+]
+{
+  '1': {
+    valor_capital: 216713819,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072364',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 29617,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058741',
+    duracion_emision_ms: 31051,
+    duracion_emision: '31.05 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013310'
+  },
+  '2': {
+    valor_capital: 207005119,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072366',
+      numero_documento_anterior: '',
+      tipo_documento: 'CE',
+      fecha_nacimiento: 25026,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058740',
+    duracion_emision_ms: 23700,
+    duracion_emision: '23.70 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013311'
+  },
+  '3': {
+    valor_capital: 239125831,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072368',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 26414,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058739',
+    duracion_emision_ms: 23630,
+    duracion_emision: '23.63 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013312'
+  },
+  '4': {
+    valor_capital: 211868457,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072370',
+      numero_documento_anterior: '',
+      tipo_documento: 'PA',
+      fecha_nacimiento: 24590,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058742',
+    duracion_emision_ms: 24410,
+    duracion_emision: '24.41 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013313'
+  },
+  '5': {
+    valor_capital: 34374603,
+    valor_pension: 34374603,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072372',
+      numero_documento_anterior: '',
+      tipo_documento: 'CE',
+      fecha_nacimiento: 28131,
+      fecha_siniestro: 43196,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058743',
+    duracion_emision_ms: 24023,
+    duracion_emision: '24.02 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013314'
+  },
+  '6': {
+    valor_capital: 19594934,
+    valor_pension: 19594934,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072374',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 29716,
+      fecha_siniestro: 44726,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058744',
+    duracion_emision_ms: 23543,
+    duracion_emision: '23.54 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013315'
+  },
+  '7': {
+    valor_capital: 31540715,
+    valor_pension: 31540715,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072376',
+      numero_documento_anterior: '',
+      tipo_documento: 'PEP',
+      fecha_nacimiento: 36107,
+      fecha_siniestro: 42723,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058750',
+    duracion_emision_ms: 23667,
+    duracion_emision: '23.67 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013316'
+  },
+  '8': {
+    valor_capital: 26278582,
+    valor_pension: 26278582,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072378',
+      numero_documento_anterior: '',
+      tipo_documento: 'CE',
+      fecha_nacimiento: 26546,
+      fecha_siniestro: 44797,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058745',
+    duracion_emision_ms: 24046,
+    duracion_emision: '24.05 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013317'
+  },
+  '9': {
+    valor_capital: 3965169,
+    valor_pension: 3965169,
+    numero_mesadas: 13,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072380',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 29831,
+      fecha_siniestro: 45213,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058752',
+    duracion_emision_ms: 23645,
+    duracion_emision: '23.64 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013318'
+  },
+  '10': {
+    valor_capital: 6003815,
+    valor_pension: 6003815,
+    numero_mesadas: 14,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072383',
+      numero_documento_anterior: '',
+      tipo_documento: 'PTP',
+      fecha_nacimiento: 28538,
+      fecha_siniestro: 40493,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058762',
+    duracion_emision_ms: 23614,
+    duracion_emision: '23.61 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013319'
+  },
+  '11': {
+    valor_capital: 3285836,
+    valor_pension: 3285836,
+    numero_mesadas: 13,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072385',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 27209,
+      fecha_siniestro: 43499,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058749',
+    duracion_emision_ms: 24146,
+    duracion_emision: '24.15 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013320'
+  },
+  '12': {
+    valor_capital: 9452644,
+    valor_pension: 9452644,
+    numero_mesadas: 13,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072388',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 28927,
+      fecha_siniestro: 41345,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object], [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058763',
+    duracion_emision_ms: 23460,
+    duracion_emision: '23.46 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013321'
+  },
+  '13': {
+    valor_capital: 24940377,
+    valor_pension: 24940377,
+    numero_mesadas: 14,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072392',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 32723,
+      fecha_siniestro: 40107,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058747',
+    duracion_emision_ms: 145992,
+    duracion_emision: '2:25.992',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013322'
+  },
+  '14': {
+    valor_capital: 16940511,
+    valor_pension: 16940511,
+    numero_mesadas: 13,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072394',
+      numero_documento_anterior: '',
+      tipo_documento: 'PEP',
+      fecha_nacimiento: 31556,
+      fecha_siniestro: 43635,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058758',
+    duracion_emision_ms: 23609,
+    duracion_emision: '23.61 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013323'
+  },
+  '15': {
+    valor_capital: 228473464,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072396',
+      numero_documento_anterior: '',
+      tipo_documento: 'PA',
+      fecha_nacimiento: 24521,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058746',
+    duracion_emision_ms: 23312,
+    duracion_emision: '23.31 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013324'
+  },
+  '16': {
+    valor_capital: 200461995,
+    valor_pension: '',
+    numero_mesadas: 14,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072398',
+      numero_documento_anterior: '',
+      tipo_documento: 'PTP',
+      fecha_nacimiento: 25580,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058748',
+    duracion_emision_ms: 23176,
+    duracion_emision: '23.18 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013325'
+  },
+  '17': {
+    valor_capital: 204665032,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072400',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 26830,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058751',
+    duracion_emision_ms: 23627,
+    duracion_emision: '23.63 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013326'
+  },
+  '18': {
+    valor_capital: 232562755,
+    valor_pension: '',
+    numero_mesadas: 13,
+    origen_pension: 'VEJEZ',
+    causante: {
+      numero_documento: '5800072402',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 26127,
+      fecha_siniestro: '',
+      estado_salud: 'VALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058754',
+    duracion_emision_ms: 24363,
+    duracion_emision: '24.36 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013327'
+  },
+  '19': {
+    valor_capital: 30618296,
+    valor_pension: 30618296,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072404',
+      numero_documento_anterior: '',
+      tipo_documento: 'PEP',
+      fecha_nacimiento: 24772,
+      fecha_siniestro: 44778,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058765',
+    duracion_emision_ms: 23580,
+    duracion_emision: '23.58 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013328'
+  },
+  '20': {
+    valor_capital: 12234442,
+    valor_pension: 12234442,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072406',
+      numero_documento_anterior: '',
+      tipo_documento: 'CE',
+      fecha_nacimiento: 29843,
+      fecha_siniestro: 45148,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058759',
+    duracion_emision_ms: 23481,
+    duracion_emision: '23.48 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013329'
+  },
+  '21': {
+    valor_capital: 30731821,
+    valor_pension: 30731821,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072408',
+      numero_documento_anterior: '',
+      tipo_documento: 'PTP',
+      fecha_nacimiento: 24952,
+      fecha_siniestro: 43815,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058757',
+    duracion_emision_ms: 23094,
+    duracion_emision: '23.09 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013330'
+  },
+  '22': {
+    valor_capital: 18606090,
+    valor_pension: 18606090,
+    numero_mesadas: 13,
+    origen_pension: 'INVALIDEZ',
+    causante: {
+      numero_documento: '5800072410',
+      numero_documento_anterior: '',
+      tipo_documento: 'CE',
+      fecha_nacimiento: 29696,
+      fecha_siniestro: 44468,
+      estado_salud: 'INVALIDO',
+      tiene_derecho_cotizacion: 'S'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058756',
+    duracion_emision_ms: 23233,
+    duracion_emision: '23.23 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013331'
+  },
+  '23': {
+    valor_capital: 12128663,
+    valor_pension: 12128663,
+    numero_mesadas: 14,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072412',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 24233,
+      fecha_siniestro: 39902,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058755',
+    duracion_emision_ms: 24112,
+    duracion_emision: '24.11 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013332'
+  },
+  '24': {
+    valor_capital: 27040509,
+    valor_pension: 27040509,
+    numero_mesadas: 13,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072415',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 37019,
+      fecha_siniestro: 44055,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058761',
+    duracion_emision_ms: 23495,
+    duracion_emision: '23.50 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013333'
+  },
+  '25': {
+    valor_capital: 6183735,
+    valor_pension: 6183735,
+    numero_mesadas: 13,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072417',
+      numero_documento_anterior: '',
+      tipo_documento: 'PEP',
+      fecha_nacimiento: 30176,
+      fecha_siniestro: 45819,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058753',
+    duracion_emision_ms: 24097,
+    duracion_emision: '24.10 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013334'
+  },
+  '26': {
+    valor_capital: 12128663,
+    valor_pension: 12128663,
+    numero_mesadas: 14,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072420',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 24233,
+      fecha_siniestro: 39902,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058764',
+    duracion_emision_ms: 24247,
+    duracion_emision: '24.25 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013335'
+  },
+  '27': {
+    valor_capital: 24940377,
+    valor_pension: 24940377,
+    numero_mesadas: 14,
+    origen_pension: 'SOBREVIVENCIA',
+    causante: {
+      numero_documento: '5800072423',
+      numero_documento_anterior: '',
+      tipo_documento: 'CC',
+      fecha_nacimiento: 32723,
+      fecha_siniestro: 40107,
+      estado_salud: 'MUERTO',
+      tiene_derecho_cotizacion: 'N'
+    },
+    beneficiarios: [ [Object], [Object] ],
+    origenRegistro: 'cotizacionMasiva',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058760',
+    duracion_emision_ms: 23176,
+    duracion_emision: '23.18 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013336'
+  },
+  '28': {
+    entidad_solicitante: 'SKANDIA',
+    tipo_solicitud_cotizacion: 'DIRECTA',
+    fecha_fin_vigencia: '2029/10/29',
+    origen_pension: 'VEJEZ',
+    valor_capital: 210583294,
+    valor_pension: '',
+    numero_mesadas: 13,
+    causante: {
+      numero_documento: '5800072425',
+      tipo_documento: 'CÉDULA CIUDADANIA',
+      genero: 'MASCULINO',
+      nombre1: 'JHON',
+      nombre2: 'CAMILO',
+      apellido1: 'ZAMBRANO',
+      pcl: '0',
+      estado_civil: 'SOLTERO(A)',
+      estado_salud: 'VALIDO',
+      fecha_nacimiento: '1973/05/04',
+      fecha_causacion: '2015/01/04',
+      numero_documento_anterior: ''
+    },
+    beneficiarios: [ [Object], [Object], [Object] ],
+    origenRegistro: 'cotizacionManual',
+    estado_cotizacion: 'POLIZA EMITIDA',
+    numero_cotizacion: 'COT-00058849',
+    duracion_emision_ms: 23159,
+    duracion_emision: '23.16 s',
+    estado_poliza: 'EXPEDIDA',
+    numero_poliza: 'POL-00013337'
+  }
+} object
+PAGINA CARGADA: LISTA DE POLIZAS
+Ingreso al modulo de administracion de polizas
+{
+  CP: '1, 11, 6',
+  'Numero de Grupo': 1,
+  Origen: 'VEJEZ',
+  'Clasificacion de Cambio': 'CORRECCIÓN DE DATOS',
+  'Tipo de Novedad': 'REVERSIÓN',
+  'Causal Reversion': 'CESACIÓN INVALIDEZ'
+}
+numero causante: 5800072364, numero poliza: POL-00013310
+[R79] URL tras abrir detalle/accion: https://andinavidasegurospre.linktic.com/administracion-poliza/lista-polizas
+[R79] La superficie actual ya corresponde al formulario de reversion.
