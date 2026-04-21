@@ -1,0 +1,6 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Polizas elegibles encontradas para siniestros: 17. Primera candidata POL-00013340 (cotizacion 1, origen VEJEZ, cedula causante 5800075327)
+PAGINA CARGADA: SINIESTROS
+When navego a la pagina de creacion de siniestros y valido el formulario principal
+Poliza seleccionada para siniestros: POL-00013340 (causante 5800075327, nombre STIVEN DARIO TORRES CARO)
+When gestiono un siniestro para la poliza POL-00013340 con causante 5800075327

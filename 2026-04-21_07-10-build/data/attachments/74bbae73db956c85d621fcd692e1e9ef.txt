@@ -1,0 +1,8 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[reservas] Abriendo la pantalla de parametros de producto reserva matematica.
+[reservas] Pantalla cargada: parametros de reserva matematica.
+[reservas] Captura inicial del listado de parametros registrada en Allure.
+[reservas] Inicio de eliminacion de vigencias. Total de registros: 1.
+[reservas] Procesando eliminacion de vigencia: parametro=NOTA TÉCNICA, periodo=2027-1.
+[PENDING] Periodo no visible para eliminar vigencia: 2027-1
+[reservas] Fin de eliminacion de vigencias del escenario actual.

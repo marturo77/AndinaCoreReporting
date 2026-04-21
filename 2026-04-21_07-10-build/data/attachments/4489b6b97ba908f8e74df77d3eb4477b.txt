@@ -1,0 +1,431 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+PAGINA CARGADA: COTIZACION
+Abriendo la pagina de cotizacion...
+PAGINA CARGADA: COTIZACION
+Subiendo archivo de contratacion...
+Usando 28 cotizaciones ya confirmadas en el sistema
+  Cotizacion COT-00058858: Causante 5800075327
+  Cotizacion COT-00058857: Causante 5800075329
+  Cotizacion COT-00058859: Causante 5800075331
+  Cotizacion COT-00058861: Causante 5800075333
+  Cotizacion COT-00058860: Causante 5800075335
+  Cotizacion COT-00058862: Causante 5800075337
+  Cotizacion COT-00058863: Causante 5800075339
+  Cotizacion COT-00058864: Causante 5800075341
+  Cotizacion COT-00058869: Causante 5800075343
+  Cotizacion COT-00058867: Causante 5800075346
+  Cotizacion COT-00058865: Causante 5800075348
+  Cotizacion COT-00058881: Causante 5800075351
+  Cotizacion COT-00058877: Causante 5800075355
+  Cotizacion COT-00058873: Causante 5800075357
+  Cotizacion COT-00058882: Causante 5800075359
+  Cotizacion COT-00058880: Causante 5800075361
+  Cotizacion COT-00058876: Causante 5800075363
+  Cotizacion COT-00058874: Causante 5800075365
+  Cotizacion COT-00058883: Causante 5800075367
+  Cotizacion COT-00058878: Causante 5800075369
+  Cotizacion COT-00058866: Causante 5800075371
+  Cotizacion COT-00058872: Causante 5800075373
+  Cotizacion COT-00058875: Causante 5800075375
+  Cotizacion COT-00058870: Causante 5800075378
+  Cotizacion COT-00058868: Causante 5800075380
+  Cotizacion COT-00058871: Causante 5800075383
+  Cotizacion COT-00058879: Causante 5800075386
+  Cotizacion COT-00058884: Causante 5800075388
+Eliminado archivo temporal: contratacion_masiva_runtime.xlsx
+Eliminado archivo temporal: cotizacion_masiva_runtime.xlsx
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075328 (RC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058858
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075327 (CC)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075327 (CC)
+    Beneficiario 2: 5800075328 (RC)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075330 (CC) a fila 2
+  EPS completado para 1 fila(s): 809008362
+  AFP completado para 1 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058857
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075329 (CE)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075329 (CE)
+    Beneficiario 2: 5800075330 (PEP)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075332 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058859
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075331 (CC)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075331 (CC)
+    Beneficiario 2: 5800075332 (CC)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075334 (CE) a fila 2
+  EPS completado para 1 fila(s): 809008362
+  AFP completado para 1 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058861
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075333 (PA)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075333 (PA)
+    Beneficiario 2: 5800075334 (CE)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075336 (RC) a fila 2
+  EPS completado para 1 fila(s): 890500675
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058860
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075335 (CE)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075335 (CE)
+    Beneficiario 2: 5800075336 (RC)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075338 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058862
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075337 (CC)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075337 (CC)
+    Beneficiario 2: 5800075338 (CC)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075340 (TI) a fila 2
+  EPS completado para 1 fila(s): 891600091
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058863
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075339 (PEP)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075339 (PEP)
+    Beneficiario 2: 5800075340 (TI)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075342 (CE) a fila 2
+  EPS completado para 1 fila(s): 900604350
+  AFP completado para 1 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058864
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075341 (CE)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075341 (CE)
+    Beneficiario 2: 5800075342 (CE)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075344 (CC) a fila 2
+  Asignando beneficiario 2: 5800075345 (TI) a fila 3
+  EPS completado para 1 fila(s): 899999107
+  AFP completado para 3 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058869
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075343 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 3
+    Beneficiario 1: 5800075343 (CC)
+    Beneficiario 2: 5800075344 (CC)
+    Beneficiario 3: 5800075345 (TI)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075347 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058867
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075346 (PTP)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075346 (PTP)
+    Beneficiario 2: 5800075347 (PTP)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075349 (RC) a fila 2
+  Asignando beneficiario 2: 5800075350 (CC) a fila 3
+  EPS completado para 1 fila(s): 900156264
+  AFP completado para 3 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058865
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075348 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 3
+    Beneficiario 1: 5800075348 (CC)
+    Beneficiario 2: 5800075349 (RC)
+    Beneficiario 3: 5800075350 (PTP)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075352 (CC) a fila 2
+  Asignando beneficiario 2: 5800075353 (CC) a fila 3
+  Asignando beneficiario 3: 5800075354 (TI) a fila 4
+  EPS completado para 1 fila(s): 601
+  AFP completado para 3 fila(s): 800227940
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058881
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075351 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 4
+    Beneficiario 1: 5800075351 (CC)
+    Beneficiario 2: 5800075352 (CC)
+    Beneficiario 3: 5800075353 (PEP)
+    Beneficiario 4: 5800075354 (TI)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075356 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058877
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075355 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075355 (CC)
+    Beneficiario 2: 5800075356 (CC)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075358 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058873
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075357 (PEP)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075357 (PEP)
+    Beneficiario 2: 5800075358 (PEP)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075360 (RC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058882
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075359 (PA)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075359 (PA)
+    Beneficiario 2: 5800075360 (RC)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075362 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058880
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075361 (PTP)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075361 (PTP)
+    Beneficiario 2: 5800075362 (PTP)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075364 (RC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058876
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075363 (CC)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075363 (CC)
+    Beneficiario 2: 5800075364 (RC)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075366 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058874
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075365 (CC)
+  Origen: 'VEJEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075365 (CC)
+    Beneficiario 2: 5800075366 (CC)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075368 (TI) a fila 2
+  EPS completado para 1 fila(s): 891600091
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058883
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075367 (PEP)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075367 (PEP)
+    Beneficiario 2: 5800075368 (TI)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075370 (CE) a fila 2
+  EPS completado para 1 fila(s): 900604350
+  AFP completado para 1 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058878
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075369 (CE)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075369 (CE)
+    Beneficiario 2: 5800075370 (CE)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075372 (CE) a fila 2
+  EPS completado para 1 fila(s): 809008362
+  AFP completado para 1 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058866
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075371 (PTP)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075371 (PTP)
+    Beneficiario 2: 5800075372 (CE)
+Procesando origen de prestacion: 'INVALIDEZ'
+  -> 'INVALIDEZ' -> codigo 'INV'
+  Asignando beneficiario 1: 5800075374 (CC) a fila 2
+  EPS completado para 1 fila(s): 809008362
+  AFP completado para 1 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058872
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075373 (CE)
+  Origen: 'INVALIDEZ'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075373 (CE)
+    Beneficiario 2: 5800075374 (PTP)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075376 (CC) a fila 2
+  Asignando beneficiario 2: 5800075377 (TI) a fila 3
+  EPS completado para 1 fila(s): 899999107
+  AFP completado para 3 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058875
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075375 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 3
+    Beneficiario 1: 5800075375 (CC)
+    Beneficiario 2: 5800075376 (CC)
+    Beneficiario 3: 5800075377 (TI)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075379 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058870
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075378 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075378 (CC)
+    Beneficiario 2: 5800075379 (CC)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075381 (CC) a fila 2
+  Asignando beneficiario 2: 5800075382 (CC) a fila 3
+  EPS completado para 1 fila(s): 900935126
+  AFP completado para 3 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058868
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075380 (PEP)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 3
+    Beneficiario 1: 5800075380 (PEP)
+    Beneficiario 2: 5800075381 (PA)
+    Beneficiario 3: 5800075382 (PA)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075384 (CC) a fila 2
+  Asignando beneficiario 2: 5800075385 (TI) a fila 3
+  EPS completado para 1 fila(s): 899999107
+  AFP completado para 3 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058871
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075383 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 3
+    Beneficiario 1: 5800075383 (CC)
+    Beneficiario 2: 5800075384 (CC)
+    Beneficiario 3: 5800075385 (TI)
+Procesando origen de prestacion: 'SOBREVIVENCIA'
+  -> 'SOBREVIVENCIA' -> codigo 'SBV'
+  Asignando beneficiario 1: 5800075387 (CC) a fila 2
+  EPS completado para 1 fila(s): 837000084
+  AFP completado para 2 fila(s): 800253055
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058879
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075386 (CC)
+  Origen: 'SOBREVIVENCIA'
+  Beneficiarios: 2
+    Beneficiario 1: 5800075386 (CC)
+    Beneficiario 2: 5800075387 (CC)
+Procesando origen de prestacion: 'VEJEZ'
+  -> 'VEJEZ' -> codigo 'VEJ'
+  Asignando beneficiario 1: 5800075389 (CC) a fila 2
+  Asignando beneficiario 2: 5800075390 (CC) a fila 3
+  Asignando beneficiario 3: 5800075391 (TI) a fila 4
+  EPS completado para 1 fila(s): 601
+  AFP completado para 3 fila(s): 800227940
+Generando contrataciÃƒÂ³n para cotizaciÃƒÂ³n: COT-00058884
+  Estado: CONFIRMADA EN SISTEMA
+  Causante: 5800075388 (CÉDULA CIUDADANIA)
+  Origen: 'VEJEZ'
+  Beneficiarios: 3
+    Beneficiario 1: 5800075389 (CÉDULA CIUDADANIA)
+    Beneficiario 2: 5800075390 (CÉDULA CIUDADANIA)
+    Beneficiario 3: 5800075391 (TARJETA IDENTIDAD)
+Usando cotizaciones confirmadas, no es necesario guardar cambios.
+Runtime de contratacion disponible en results: D:\a\1\s\results\contratacion_masiva_runtime.xlsx
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\results\contratacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+Archivo de resultados descargado en: D:\a\1\s\tmp_downloads\1776771291276-24m4qx\detalle_cargue_archivo_contratación.xlsx
+Se encontraron 2 errores de validacion en 30 registros:
+  1. El beneficiario con número de cedula: 5800075391: El beneficiario no existe (fila 66 )
+  2. Fecha Expedición de la persona con número identificación 5800075382: Tiene una fecha de expedición inválida
+Sincronizando cotizaciones persistidas desde consulta...
+PAGINA CARGADA: CONSULTA COTIZACIONES
+Resultado detectado para causante 5800075327: cotizacion COT-00058858, estado EMITIR PÓLIZA, tiempo 32.38 s.
+Resultado detectado para causante 5800075329: cotizacion COT-00058857, estado EMITIR PÓLIZA, tiempo 14.01 s.
+Resultado detectado para causante 5800075331: cotizacion COT-00058859, estado EMITIR PÓLIZA, tiempo 14.76 s.
+Resultado detectado para causante 5800075333: cotizacion COT-00058861, estado EMITIR PÓLIZA, tiempo 13.09 s.
+Resultado detectado para causante 5800075335: cotizacion COT-00058860, estado EMITIR PÓLIZA, tiempo 13.53 s.
+Resultado detectado para causante 5800075337: cotizacion COT-00058862, estado EMITIR PÓLIZA, tiempo 13.38 s.
+Resultado detectado para causante 5800075339: cotizacion COT-00058863, estado EMITIR PÓLIZA, tiempo 13.22 s.
+Resultado detectado para causante 5800075341: cotizacion COT-00058864, estado EMITIR PÓLIZA, tiempo 13.12 s.
+Resultado detectado para causante 5800075343: cotizacion COT-00058869, estado EMITIR PÓLIZA, tiempo 13.83 s.
+Resultado detectado para causante 5800075346: cotizacion COT-00058867, estado EMITIR PÓLIZA, tiempo 14.59 s.
+Resultado detectado para causante 5800075348: cotizacion COT-00058865, estado EMITIR PÓLIZA, tiempo 14.07 s.
+Resultado detectado para causante 5800075351: cotizacion COT-00058881, estado EMITIR PÓLIZA, tiempo 14.49 s.
+Resultado detectado para causante 5800075355: cotizacion COT-00058877, estado EMITIR PÓLIZA, tiempo 13.97 s.
+Resultado detectado para causante 5800075357: cotizacion COT-00058873, estado EMITIR PÓLIZA, tiempo 13.47 s.
+Resultado detectado para causante 5800075359: cotizacion COT-00058882, estado EMITIR PÓLIZA, tiempo 13.98 s.
+Resultado detectado para causante 5800075361: cotizacion COT-00058880, estado EMITIR PÓLIZA, tiempo 13.67 s.
+Resultado detectado para causante 5800075363: cotizacion COT-00058876, estado EMITIR PÓLIZA, tiempo 13.09 s.
+Resultado detectado para causante 5800075365: cotizacion COT-00058874, estado EMITIR PÓLIZA, tiempo 13.11 s.
+Resultado detectado para causante 5800075367: cotizacion COT-00058883, estado EMITIR PÓLIZA, tiempo 13.52 s.
+Resultado detectado para causante 5800075369: cotizacion COT-00058878, estado EMITIR PÓLIZA, tiempo 13.73 s.
+Resultado detectado para causante 5800075371: cotizacion COT-00058866, estado EMITIR PÓLIZA, tiempo 14.31 s.
+Resultado detectado para causante 5800075373: cotizacion COT-00058872, estado EMITIR PÓLIZA, tiempo 13.91 s.
+Resultado detectado para causante 5800075375: cotizacion COT-00058875, estado EMITIR PÓLIZA, tiempo 14.20 s.
+Resultado detectado para causante 5800075378: cotizacion COT-00058870, estado EMITIR PÓLIZA, tiempo 13.46 s.
+Resultado detectado para causante 5800075380: cotizacion COT-00058868, estado EMITIR PÓLIZA, tiempo 13.49 s.
+Resultado detectado para causante 5800075383: cotizacion COT-00058871, estado EMITIR PÓLIZA, tiempo 13.56 s.
+Resultado detectado para causante 5800075386: cotizacion COT-00058879, estado EMITIR PÓLIZA, tiempo 13.36 s.
+Resultado detectado para causante 5800075388: cotizacion COT-00058884, estado EMITIR PÓLIZA, tiempo 14.08 s.
+El archivo de resultados reporto mensajes de validacion, pero la consulta confirma que todas las cotizaciones quedaron listas para emision.

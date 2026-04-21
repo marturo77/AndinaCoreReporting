@@ -1,0 +1,18 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[reservas] Abriendo la pantalla de parametros de producto reserva matematica.
+[reservas] Pantalla cargada: parametros de reserva matematica.
+[reservas] Captura inicial del listado de parametros registrada en Allure.
+[reservas] Inicio de creacion de vigencias. Total de registros: 5.
+[reservas] Procesando creacion de vigencia: parametro=TMR, periodo=2027-1, documento=tabla_mortalidad.xlsx.
+[PENDING] Parametro no visible para crear vigencia: TMR
+[reservas] Procesando creacion de vigencia: parametro=TM_VALIDOS, periodo=2027-1, documento=tabla_mortalidad.xlsx.
+[PENDING] Parametro no visible para crear vigencia: TM_VALIDOS
+[reservas] Procesando creacion de vigencia: parametro=TM_INVALIDOS, periodo=2027-1, documento=tabla_mortalidad.xlsx.
+[PENDING] Parametro no visible para crear vigencia: TM_INVALIDOS
+[reservas] Procesando creacion de vigencia: parametro=TM_MEJORAMIENTO, periodo=2027-1, documento=tabla_mortalidad.xlsx.
+[PENDING] Parametro no visible para crear vigencia: TM_MEJORAMIENTO
+[reservas] Procesando creacion de vigencia: parametro=TM_REDUCCION, periodo=2027-1, documento=tabla_mortalidad.xlsx.
+[PENDING] Parametro no visible para crear vigencia: TM_REDUCCION
+[reservas] Fin de creacion de vigencias del escenario actual.
+[reservas] Validando mensaje de confirmacion de la operacion actual.
+[reservas] Validacion de confirmacion completada.

@@ -1,0 +1,152 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de Emision...
+Selecciono boton emision de polizas...
+PAGINA CARGADA: EMISION DE POLIZAS
+Cotizacion COT-00058858 emitida en 32.68 s. Progreso 3.57% (1/28).
+Cotizacion COT-00058857 emitida en 24.11 s. Progreso 7.14% (2/28).
+Cotizacion COT-00058859 emitida en 24.13 s. Progreso 10.71% (3/28).
+Cotizacion COT-00058861 emitida en 24.83 s. Progreso 14.29% (4/28).
+Cotizacion COT-00058860 emitida en 24.28 s. Progreso 17.86% (5/28).
+Cotizacion COT-00058862 emitida en 25.29 s. Progreso 21.43% (6/28).
+Cotizacion COT-00058863 emitida en 24.62 s. Progreso 25.00% (7/28).
+Cotizacion COT-00058864 emitida en 24.05 s. Progreso 28.57% (8/28).
+Cotizacion COT-00058869 emitida en 25.93 s. Progreso 32.14% (9/28).
+Cotizacion COT-00058867 emitida en 24.98 s. Progreso 35.71% (10/28).
+Cotizacion COT-00058865 emitida en 25.23 s. Progreso 39.29% (11/28).
+Cotizacion COT-00058881 emitida en 25.30 s. Progreso 42.86% (12/28).
+Cotizacion COT-00058877 emitida en 24.51 s. Progreso 46.43% (13/28).
+Cotizacion COT-00058873 emitida en 24.19 s. Progreso 50.00% (14/28).
+Cotizacion COT-00058882 emitida en 24.48 s. Progreso 53.57% (15/28).
+Cotizacion COT-00058880 emitida en 2:42.105. Progreso 57.14% (16/28).
+Cotizacion COT-00058876 emitida en 24.39 s. Progreso 60.71% (17/28).
+Cotizacion COT-00058874 emitida en 24.59 s. Progreso 64.29% (18/28).
+Cotizacion COT-00058883 emitida en 24.18 s. Progreso 67.86% (19/28).
+Cotizacion COT-00058878 emitida en 25.17 s. Progreso 71.43% (20/28).
+Cotizacion COT-00058866 emitida en 24.44 s. Progreso 75.00% (21/28).
+Cotizacion COT-00058872 emitida en 24.36 s. Progreso 78.57% (22/28).
+Cotizacion COT-00058875 emitida en 24.75 s. Progreso 82.14% (23/28).
+Cotizacion COT-00058870 emitida en 23.89 s. Progreso 85.71% (24/28).
+Cotizacion COT-00058868 emitida en 24.68 s. Progreso 89.29% (25/28).
+Cotizacion COT-00058871 emitida en 24.27 s. Progreso 92.86% (26/28).
+Cotizacion COT-00058879 emitida en 24.11 s. Progreso 96.43% (27/28).
+Cotizacion COT-00058884 emitida en 23.93 s. Progreso 100.00% (28/28).
+PAGINA CARGADA: CONSULTA COTIZACIONES
+Buscando numero de cotizacion generada para cada grupo y validando estado 'POLIZA EMITIDA'...
+Resultado detectado para causante 5800075327: cotizacion COT-00058858, estado POLIZA EMITIDA, tiempo 30.25 s.
+Progreso de validacion: 4% (1/28)
+Resultado detectado para causante 5800075329: cotizacion COT-00058857, estado POLIZA EMITIDA, tiempo 14.46 s.
+Progreso de validacion: 7% (2/28)
+Resultado detectado para causante 5800075331: cotizacion COT-00058859, estado POLIZA EMITIDA, tiempo 14.16 s.
+Progreso de validacion: 11% (3/28)
+Resultado detectado para causante 5800075333: cotizacion COT-00058861, estado POLIZA EMITIDA, tiempo 14.15 s.
+Progreso de validacion: 14% (4/28)
+Resultado detectado para causante 5800075335: cotizacion COT-00058860, estado POLIZA EMITIDA, tiempo 13.52 s.
+Progreso de validacion: 18% (5/28)
+Resultado detectado para causante 5800075337: cotizacion COT-00058862, estado POLIZA EMITIDA, tiempo 14.82 s.
+Progreso de validacion: 21% (6/28)
+Resultado detectado para causante 5800075339: cotizacion COT-00058863, estado POLIZA EMITIDA, tiempo 13.30 s.
+Progreso de validacion: 25% (7/28)
+Resultado detectado para causante 5800075341: cotizacion COT-00058864, estado POLIZA EMITIDA, tiempo 14.43 s.
+Progreso de validacion: 29% (8/28)
+Resultado detectado para causante 5800075343: cotizacion COT-00058869, estado POLIZA EMITIDA, tiempo 13.28 s.
+Progreso de validacion: 32% (9/28)
+Resultado detectado para causante 5800075346: cotizacion COT-00058867, estado POLIZA EMITIDA, tiempo 13.18 s.
+Progreso de validacion: 36% (10/28)
+Resultado detectado para causante 5800075348: cotizacion COT-00058865, estado POLIZA EMITIDA, tiempo 13.69 s.
+Progreso de validacion: 39% (11/28)
+Resultado detectado para causante 5800075351: cotizacion COT-00058881, estado POLIZA EMITIDA, tiempo 13.08 s.
+Progreso de validacion: 43% (12/28)
+Resultado detectado para causante 5800075355: cotizacion COT-00058877, estado POLIZA EMITIDA, tiempo 14.11 s.
+Progreso de validacion: 46% (13/28)
+Resultado detectado para causante 5800075357: cotizacion COT-00058873, estado POLIZA EMITIDA, tiempo 13.20 s.
+Progreso de validacion: 50% (14/28)
+Resultado detectado para causante 5800075359: cotizacion COT-00058882, estado POLIZA EMITIDA, tiempo 13.61 s.
+Progreso de validacion: 54% (15/28)
+Resultado detectado para causante 5800075361: cotizacion COT-00058880, estado POLIZA EMITIDA, tiempo 13.00 s.
+Progreso de validacion: 57% (16/28)
+Resultado detectado para causante 5800075363: cotizacion COT-00058876, estado POLIZA EMITIDA, tiempo 13.28 s.
+Progreso de validacion: 61% (17/28)
+Resultado detectado para causante 5800075365: cotizacion COT-00058874, estado POLIZA EMITIDA, tiempo 13.60 s.
+Progreso de validacion: 64% (18/28)
+Resultado detectado para causante 5800075367: cotizacion COT-00058883, estado POLIZA EMITIDA, tiempo 13.46 s.
+Progreso de validacion: 68% (19/28)
+Resultado detectado para causante 5800075369: cotizacion COT-00058878, estado POLIZA EMITIDA, tiempo 13.21 s.
+Progreso de validacion: 71% (20/28)
+Resultado detectado para causante 5800075371: cotizacion COT-00058866, estado POLIZA EMITIDA, tiempo 13.38 s.
+Progreso de validacion: 75% (21/28)
+Resultado detectado para causante 5800075373: cotizacion COT-00058872, estado POLIZA EMITIDA, tiempo 13.45 s.
+Progreso de validacion: 79% (22/28)
+Resultado detectado para causante 5800075375: cotizacion COT-00058875, estado POLIZA EMITIDA, tiempo 13.58 s.
+Progreso de validacion: 82% (23/28)
+Resultado detectado para causante 5800075378: cotizacion COT-00058870, estado POLIZA EMITIDA, tiempo 14.97 s.
+Progreso de validacion: 86% (24/28)
+Resultado detectado para causante 5800075380: cotizacion COT-00058868, estado POLIZA EMITIDA, tiempo 13.31 s.
+Progreso de validacion: 89% (25/28)
+Resultado detectado para causante 5800075383: cotizacion COT-00058871, estado POLIZA EMITIDA, tiempo 13.21 s.
+Progreso de validacion: 93% (26/28)
+Resultado detectado para causante 5800075386: cotizacion COT-00058879, estado POLIZA EMITIDA, tiempo 13.89 s.
+Progreso de validacion: 96% (27/28)
+Resultado detectado para causante 5800075388: cotizacion COT-00058884, estado POLIZA EMITIDA, tiempo 13.59 s.
+Progreso de validacion: 100% (28/28)
+Total de cotizaciones procesadas: 28.
+se emiten las polizas a partir de las cotizaciones generadas
+Obteniendo numeros de polizas emitidas...
+PAGINA CARGADA: CONSULTA DE POLIZAS
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013340', cotizacion: 'COT-00058858'
+Poliza POL-00013340 resuelta para la cotizacion COT-00058858 en 1.86 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013341', cotizacion: 'COT-00058857'
+Poliza POL-00013341 resuelta para la cotizacion COT-00058857 en 1.72 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013342', cotizacion: 'COT-00058859'
+Poliza POL-00013342 resuelta para la cotizacion COT-00058859 en 1.65 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013343', cotizacion: 'COT-00058861'
+Poliza POL-00013343 resuelta para la cotizacion COT-00058861 en 1.66 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013344', cotizacion: 'COT-00058860'
+Poliza POL-00013344 resuelta para la cotizacion COT-00058860 en 1.67 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013345', cotizacion: 'COT-00058862'
+Poliza POL-00013345 resuelta para la cotizacion COT-00058862 en 1.59 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013346', cotizacion: 'COT-00058863'
+Poliza POL-00013346 resuelta para la cotizacion COT-00058863 en 1.72 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013347', cotizacion: 'COT-00058864'
+Poliza POL-00013347 resuelta para la cotizacion COT-00058864 en 1.78 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013348', cotizacion: 'COT-00058869'
+Poliza POL-00013348 resuelta para la cotizacion COT-00058869 en 1.59 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013349', cotizacion: 'COT-00058867'
+Poliza POL-00013349 resuelta para la cotizacion COT-00058867 en 1.66 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013350', cotizacion: 'COT-00058865'
+Poliza POL-00013350 resuelta para la cotizacion COT-00058865 en 1.69 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013351', cotizacion: 'COT-00058881'
+Poliza POL-00013351 resuelta para la cotizacion COT-00058881 en 1.72 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013352', cotizacion: 'COT-00058877'
+Poliza POL-00013352 resuelta para la cotizacion COT-00058877 en 1.63 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013353', cotizacion: 'COT-00058873'
+Poliza POL-00013353 resuelta para la cotizacion COT-00058873 en 1.68 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013354', cotizacion: 'COT-00058882'
+Poliza POL-00013354 resuelta para la cotizacion COT-00058882 en 1.68 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013355', cotizacion: 'COT-00058880'
+Poliza POL-00013355 resuelta para la cotizacion COT-00058880 en 1.63 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013356', cotizacion: 'COT-00058876'
+Poliza POL-00013356 resuelta para la cotizacion COT-00058876 en 1.65 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013357', cotizacion: 'COT-00058874'
+Poliza POL-00013357 resuelta para la cotizacion COT-00058874 en 1.70 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013358', cotizacion: 'COT-00058883'
+Poliza POL-00013358 resuelta para la cotizacion COT-00058883 en 1.66 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013359', cotizacion: 'COT-00058878'
+Poliza POL-00013359 resuelta para la cotizacion COT-00058878 en 1.60 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013360', cotizacion: 'COT-00058866'
+Poliza POL-00013360 resuelta para la cotizacion COT-00058866 en 1.60 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013361', cotizacion: 'COT-00058872'
+Poliza POL-00013361 resuelta para la cotizacion COT-00058872 en 1.64 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013362', cotizacion: 'COT-00058875'
+Poliza POL-00013362 resuelta para la cotizacion COT-00058875 en 1.59 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013363', cotizacion: 'COT-00058870'
+Poliza POL-00013363 resuelta para la cotizacion COT-00058870 en 1.63 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013364', cotizacion: 'COT-00058868'
+Poliza POL-00013364 resuelta para la cotizacion COT-00058868 en 1.61 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013365', cotizacion: 'COT-00058871'
+Poliza POL-00013365 resuelta para la cotizacion COT-00058871 en 1.60 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013366', cotizacion: 'COT-00058879'
+Poliza POL-00013366 resuelta para la cotizacion COT-00058879 en 1.66 s.
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00013367', cotizacion: 'COT-00058884'
+Poliza POL-00013367 resuelta para la cotizacion COT-00058884 en 1.76 s.
+Todo okis. Total de cotizaciones procesadas: 28.
+se obtienen los numeros de polizas emitidas
