@@ -1,0 +1,126 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+PAGINA CARGADA: COTIZACION
+[cotizacion-manual] Identificaciones asignadas: 5800075766 a 5800075830
+[cotizacion-manual] Rango reservado para la ejecucion: 5800075766 a 5800075830. Documentos asignados: 65.
+Cargando 20 cotizaciones desde manual.xlsx
+  Cotizacion 1:
+    Causante: 5800075766 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 3
+  Cotizacion 2:
+    Causante: 5800075770 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 2
+  Cotizacion 3:
+    Causante: 5800075773 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 2
+  Cotizacion 4:
+    Causante: 5800075776 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 5:
+    Causante: 5800075779 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+  Cotizacion 6:
+    Causante: 5800075783 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 1
+  Cotizacion 7:
+    Causante: 5800075785 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 8:
+    Causante: 5800075788 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 2
+  Cotizacion 9:
+    Causante: 5800075791 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 3
+  Cotizacion 10:
+    Causante: 5800075795 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 1
+  Cotizacion 11:
+    Causante: 5800075797 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 2
+  Cotizacion 12:
+    Causante: 5800075800 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 2
+  Cotizacion 13:
+    Causante: 5800075803 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 14:
+    Causante: 5800075806 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+  Cotizacion 15:
+    Causante: 5800075810 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 3
+  Cotizacion 16:
+    Causante: 5800075814 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 17:
+    Causante: 5800075817 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+  Cotizacion 18:
+    Causante: 5800075821 (CÉDULA CIUDADANIA)
+    Origen: 'SBV'
+    Beneficiarios: 2
+  Cotizacion 19:
+    Causante: 5800075824 (CÉDULA CIUDADANIA)
+    Origen: 'VEJEZ'
+    Beneficiarios: 2
+  Cotizacion 20:
+    Causante: 5800075827 (CÉDULA CIUDADANIA)
+    Origen: 'INVALIDEZ'
+    Beneficiarios: 3
+Inicia diligenciamiento de formulario de cotizacion manual...
+Formulario de cotizacion manual diligenciado.
+Boton Continuar clickeado.
+Inicia diligenciamiento de formulario de causante manual...
+Causante: {
+  "numero_documento": "5800075766",
+  "tipo_documento": "CÉDULA CIUDADANIA",
+  "genero": "MASCULINO",
+  "nombre1": "JHON",
+  "nombre2": "CAMILO",
+  "apellido1": "ZAMBRANO",
+  "pcl": "0",
+  "estado_civil": "SOLTERO(A)",
+  "estado_salud": "VALIDO",
+  "fecha_nacimiento": "1973/05/04",
+  "fecha_causacion": "2015/01/04"
+}
+Formulario de causante manual diligenciado.
+Boton Continuar clickeado.
+Inicia diligenciamiento de formulario de beneficiarios manual...
+Ingresando beneficiario 1: 5800075767
+Usando seccion 'Detalles de pensiÃ³n' para beneficiario 5800075767
+Campo opcional % PCL no disponible para beneficiario 5800075767: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '54': Error: No se encontro la celda del campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' dentro de 20000 ms.
+Boton Agregar beneficiario clickeado.
+Ingresando beneficiario 2: 5800075768
+No se pudo encontrar contexto especÃ­fico para beneficiario 5800075768, usando contexto general
+No se encontro scope especifico para beneficiario 5800075768, usando panel general
+Campo opcional % PCL no disponible para beneficiario 5800075768: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '78': Error: No se encontro la celda del campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' dentro de 20000 ms.
+Boton Agregar beneficiario clickeado.
+Ingresando beneficiario 3: 5800075769
+No se pudo encontrar contexto especÃ­fico para beneficiario 5800075769, usando contexto general
+No se encontro scope especifico para beneficiario 5800075769, usando panel general
+Campo opcional % PCL no disponible para beneficiario 5800075769: Error: Fallo al diligenciar el campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' con el valor '53': Error: No se encontro la celda del campo '% DE PCL CON LA QUE SE RECONOCIO DERECHO' dentro de 20000 ms.
+se valida que no tiene errores los formularios
+Guardando cotizacion manual...
+Boton Guardar clickeado.
+PAGINA CARGADA: CONSULTA COTIZACIONES
+Buscando numero de cotizacion generada para cada grupo y validando estado 'RADICADA'...
+Resultado detectado para causante 5800075766: cotizacion COT-00059037, estado POLIZA EMITIDA, tiempo 10.63 s.
+Progreso de validacion: 100% (1/1)

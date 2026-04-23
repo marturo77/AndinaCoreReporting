@@ -1,0 +1,6 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[reservas] Abriendo la pantalla de parametros de producto reserva matematica.
+[reservas] Pantalla cargada: parametros de reserva matematica.
+[PENDING] parametria sin datos disponibles
+[reservas] Captura inicial del listado de parametros registrada en Allure.
+[PENDING] Existen los parametros de producto (sin datos en modulo de parametria)
