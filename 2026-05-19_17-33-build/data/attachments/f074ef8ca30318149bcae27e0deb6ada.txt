@@ -1,0 +1,5 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[gestion] 17 fila(s) de D:\a\1\s\datasets\gestion\R70_retiro_beneficiario.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+[gestion] 17 fila(s) de D:\a\1\s\datasets\gestion\R70_retiro_beneficiario.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+PAGINA CARGADA: LISTA DE POLIZAS
+[INFO] No se encontro poliza disponible para grupo 1 en cotizaciones.json. Se omite.
