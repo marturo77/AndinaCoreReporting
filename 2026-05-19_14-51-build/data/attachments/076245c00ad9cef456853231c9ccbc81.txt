@@ -1,0 +1,10 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[reservas] Abriendo la pantalla de parametros de producto reserva matematica.
+[reservas] Pantalla cargada: parametros de reserva matematica.
+[reservas] Inicio de creacion de vigencias. Total de registros: 1.
+[reservas] Procesando creacion de vigencia: parametro=NOTA TÉCNICA, periodo=2027-1, documento=nota_tecnica.pdf.
+[reservas] La vigencia 2027-1 para NOTA TÉCNICA ya tiene el valor esperado. No se guarda nuevamente.
+[reservas] Vigencia creada correctamente: parametro=NOTA TÉCNICA, periodo=2027-1.
+[reservas] Fin de creacion de vigencias del escenario actual en 640 ms.
+[reservas] Validando mensaje de confirmacion de la operacion actual.
+[reservas] Validacion de confirmacion completada.
