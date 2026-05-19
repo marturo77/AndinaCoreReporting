@@ -1,0 +1,9 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[reservas] Abriendo la pantalla de parametros de producto reserva matematica.
+[reservas] Pantalla cargada: parametros de reserva matematica.
+[reservas] Captura inicial del listado de parametros registrada en Allure.
+[reservas] Ajustando paginacion del listado para mostrar todos los parametros disponibles.
+[reservas] Paginacion aplicada con valor 400.
+[reservas] Inicio de verificacion de archivos cargados. Total de registros: 1.
+[reservas] Verificando archivo cargado: parametro=NOTA TÉCNICA, periodo=2027-1, documento=nota_tecnica.pdf.
+[PENDING] Periodo no visible para verificar archivo: 2027-1

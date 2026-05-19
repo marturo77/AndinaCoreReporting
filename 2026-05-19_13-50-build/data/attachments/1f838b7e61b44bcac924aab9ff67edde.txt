@@ -1,0 +1,9 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[reservas] Abriendo la pantalla de parametros de producto reserva matematica.
+[reservas] Pantalla cargada: parametros de reserva matematica.
+[reservas] Captura inicial del listado de parametros registrada en Allure.
+[reservas] Inicio de creacion de vigencias. Total de registros: 5.
+[reservas] Procesando creacion de vigencia: parametro=TMR, periodo=2027-1, documento=tabla_mortalidad.xlsx.
+[reservas] Adjuntando documento tabla_mortalidad.xlsx para TMR periodo 2027-1.
+[reservas] Archivo adjuntado: tabla_mortalidad.xlsx (12 KB) en 402 ms.
+[reservas] La vigencia 2027-1 para TMR ya existe o cruza fechas. Se cancela la creacion y se actualiza el periodo existente.
