@@ -1,0 +1,45 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[gestion] 5 fila(s) de D:\a\1\s\datasets\gestion\R25_con_impacto_reserva.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+PAGINA CARGADA: LISTA DE POLIZAS
+[INFO] Poliza POL-00014733 del grupo 1 encontrada y seleccionada desde cotizaciones.json.
+[gestion] 5 fila(s) de D:\a\1\s\datasets\gestion\R25_con_impacto_reserva.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+[COMBO][INICIO] Clasificación de cambio => 'CORRECCIÓN DE DATOS'
+[COMBO][ABIERTO] Clasificación de cambio en 534 ms
+[COMBO][OK-EXACT] Clasificación de cambio en 1006 ms
+[COMBO][INICIO] Tipo de novedad => 'CAMBIO DE DATOS CON IMPACTO EN RESERVA'
+[COMBO][ABIERTO] Tipo de novedad en 444 ms
+[COMBO][OK-EXACT] Tipo de novedad en 986 ms
+[COMBO][INICIO] Sección a modificar => 'PÓLIZA'
+[COMBO][ABIERTO] Sección a modificar en 558 ms
+[COMBO][OK-EXACT] Sección a modificar en 1166 ms
+[CONTROL][INICIO] FECHA DE MUERTE
+[CONTROL][INTENTO] Campo FECHA DE MUERTE con etiqueta 'Fecha de muerte' y tipo fecha
+[CONTROL][INTENTO][OK] Campo FECHA DE MUERTE diligenciado con etiqueta 'Fecha de muerte' en 2489 ms
+[CONTROL][OK] FECHA DE MUERTE en 2489 ms
+[CONTROL][INICIO] NUMERO DE MESADAS
+[CONTROL][INTENTO] Campo NUMERO DE MESADAS con etiqueta 'Numero de mesadas' y tipo numeroMesadas
+[CONTROL][INTENTO][OK] Campo NUMERO DE MESADAS diligenciado con etiqueta 'Numero de mesadas' en 821 ms
+[CONTROL][OK] NUMERO DE MESADAS en 822 ms
+[CONTROL][INICIO] ESTADO DE LA POLIZA
+[CONTROL][INTENTO] Campo ESTADO DE LA POLIZA con etiqueta 'Estado poliza' y tipo combo
+[COMBO][SKIP] Se omite interaccion de 'Estado poliza' para evitar bloqueo de UI y continuar con Guardar cambios.
+[CONTROL][INTENTO][OK] Campo ESTADO DE LA POLIZA diligenciado con etiqueta 'Estado poliza' en 278 ms
+[CONTROL][OK] ESTADO DE LA POLIZA en 278 ms
+[CONTROL][INICIO] VALOR PENSION ACTUAL
+[CONTROL][INTENTO] Campo VALOR PENSION ACTUAL con etiqueta 'Valor pension actual' y tipo numero
+[NUMERO][SKIP] Se omite interaccion de 'Valor pension actual' para evitar afectar controles vecinos antes de Guardar cambios.
+[CONTROL][INTENTO][OK] Campo VALOR PENSION ACTUAL diligenciado con etiqueta 'Valor pension actual' en 212 ms
+[CONTROL][OK] VALOR PENSION ACTUAL en 212 ms
+[CONTROL][INICIO] ORIGEN PENSION ACTUAL
+[CONTROL][INTENTO] Campo ORIGEN PENSION ACTUAL con etiqueta 'Origen pension actual' y tipo combo
+[COMBO][SKIP] Se omite interaccion de 'Origen pension actual' para conservar valor actual y continuar con Guardar cambios.
+[CONTROL][INTENTO][OK] Campo ORIGEN PENSION ACTUAL diligenciado con etiqueta 'Origen pension actual' en 250 ms
+[CONTROL][OK] ORIGEN PENSION ACTUAL en 250 ms
+[R25] Intentando presionar el boton Guardar Cambios.
+[R25] Click ejecutado sobre Guardar Cambios por locator.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Fecha de soporte diligenciada desde calendario: 2026/05/19
+[COMBO][INICIO] Tipo de novedad => 'CAMBIO DE DATOS CON IMPACTO EN RESERVA'
+[COMBO][ABIERTO] Tipo de novedad en 176 ms
+[COMBO][OK-EXACT] Tipo de novedad en 912 ms
+[INFO] Consulta novedades poliza=POL-00014733 tipo="CAMBIO DE DATOS CON IMPACTO EN RESERVA": con resultados

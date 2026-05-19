@@ -1,0 +1,15 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[gestion] 27 fila(s) de D:\a\1\s\datasets\gestion\R79_reversion_de_polizas.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+[gestion] 27 fila(s) de D:\a\1\s\datasets\gestion\R79_reversion_de_polizas.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+PAGINA CARGADA: LISTA DE POLIZAS
+[INFO] R79 fila 1: grupo cotizacion 1, poliza POL-00014733.
+[INFO] Ejecutando R79 fila 1 de 1.
+[COMBO][INICIO] Clasificación de cambio => 'CORRECCIÓN DE DATOS'
+[COMBO][ABIERTO] Clasificación de cambio en 181 ms
+[COMBO][OK-EXACT] Clasificación de cambio en 869 ms
+[COMBO][INICIO] Tipo de novedad => 'REVERSIÓN'
+[COMBO][ABIERTO] Tipo de novedad en 472 ms
+[COMBO][OK-EXACT] Tipo de novedad en 1256 ms
+[COMBO][INICIO] Causal de reversión => 'CESACIÓN INVALIDEZ'
+[COMBO][ABIERTO] Causal de reversión en 541 ms
+[COMBO][OK-EXACT] Causal de reversión en 1040 ms

@@ -1,0 +1,17 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de Emision...
+Selecciono boton emision de polizas...
+PAGINA CARGADA: EMISION DE POLIZAS
+Cotizacion COT-00060072 emitida en 29.96 s. Progreso 100.00% (1/1).
+PAGINA CARGADA: CONSULTA COTIZACIONES
+Buscando numero de cotizacion generada para cada grupo y validando estado 'POLIZA EMITIDA'...
+Resultado detectado para causante 5800078320: cotizacion COT-00060072, estado POLIZA EMITIDA, tiempo 15.53 s.
+Progreso de validacion: 100% (1/1)
+Total de cotizaciones procesadas: 1.
+se emiten las polizas a partir de las cotizaciones generadas
+Obteniendo numeros de polizas emitidas...
+PAGINA CARGADA: CONSULTA DE POLIZAS
+Estado actual: 'EXPEDIDA', numero poliza: 'POL-00014733', cotizacion: 'COT-00060072'
+Poliza POL-00014733 resuelta para la cotizacion COT-00060072 en 2.04 s.
+Todo okis. Total de cotizaciones procesadas: 1.
+se obtienen los numeros de polizas emitidas

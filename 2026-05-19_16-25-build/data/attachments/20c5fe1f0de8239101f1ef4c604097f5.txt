@@ -1,0 +1,16 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+Abriendo la pagina de cotizacion...
+PAGINA CARGADA: COTIZACION
+Subiendo archivo de cotizacion...
+[cotizaciones] Limite activo: 1. Se usaran 1 cotizacion(es) y 2 fila(s) del runtime.
+Runtime de cotizacion masiva generado con 2 identificaciones consecutivas desde 5800078314 hasta 5800078315.
+Runtime de cotizacion disponible en: D:\a\1\s\results\cotizacion_masiva_runtime.xlsx
+Boton 'Generar Cotizacion' clickeado
+Usando Excel para subir: D:\a\1\s\results\cotizacion_masiva_runtime.xlsx
+Archivo cargado en Q-Uploader correctamente
+Proceso de subida finalizado correctamente
+PAGINA CARGADA: CONSULTA COTIZACIONES
+Buscando numero de cotizacion generada para cada grupo y validando estado 'RADICADA'...
+Resultado detectado para causante 5800078314: cotizacion COT-00060066, estado RADICADA, tiempo 14.83 s.
+Progreso de validacion: 100% (1/1)
+Total de cotizaciones procesadas: 1.

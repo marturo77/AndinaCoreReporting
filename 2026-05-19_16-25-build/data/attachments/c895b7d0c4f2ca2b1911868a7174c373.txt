@@ -1,0 +1,57 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+PAGINA CARGADA: LISTA DE POLIZAS
+[INFO] Poliza POL-00014733 del grupo 1 encontrada y seleccionada desde cotizaciones.json.
+[COMBO][INICIO] Clasificación de cambio => 'CORRECCIÓN DE DATOS'
+[COMBO][ABIERTO] Clasificación de cambio en 297 ms
+[COMBO][OK-EXACT] Clasificación de cambio en 856 ms
+[COMBO][INICIO] Tipo de novedad => 'ACTUALIZACIÓN DATOS DE CONTACTO'
+[COMBO][ABIERTO] Tipo de novedad en 419 ms
+[COMBO][OK-EXACT] Tipo de novedad en 945 ms
+[R25][CONTACTO] Abriendo formulario de beneficiario desde la lista.
+[CONTROL][INICIO] DEPARTAMENTO DE NACIMIENTO
+[CONTROL][INTENTO] Campo DEPARTAMENTO DE NACIMIENTO con etiqueta 'Departamento de nacimiento' y tipo combo
+[COMBO][WARN] Departamento de nacimiento no se pudo diligenciar (Error: Timeout de 12000 ms llenando combo Departamento de nacimiento.). Se continua para permitir Guardar cambios.
+[CONTROL][INTENTO][OK] Campo DEPARTAMENTO DE NACIMIENTO diligenciado con etiqueta 'Departamento de nacimiento' en 12848 ms
+[CONTROL][OK] DEPARTAMENTO DE NACIMIENTO en 12848 ms
+[CONTROL][INICIO] CIUDAD Y/O MUNICIPIO DE NACIMIENTO
+[CONTROL][INTENTO] Campo CIUDAD Y/O MUNICIPIO DE NACIMIENTO con etiqueta 'Ciudad y/o municipio de nacimiento' y tipo combo
+[COMBO][WARN] Ciudad y/o municipio de nacimiento no se pudo diligenciar (Error: Timeout de 12000 ms llenando combo Ciudad y/o municipio de nacimiento.). Se continua para permitir Guardar cambios.
+[CONTROL][INTENTO][OK] Campo CIUDAD Y/O MUNICIPIO DE NACIMIENTO diligenciado con etiqueta 'Ciudad y/o municipio de nacimiento' en 12947 ms
+[CONTROL][OK] CIUDAD Y/O MUNICIPIO DE NACIMIENTO en 12948 ms
+[CONTROL][INICIO] DIRECCION Y BARRIO
+[CONTROL][INTENTO] Campo DIRECCION Y BARRIO con etiqueta 'Direccion y barrio' y tipo texto
+[CONTROL][INTENTO][OK] Campo DIRECCION Y BARRIO diligenciado con etiqueta 'Direccion y barrio' en 422 ms
+[CONTROL][OK] DIRECCION Y BARRIO en 422 ms
+[CONTROL][INICIO] PAIS DE RESIDENCIA
+[CONTROL][INTENTO] Campo PAIS DE RESIDENCIA con etiqueta 'Pais de residencia' y tipo combo
+[COMBO][SKIP] Pais de residencia ya tiene el valor esperado 'COLOMBIA'.
+[CONTROL][INTENTO][OK] Campo PAIS DE RESIDENCIA diligenciado con etiqueta 'Pais de residencia' en 630 ms
+[CONTROL][OK] PAIS DE RESIDENCIA en 630 ms
+[CONTROL][INICIO] DEPARTAMENTO DE RESIDENCIA
+[CONTROL][INTENTO] Campo DEPARTAMENTO DE RESIDENCIA con etiqueta 'Departamento de residencia' y tipo combo
+[COMBO][WARN] Departamento de residencia no se pudo diligenciar (Error: Timeout de 12000 ms llenando combo Departamento de residencia.). Se continua para permitir Guardar cambios.
+[CONTROL][INTENTO][OK] Campo DEPARTAMENTO DE RESIDENCIA diligenciado con etiqueta 'Departamento de residencia' en 13925 ms
+[CONTROL][OK] DEPARTAMENTO DE RESIDENCIA en 13925 ms
+[CONTROL][INICIO] CIUDAD Y/O MUNICIPIO DE RESIDENCIA
+[CONTROL][INTENTO] Campo CIUDAD Y/O MUNICIPIO DE RESIDENCIA con etiqueta 'Ciudad y/o municipio de residencia' y tipo combo
+[COMBO][WARN] Ciudad y/o municipio de residencia no se pudo diligenciar (Error: Timeout de 12000 ms llenando combo Ciudad y/o municipio de residencia.). Se continua para permitir Guardar cambios.
+[CONTROL][INTENTO][OK] Campo CIUDAD Y/O MUNICIPIO DE RESIDENCIA diligenciado con etiqueta 'Ciudad y/o municipio de residencia' en 15327 ms
+[CONTROL][OK] CIUDAD Y/O MUNICIPIO DE RESIDENCIA en 15328 ms
+[CONTROL][INICIO] TELEFONO FIJO
+[CONTROL][INTENTO] Campo TELEFONO FIJO con etiqueta 'Telefono fijo' y tipo texto
+[CONTROL][INTENTO][OK] Campo TELEFONO FIJO diligenciado con etiqueta 'Telefono fijo' en 447 ms
+[CONTROL][OK] TELEFONO FIJO en 447 ms
+[CONTROL][INICIO] CELULAR
+[CONTROL][INTENTO] Campo CELULAR con etiqueta 'Celular' y tipo texto
+[CONTROL][INTENTO][OK] Campo CELULAR diligenciado con etiqueta 'Celular' en 288 ms
+[CONTROL][OK] CELULAR en 289 ms
+[CONTROL][INICIO] CORREO ELECTRONICO
+[CONTROL][INTENTO] Campo CORREO ELECTRONICO con etiqueta 'Correo electronico' y tipo texto
+[CONTROL][INTENTO][OK] Campo CORREO ELECTRONICO diligenciado con etiqueta 'Correo electronico' en 319 ms
+[CONTROL][OK] CORREO ELECTRONICO en 319 ms
+[R25] Intentando presionar el boton Guardar Cambios.
+[R25] Click ejecutado sobre Guardar Cambios por locator.
+[COMBO][INICIO] Departamento de nacimiento => 'BOGOTA'
+[COMBO][INICIO] Ciudad y/o municipio de nacimiento => 'BOGOTA'
+[COMBO][INICIO] Departamento de residencia => 'BOGOTA'
+[COMBO][INICIO] Ciudad y/o municipio de residencia => 'BOGOTA'

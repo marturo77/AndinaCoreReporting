@@ -1,0 +1,49 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[gestion] 17 fila(s) de D:\a\1\s\datasets\gestion\R70_retiro_beneficiario.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+[gestion] 17 fila(s) de D:\a\1\s\datasets\gestion\R70_retiro_beneficiario.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+PAGINA CARGADA: LISTA DE POLIZAS
+[INFO] Grupo base 1 usara poliza POL-00014733 del grupo 1 con origen VEJEZ.
+[INFO] Poliza seleccionada para gestion desde grupo 1 con origen .
+[COMBO][INICIO] Clasificación de cambio => 'CORRECCIÓN DE DATOS'
+[COMBO][ABIERTO] Clasificación de cambio en 240 ms
+[COMBO][OK-EXACT] Clasificación de cambio en 998 ms
+[COMBO][INICIO] Tipo de novedad => 'RETIRO DE BENEFICIARIO'
+[COMBO][ABIERTO] Tipo de novedad en 407 ms
+[COMBO][OK-EXACT] Tipo de novedad en 1208 ms
+[COMBO][INICIO] Causal de retiro => 'FALLECIMIENTO'
+[COMBO][ABIERTO] Causal de retiro en 157 ms
+[COMBO][OK-EXACT] Causal de retiro en 713 ms
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 1/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 2/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 3/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 4/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 5/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 6/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 7/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente 8/8 para poliza POL-00014733.
+[WARN] No se encontro pendiente para poliza POL-00014733 con tipo 'RETIRO DE BENEFICIARIO'. Se intentara buscar una solicitud pendiente solo por poliza.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 1/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 2/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 3/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 4/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 5/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 6/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 7/8 para poliza POL-00014733.
+[INFO] Filtro de aprobacion diligenciado con poliza: POL-00014733
+[INFO] Reintentando aprobacion pendiente sin tipo 8/8 para poliza POL-00014733.
+[WARN] No se encontro pendiente para aprobacion explicita en retiro. Se omite validacion en consulta para este ambiente. Detalle: Error: No se encontro una solicitud de aprobacion pendiente para la poliza POL-00014733.

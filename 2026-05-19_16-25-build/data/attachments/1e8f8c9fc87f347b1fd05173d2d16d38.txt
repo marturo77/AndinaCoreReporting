@@ -1,0 +1,98 @@
+[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
+[gestion] 5 fila(s) de D:\a\1\s\datasets\gestion\R25_sin_impacto_reserva.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+PAGINA CARGADA: LISTA DE POLIZAS
+[INFO] Poliza POL-00014733 del grupo 1 encontrada y seleccionada desde cotizaciones.json.
+[gestion] 5 fila(s) de D:\a\1\s\datasets\gestion\R25_sin_impacto_reserva.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
+[COMBO][INICIO] Clasificación de cambio => 'CORRECCIÓN DE DATOS'
+[COMBO][ABIERTO] Clasificación de cambio en 414 ms
+[COMBO][OK-EXACT] Clasificación de cambio en 921 ms
+[COMBO][INICIO] Tipo de novedad => 'CAMBIO DE DATOS SIN IMPACTO EN RESERVA'
+[COMBO][ABIERTO] Tipo de novedad en 415 ms
+[COMBO][OK-EXACT] Tipo de novedad en 1086 ms
+[COMBO][INICIO] Sección a modificar => 'PÓLIZA'
+[COMBO][ABIERTO] Sección a modificar en 259 ms
+[COMBO][OK-EXACT] Sección a modificar en 932 ms
+[CONTROL][INICIO] FECHA DE EXPEDICION
+[R25][SKIP] Campo FECHA DE EXPEDICION ya tiene valor en UI.
+[CONTROL][OK] FECHA DE EXPEDICION en 203 ms
+[CONTROL][INICIO] LUGAR DE EXPEDICION
+[R25][SKIP] Campo LUGAR DE EXPEDICION ya tiene valor en UI.
+[CONTROL][OK] LUGAR DE EXPEDICION en 244 ms
+[CONTROL][INICIO] INICIO DE VIGENCIA
+[R25][SKIP] Campo INICIO DE VIGENCIA ya tiene valor en UI.
+[CONTROL][OK] INICIO DE VIGENCIA en 119 ms
+[CONTROL][INICIO] NRO DE LA COTIZACION
+[R25][SKIP] Campo NRO DE LA COTIZACION ya tiene valor en UI.
+[CONTROL][OK] NRO DE LA COTIZACION en 253 ms
+[CONTROL][INICIO] AFP VENDEDORA
+[R25][SKIP] Campo AFP VENDEDORA ya tiene valor en UI.
+[CONTROL][OK] AFP VENDEDORA en 617 ms
+[CONTROL][INICIO] TIPO DE SOLICITUD COTIZACION
+[R25][SKIP] Campo TIPO DE SOLICITUD COTIZACION ya tiene valor en UI.
+[CONTROL][OK] TIPO DE SOLICITUD COTIZACION en 522 ms
+[CONTROL][INICIO] FECHA DE CAUSACION DE DERECHO
+[CONTROL][INTENTO] Campo FECHA DE CAUSACION DE DERECHO con etiqueta 'Fecha de causacion de derecho' y tipo fecha
+[CONTROL][INTENTO][FALLO] Campo FECHA DE CAUSACION DE DERECHO con etiqueta 'Fecha de causacion de derecho': Error: No se encontro el campo visible Fecha de causacion de derecho en el formulario R25.
+[CONTROL][INTENTO] Campo FECHA DE CAUSACION DE DERECHO con etiqueta 'Fecha de causación de derecho' y tipo fecha
+[CONTROL][INTENTO][FALLO] Campo FECHA DE CAUSACION DE DERECHO con etiqueta 'Fecha de causación de derecho': Error: No se encontro el campo visible Fecha de causación de derecho en el formulario R25.
+[CONTROL][INTENTO] Campo FECHA DE CAUSACION DE DERECHO con etiqueta 'Fecha de causacion del derecho' y tipo fecha
+[CONTROL][INTENTO][OK] Campo FECHA DE CAUSACION DE DERECHO diligenciado con etiqueta 'Fecha de causacion del derecho' en 11209 ms
+[CONTROL][OK] FECHA DE CAUSACION DE DERECHO en 15286 ms
+[CONTROL][INICIO] VALOR PENSION INICIAL
+[R25][SKIP] Campo VALOR PENSION INICIAL ya tiene valor en UI.
+[CONTROL][OK] VALOR PENSION INICIAL en 595 ms
+[CONTROL][INICIO] ORIGEN PENSION INICIAL
+[R25][SKIP] Campo ORIGEN PENSION INICIAL ya tiene valor en UI.
+[CONTROL][OK] ORIGEN PENSION INICIAL en 964 ms
+[CONTROL][INICIO] CLASE DE RENTA
+[R25][SKIP] Campo CLASE DE RENTA ya tiene valor en UI.
+[CONTROL][OK] CLASE DE RENTA en 781 ms
+[CONTROL][INICIO] ORIGEN INICIAL DE LA PRESTACION
+[R25][SKIP] Campo ORIGEN INICIAL DE LA PRESTACION ya tiene valor en UI.
+[CONTROL][OK] ORIGEN INICIAL DE LA PRESTACION en 652 ms
+[CONTROL][INICIO] MODALIDAD DE RENTA
+[R25][SKIP] Campo MODALIDAD DE RENTA ya tiene valor en UI.
+[CONTROL][OK] MODALIDAD DE RENTA en 647 ms
+[CONTROL][INICIO] NRO SEMANAS COTIZADAS
+[CONTROL][INTENTO] Campo NRO SEMANAS COTIZADAS con etiqueta 'Nro. semanas cotizadas' y tipo numero
+[CONTROL][INTENTO][OK] Campo NRO SEMANAS COTIZADAS diligenciado con etiqueta 'Nro. semanas cotizadas' en 1132 ms
+[CONTROL][OK] NRO SEMANAS COTIZADAS en 2068 ms
+[CONTROL][INICIO] IBL
+[R25][SKIP] Campo IBL ya tiene valor en UI.
+[CONTROL][OK] IBL en 1443 ms
+[CONTROL][INICIO] RAMO
+[R25][SKIP] Campo RAMO ya tiene valor en UI.
+[CONTROL][OK] RAMO en 968 ms
+[CONTROL][INICIO] PRIMA UNICA
+[CONTROL][INTENTO] Campo PRIMA UNICA con etiqueta 'Prima única' y tipo numero
+[CONTROL][INTENTO][OK] Campo PRIMA UNICA diligenciado con etiqueta 'Prima única' en 1291 ms
+[CONTROL][OK] PRIMA UNICA en 1291 ms
+[CONTROL][INICIO] FECHA ULTIMO INCREMENTO
+[R25][SKIP] Campo FECHA ULTIMO INCREMENTO ya tiene valor en UI.
+[CONTROL][OK] FECHA ULTIMO INCREMENTO en 115 ms
+[CONTROL][INICIO] VERSION CLAUSULADO
+[R25][SKIP] Campo VERSION CLAUSULADO ya tiene valor en UI.
+[CONTROL][OK] VERSION CLAUSULADO en 1574 ms
+[CONTROL][INICIO] FECHA ULTIMA MODIFICACION
+[R25][SKIP] Campo FECHA ULTIMA MODIFICACION ya tiene valor en UI.
+[CONTROL][OK] FECHA ULTIMA MODIFICACION en 118 ms
+[CONTROL][INICIO] AUTORIZACION DATOS PERSONALES
+[R25][SKIP] Campo AUTORIZACION DATOS PERSONALES ya tiene valor en UI.
+[CONTROL][OK] AUTORIZACION DATOS PERSONALES en 1174 ms
+[CONTROL][INICIO] INTERES DE RESERVA
+[R25][SKIP] Campo INTERES DE RESERVA ya tiene valor en UI.
+[CONTROL][OK] INTERES DE RESERVA en 1142 ms
+[CONTROL][INICIO] VIGENCIA TMR
+[R25][SKIP] Campo VIGENCIA TMR ya tiene valor en UI.
+[CONTROL][OK] VIGENCIA TMR en 89 ms
+[CONTROL][INICIO] TIPO DE CALCULO
+[R25][SKIP] Campo TIPO DE CALCULO ya tiene valor en UI.
+[CONTROL][OK] TIPO DE CALCULO en 1468 ms
+[CONTROL][INICIO] FACTOR DESLIZAMIENTO
+[R25][SKIP] Campo FACTOR DESLIZAMIENTO ya tiene valor en UI.
+[CONTROL][OK] FACTOR DESLIZAMIENTO en 1418 ms
+[CONTROL][INICIO] AUTORIZACION ENVIO CUPON PAGO
+[R25][SKIP] Campo AUTORIZACION ENVIO CUPON PAGO ya tiene valor en UI.
+[CONTROL][OK] AUTORIZACION ENVIO CUPON PAGO en 1448 ms
+[R25] Intentando presionar el boton Guardar Cambios.
+[R25] Click ejecutado sobre Guardar Cambios por locator.
