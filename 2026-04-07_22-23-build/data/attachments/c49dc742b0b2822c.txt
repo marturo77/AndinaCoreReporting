@@ -1,6 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-[PENDING] Parametro no visible para eliminar vigencia: TMR
-[PENDING] Parametro no visible para eliminar vigencia: TM_Validos
-[PENDING] Parametro no visible para eliminar vigencia: TM_Invalidos
-[PENDING] Parametro no visible para eliminar vigencia: TM_mejoramiento
-[PENDING] Parametro no visible para eliminar vigencia: TM_reduccion
