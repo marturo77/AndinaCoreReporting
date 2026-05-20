@@ -1,3 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-PAGINA CARGADA: LISTA DE POLIZAS
-[INFO] No se encontro poliza expedida en cotizaciones.json para grupo 1.

@@ -1,4 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-Abriendo la pagina de cotizacion...
-URL actual al abrir cotizacion: https://andinavidasegurospre.linktic.com/cotizaciones/nueva
-Texto visible actual: 

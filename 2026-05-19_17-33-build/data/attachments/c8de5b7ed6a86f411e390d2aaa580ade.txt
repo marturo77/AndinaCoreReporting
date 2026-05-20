@@ -1,4 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-[gestion] 5 fila(s) de D:\a\1\s\datasets\gestion\R25_sin_impacto_reserva.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
-PAGINA CARGADA: LISTA DE POLIZAS
-[INFO] No se encontro poliza expedida en cotizaciones.json para grupo 1.
