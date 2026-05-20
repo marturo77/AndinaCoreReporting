@@ -1,5 +1,0 @@
-[LOGIN] Navegado a: https://andinavidasegurospre.linktic.com/
-[gestion] 27 fila(s) de D:\a\1\s\datasets\gestion\R79_reversion_de_polizas.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
-[gestion] 27 fila(s) de D:\a\1\s\datasets\gestion\R79_reversion_de_polizas.xlsx se omiten porque su Grupo no existe en cotizaciones.json.
-PAGINA CARGADA: LISTA DE POLIZAS
-[INFO] R79 fila 1: el grupo 1 no tiene numero_poliza. Se omite.

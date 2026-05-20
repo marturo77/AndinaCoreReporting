@@ -1,52 +1,12 @@
 ﻿[
     {
-        "id":  "2026-05-19_17-33-build",
-        "label":  "2026-05-19 17:33",
-        "folder":  "2026-05-19_17-33-build",
-        "url":  "./2026-05-19_17-33-build/index.html",
-        "createdAt":  "2026-05-19T17:33:51",
-        "progressPercent":  null
-    },
-    {
         "id":  "2026-05-19_16-25-build",
         "label":  "2026-05-19 16:25",
         "folder":  "2026-05-19_16-25-build",
         "url":  "./2026-05-19_16-25-build/index.html",
         "createdAt":  "2026-05-19T16:25:54",
         "progressPercent":  null
-    },
-    {
-        "id":  "2026-05-19_15-35-build",
-        "label":  "2026-05-19 15:35",
-        "folder":  "2026-05-19_15-35-build",
-        "url":  "./2026-05-19_15-35-build/index.html",
-        "createdAt":  "2026-05-19T15:35:52",
-        "progressPercent":  null
-    },
-    {
-        "id":  "2026-05-19_14-51-build",
-        "label":  "2026-05-19 14:51",
-        "folder":  "2026-05-19_14-51-build",
-        "url":  "./2026-05-19_14-51-build/index.html",
-        "createdAt":  "2026-05-19T14:51:32",
-        "progressPercent":  null
-    },
-    {
-        "id":  "2026-05-19_13-50-build",
-        "label":  "2026-05-19 13:50",
-        "folder":  "2026-05-19_13-50-build",
-        "url":  "./2026-05-19_13-50-build/index.html",
-        "createdAt":  "2026-05-19T13:50:36",
-        "progressPercent":  null
-    },
-    {
-        "id":  "2026-05-19_12-39-build",
-        "label":  "2026-05-19 12:39",
-        "folder":  "2026-05-19_12-39-build",
-        "url":  "./2026-05-19_12-39-build/index.html",
-        "createdAt":  "2026-05-19T12:39:27",
-        "progressPercent":  null
-    },
+    },    
     {
         "id":  "2026-04-23_02-37-build",
         "label":  "2026-04-23 02:37",
